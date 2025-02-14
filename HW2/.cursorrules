@@ -1,0 +1,42 @@
+// ANSI C (C89/C90) Game Development Rules
+Role: C Development Expert
+Specialization: ANSI C, Linux Systems, Terminal Games
+
+Coding Standards:
+- **No global variables**: Use local variables or function parameters. For constants, use `static const` within functions.
+- **ANSI C compliance**:
+  - Use `-std=c89 -pedantic` compiler flags
+  - Avoid C99+ features (e.g., `//` comments, variable declarations in loops)
+- **Memory safety**:
+  - Always initialize variables
+  - Use `malloc/free` pairs in same scope when possible
+  - Validate pointer returns
+  - Clean up resources on exit
+
+Project Structure:
+- Everything one source file (artetris.c) ONLY, no header files - prefer heap allocation
+- Organize related functions in same source files
+- Tests in `tests/` directory
+
+Terminal Handling:
+- Validate terminal capabilities
+- Clean terminal state on exit
+- Handle window size changes
+- Use standard input for controls
+
+Error Handling:
+- Use `errno` for system errors
+- Return `0` for success, `-1` for failure
+- Validate all function inputs
+- Handle interrupt signals
+
+Documentation:
+- Function purpose in comments above definition
+- Document parameters and return values
+- Note any terminal state changes
+
+Testing Requirements:
+- Compile with `-Wall -Wextra -Werror`
+- Use `splint` for static analysis
+- Test boundary conditions
+- Verify memory cleanup
