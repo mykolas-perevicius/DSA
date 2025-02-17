@@ -29,8 +29,8 @@ rm -f "$SUMMARY"  # Start fresh each test run
 # Create and initialize the running summary
 RUNNING_SUMMARY="/tmp/running_summary.txt"
 echo "Test Results Summary" > "$RUNNING_SUMMARY"
-echo "===================" >> "$RUNNING_SUMMARY"
-printf "%-25s %-15s %-20s %-10s\n" "Configuration" "Status" "Time" "Pieces Placed" >> "$RUNNING_SUMMARY"
+echo "=================== " >> "$RUNNING_SUMMARY"
+printf "%-25s %-15s %-20s %-15s %-30s\n" "Configuration" "Status" "Time" "Pieces Placed" "Fail Reason" >> "$RUNNING_SUMMARY"
 echo "------------------------------------------------------------------------" >> "$RUNNING_SUMMARY"
 
 # Test cases covering all template types with valid configurations
@@ -68,9 +68,33 @@ declare -A tests=(
     ["4x4_OOOO"]="4 4 OOOO"     # 4×4=16 = 4×4
     
     # Q: 4 cells (cross)
-    ["5x5_QQQQQ"]="5 5 QQQQQ"   # 5×5=25 = 5×5 (needs 25/4=6.25 → invalid)
-    # Correction:
     ["5x4_QQQQ"]="5 4 QQQQ"     # 5×4=20 = 4×5
+
+    # Easy Cases
+    ["1x6_A"]="1 6 A"
+    ["6x1_A"]="6 1 A"
+    ["3x6_AAA"]="3 6 AAA"
+    ["5x5_JJJJJ"]="5 5 JJJJJ"
+
+    # Medium Cases
+    ["6x6_AAAAAA"]="6 6 AAAAAA"
+    ["5x6_IIIIII"]="5 6 IIIIII"
+    ["6x5_FFFFFF"]="6 5 FFFFFF"
+
+    # Edge Cases
+    ["2x2_A"]="2 2 A"
+    ["1x1_N"]="1 1 N"
+    ["2x3_JJ"]="2 3 JJ"
+
+    # Mixed Cases
+    ["7x3_AIII"]="7 3 AIII"
+    ["3x7_AIII"]="3 7 AIII"
+    ["6x6_ACCCDIJ"]="6 6 ACCCDIJ"
+    ["5x4_IIKL"]="5 4 IIKL"
+    # Hardest test case: use all allowed pieces in a challenging mix
+    ["Hardest_All"]="8 16 AAACCDDFFIIJJKKLLMMNNOOQQ"
+    ["6x2_AA"]="6 2 AA"
+    ["3x5_NNN"]="3 5 NNN"
 )
 
 # Run tests
@@ -80,6 +104,7 @@ for test in "${!tests[@]}"; do
     status=""
     time_taken="N/A"
     pieces_placed="N/A"
+    failure_reason=""
     
     # Run with debug output and capture exit code
     ./artetris ${tests[$test]} > "$logfile" 2>&1
@@ -89,15 +114,13 @@ for test in "${!tests[@]}"; do
     if [ $exit_code -eq 139 ]; then
         status="CORE DUMP"
         echo "Core dump detected in test $test"
-        # Generate backtrace if possible
         if [ -x artetris ] && [ -f artetris ]; then
             gdb -batch -ex "bt" artetris core >> "$logfile" 2>&1
         fi
     else
         # Extract test results
         time_taken=$(grep "Time:" "$logfile" | awk '{print $NF}' | head -1)
-        pieces_placed=$(grep "Best solution:" "$logfile" | awk '{print $NF}')
-        
+        pieces_placed=$(grep "solution has" "$logfile" | awk '{print $(NF-1)}')
         if [ -z "$pieces_placed" ]; then
             pieces_placed="0"
         fi
@@ -112,12 +135,17 @@ for test in "${!tests[@]}"; do
         fi
     fi
     
+    if [ "$status" != "COMPLETED" ]; then
+         failure_reason=$(grep -E "Error:|No valid tiling" "$logfile" | head -1)
+    fi
+    
     # Add to summary
-    printf "%-25s %-15s %-20s %-10s\n" "$test" "$status" "$time_taken" "$pieces_placed" >> "$SUMMARY"
+    printf "%-25s %-15s %-20s %-15s %-30s\n" "$test" "$status" "$time_taken" "$pieces_placed" "$failure_reason" >> "$SUMMARY"
+
 done
 
 # Print final summary
 echo ""
 echo "Test Results Summary"
-echo "==================="
+echo "=================== "
 column -t -s' ' "$SUMMARY"

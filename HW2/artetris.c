@@ -3,7 +3,6 @@
 #include <errno.h>
 #include <string.h>
 #include <time.h>
-#include <limits.h>
 
 /* 
    Structure representing a block rotation.
@@ -47,6 +46,7 @@ typedef struct {
     int bestCount;        /* How many pieces were placed in the best solution */
     int boardArea;
     int solutions_count;  /* Number of complete solutions found */
+    double elapsedTime; /* Elapsed time in milliseconds */
 } SolverState;
 
 /* New structure for a placement row (for Algorithm X).
@@ -75,6 +75,9 @@ int initialize_block(Block *block, const char *init_grid, int init_rows, int ini
 void print_block(const Block *block, int block_dim);
 void free_block(Block *block);
 
+/* Forward declaration for helper function get_piece_letter */
+static char get_piece_letter(Block *blocks, int pieceIndex, int rotation);
+
 /* Solver helper function prototypes */
 int canPlacePiece(char *board, int boardRows, int boardCols, BlockRotation *piece, int block_dim, int top, int left);
 void placePiece(char *board, int boardRows, int boardCols, BlockRotation *piece, int block_dim, int top, int left, char letter);
@@ -90,12 +93,10 @@ int algorithm_x(int total_columns, int total_rows, PlacementRow *matrix,
                 int *solution_count, int *best_solution, int *best_depth,
                 clock_t start_time, int time_limit, int boardRows, 
                 int boardCols, Block *blocks, FILE* log, int *timed_out);
-
-/* Add blocksToString prototype */
 char* blocksToString(Block *blocks, int nblocks);
-
-/* Add print_current_board prototype */
 void print_current_board(int boardRows, int boardCols, PlacementRow *matrix, int *solution, int sol_depth, Block *blocks, FILE* log);
+void print_solution(int *solution, int sol_depth, PlacementRow *matrix, 
+                   Block *blocks, int boardRows, int boardCols);
 
 /* Helper function: returns 1 if the board is fully covered (no '-' empty cells), 0 otherwise */
 int is_board_full(const char *board, int boardArea) {
@@ -105,43 +106,6 @@ int is_board_full(const char *board, int boardArea) {
             return 0;
     }
     return 1;
-}
-
-/* Revised print_solution function */
-void print_solution(int *solution, int sol_depth, PlacementRow *matrix, 
-                   Block *blocks, int boardRows, int boardCols) {
-    char *board = calloc(boardRows * boardCols + 1, 1);
-    int s, k, b, r, c;  /* Declare all loop variables at start */
-    int idx, pos;
-    char letter;
-    
-    if (!board) return;
-    
-    memset(board, '-', boardRows * boardCols);
-    
-    for (s = 0; s < sol_depth; s++) {
-        idx = solution[s];
-        letter = blocks[matrix[idx].pieceIndex].rotations[0].grid[0];
-        
-        for (k = 0; k < blocks[matrix[idx].pieceIndex].rotations[matrix[idx].rotation].rows; k++) {
-            for (b = 0; b < blocks[matrix[idx].pieceIndex].rotations[matrix[idx].rotation].cols; b++) {
-                if (blocks[matrix[idx].pieceIndex].rotations[matrix[idx].rotation]
-                    .grid[k * blocks[matrix[idx].pieceIndex].rotations[matrix[idx].rotation].alloc_dim + b] != '.') {
-                    pos = (matrix[idx].top + k) * boardCols + (matrix[idx].left + b);
-                    board[pos] = letter;
-                }
-            }
-        }
-    }
-    
-    for (r = 0; r < boardRows; r++) {
-        for (c = 0; c < boardCols; c++) {
-            printf("%c", board[r * boardCols + c]);
-        }
-        printf("\n");
-    }
-    
-    free(board);
 }
 
 /* Main function */
@@ -687,6 +651,26 @@ void freePlacementMatrix(PlacementRow *matrix, int rowCount) {
     free(matrix);
 }
 
+/* Helper function to get the letter for a piece from its base rotation */
+static char get_piece_letter(Block *blocks, int pieceIndex, int rotation) {
+    int r, c;
+    int rows, cols, alloc_dim;
+    char ch;
+    (void) rotation;  /* Silence unused parameter warning */
+    rows = blocks[pieceIndex].rotations[0].rows;
+    cols = blocks[pieceIndex].rotations[0].cols;
+    alloc_dim = blocks[pieceIndex].rotations[0].alloc_dim;
+    for (r = 0; r < rows; r++) {
+        for (c = 0; c < cols; c++) {
+            ch = blocks[pieceIndex].rotations[0].grid[r * alloc_dim + c];
+            if (ch != '.' && ch != '\0') {
+                return ch;
+            }
+        }
+    }
+    return '?';
+}
+
 /* Revised algorithm_x function */
 int algorithm_x(int total_columns, int total_rows, PlacementRow *matrix, 
                 int *active, int *col_covered, int covered_count,
@@ -769,16 +753,18 @@ int algorithm_x(int total_columns, int total_rows, PlacementRow *matrix,
         free(col_covered_copy);
     }
 
-    if (log) {
-        if (*solution_count % 100 == 0) {
-            int active_count = 0;
-            for (j = 0; j < total_rows; j++) {
-                if (active[j])
-                    active_count++;
+    {
+        static const int debugEnabled = 0;
+        if (log && debugEnabled) {
+            if (*solution_count % 100 == 0) {
+                int active_count = 0;
+                for (j = 0; j < total_rows; j++) {
+                    if (active[j])
+                        active_count++;
+                }
+                print_current_board(boardRows, boardCols, matrix, solution, sol_depth, blocks, log);
+                fprintf(log, "Depth: %d, Candidates: %d\n", sol_depth, active_count);
             }
-
-            print_current_board(boardRows, boardCols, matrix, solution, sol_depth, blocks, log);
-            fprintf(log, "Depth: %d, Candidates: %d\n", sol_depth, active_count);
         }
     }
 
@@ -840,7 +826,7 @@ void solvePuzzleDLX(int boardRows, int boardCols, Block *blocks, int nblocks, So
             pRows = blocks[matrix[idx].pieceIndex].rotations[matrix[idx].rotation].rows;
             pCols = blocks[matrix[idx].pieceIndex].rotations[matrix[idx].rotation].cols;
             alloc_dim = blocks[matrix[idx].pieceIndex].rotations[matrix[idx].rotation].alloc_dim;
-            letter = blocks[matrix[idx].pieceIndex].rotations[0].grid[0];
+            letter = get_piece_letter(blocks, matrix[idx].pieceIndex, 0);
 
             for (k = 0; k < pRows; k++) {
                 for (b = 0; b < pCols; b++) {
@@ -855,12 +841,13 @@ void solvePuzzleDLX(int boardRows, int boardCols, Block *blocks, int nblocks, So
 
     /* Final summary - ALWAYS WRITE */
     elapsed = (clock() - start_time) * 1000.0 / CLOCKS_PER_SEC;
+    state->elapsedTime = elapsed;
     summary = fopen("solver_summary.txt", "a"); /* Changed from debug_log to always create */
     if (summary) {
-        fprintf(summary, "[%dx%d] %s | Solutions: %d | Best: %d | Time: %.2fms%s\n",
+        fprintf(summary, "[%dx%d] Sequence: %s | Solutions: %d | Best Pieces: %d | Elapsed Time: %.2fms%s\n",
                 boardRows, boardCols, blocksToString(blocks, nblocks), 
                 state->solutions_count, state->bestCount, elapsed,
-                timed_out ? " (Timeout)" : "");  /* Add timeout indicator */
+                timed_out ? " (Timeout)" : "");
         fclose(summary);
     }
 
@@ -877,11 +864,11 @@ void solvePuzzleDLX(int boardRows, int boardCols, Block *blocks, int nblocks, So
         fprintf(log, "Built placement matrix with %d rows\n", rowCount);
         for (i = 0; i < rowCount; i++) {
             fprintf(log, "Row %d: Piece %c Rot %d @ (%d,%d) covers cols: ",
-                    i, 
-                    blocks[matrix[i].pieceIndex].rotations[0].grid[0],
-                    matrix[i].rotation,
-                    matrix[i].top,
-                    matrix[i].left);
+                    (int)i, 
+                    get_piece_letter(blocks, matrix[i].pieceIndex, 0),
+                    (int)matrix[i].rotation,
+                    (int)matrix[i].top,
+                    (int)matrix[i].left);
             for (c = 0; c < matrix[i].count; c++) {
                 fprintf(log, "%d ", matrix[i].cols[c]);
             }
@@ -911,7 +898,7 @@ void print_current_board(int boardRows, int boardCols, PlacementRow *matrix, int
     
     for (s = 0; s < sol_depth; s++) {
         idx = solution[s];
-        letter = blocks[matrix[idx].pieceIndex].rotations[0].grid[0];
+        letter = get_piece_letter(blocks, matrix[idx].pieceIndex, 0);
         
         for (k = 0; k < blocks[matrix[idx].pieceIndex].rotations[matrix[idx].rotation].rows; k++) {
             for (b = 0; b < blocks[matrix[idx].pieceIndex].rotations[matrix[idx].rotation].cols; b++) {

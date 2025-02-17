@@ -1,462 +1,72 @@
 Starting DLX solver
 Starting DLX solver (time limit: 100s)
 Initial matrix: 64 rows, 20 columns
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
--.--
-...-
--.--
-----
-Depth: 1, Candidates: 0
-Current board state:
---.-
--...
---.-
-----
-Depth: 1, Candidates: 0
-Current board state:
-----
--.--
-...-
--.--
-Depth: 1, Candidates: 0
-Current board state:
-----
---.-
--...
---.-
-Depth: 1, Candidates: 0
-Current board state:
-----
-----
-----
-----
-Depth: 0, Candidates: 64
 [DEBUG] Solver completed. Best solution: -1 pieces
 Built placement matrix with 64 rows
-Row 0: Piece . Rot 0 @ (0,0) covers cols: 1 4 5 6 9 16 
-Row 1: Piece . Rot 0 @ (0,1) covers cols: 2 5 6 7 10 16 
-Row 2: Piece . Rot 0 @ (1,0) covers cols: 5 8 9 10 13 16 
-Row 3: Piece . Rot 0 @ (1,1) covers cols: 6 9 10 11 14 16 
-Row 4: Piece . Rot 1 @ (0,0) covers cols: 1 4 5 6 9 16 
-Row 5: Piece . Rot 1 @ (0,1) covers cols: 2 5 6 7 10 16 
-Row 6: Piece . Rot 1 @ (1,0) covers cols: 5 8 9 10 13 16 
-Row 7: Piece . Rot 1 @ (1,1) covers cols: 6 9 10 11 14 16 
-Row 8: Piece . Rot 2 @ (0,0) covers cols: 1 4 5 6 9 16 
-Row 9: Piece . Rot 2 @ (0,1) covers cols: 2 5 6 7 10 16 
-Row 10: Piece . Rot 2 @ (1,0) covers cols: 5 8 9 10 13 16 
-Row 11: Piece . Rot 2 @ (1,1) covers cols: 6 9 10 11 14 16 
-Row 12: Piece . Rot 3 @ (0,0) covers cols: 1 4 5 6 9 16 
-Row 13: Piece . Rot 3 @ (0,1) covers cols: 2 5 6 7 10 16 
-Row 14: Piece . Rot 3 @ (1,0) covers cols: 5 8 9 10 13 16 
-Row 15: Piece . Rot 3 @ (1,1) covers cols: 6 9 10 11 14 16 
-Row 16: Piece . Rot 0 @ (0,0) covers cols: 1 4 5 6 9 17 
-Row 17: Piece . Rot 0 @ (0,1) covers cols: 2 5 6 7 10 17 
-Row 18: Piece . Rot 0 @ (1,0) covers cols: 5 8 9 10 13 17 
-Row 19: Piece . Rot 0 @ (1,1) covers cols: 6 9 10 11 14 17 
-Row 20: Piece . Rot 1 @ (0,0) covers cols: 1 4 5 6 9 17 
-Row 21: Piece . Rot 1 @ (0,1) covers cols: 2 5 6 7 10 17 
-Row 22: Piece . Rot 1 @ (1,0) covers cols: 5 8 9 10 13 17 
-Row 23: Piece . Rot 1 @ (1,1) covers cols: 6 9 10 11 14 17 
-Row 24: Piece . Rot 2 @ (0,0) covers cols: 1 4 5 6 9 17 
-Row 25: Piece . Rot 2 @ (0,1) covers cols: 2 5 6 7 10 17 
-Row 26: Piece . Rot 2 @ (1,0) covers cols: 5 8 9 10 13 17 
-Row 27: Piece . Rot 2 @ (1,1) covers cols: 6 9 10 11 14 17 
-Row 28: Piece . Rot 3 @ (0,0) covers cols: 1 4 5 6 9 17 
-Row 29: Piece . Rot 3 @ (0,1) covers cols: 2 5 6 7 10 17 
-Row 30: Piece . Rot 3 @ (1,0) covers cols: 5 8 9 10 13 17 
-Row 31: Piece . Rot 3 @ (1,1) covers cols: 6 9 10 11 14 17 
-Row 32: Piece . Rot 0 @ (0,0) covers cols: 1 4 5 6 9 18 
-Row 33: Piece . Rot 0 @ (0,1) covers cols: 2 5 6 7 10 18 
-Row 34: Piece . Rot 0 @ (1,0) covers cols: 5 8 9 10 13 18 
-Row 35: Piece . Rot 0 @ (1,1) covers cols: 6 9 10 11 14 18 
-Row 36: Piece . Rot 1 @ (0,0) covers cols: 1 4 5 6 9 18 
-Row 37: Piece . Rot 1 @ (0,1) covers cols: 2 5 6 7 10 18 
-Row 38: Piece . Rot 1 @ (1,0) covers cols: 5 8 9 10 13 18 
-Row 39: Piece . Rot 1 @ (1,1) covers cols: 6 9 10 11 14 18 
-Row 40: Piece . Rot 2 @ (0,0) covers cols: 1 4 5 6 9 18 
-Row 41: Piece . Rot 2 @ (0,1) covers cols: 2 5 6 7 10 18 
-Row 42: Piece . Rot 2 @ (1,0) covers cols: 5 8 9 10 13 18 
-Row 43: Piece . Rot 2 @ (1,1) covers cols: 6 9 10 11 14 18 
-Row 44: Piece . Rot 3 @ (0,0) covers cols: 1 4 5 6 9 18 
-Row 45: Piece . Rot 3 @ (0,1) covers cols: 2 5 6 7 10 18 
-Row 46: Piece . Rot 3 @ (1,0) covers cols: 5 8 9 10 13 18 
-Row 47: Piece . Rot 3 @ (1,1) covers cols: 6 9 10 11 14 18 
-Row 48: Piece . Rot 0 @ (0,0) covers cols: 1 4 5 6 9 19 
-Row 49: Piece . Rot 0 @ (0,1) covers cols: 2 5 6 7 10 19 
-Row 50: Piece . Rot 0 @ (1,0) covers cols: 5 8 9 10 13 19 
-Row 51: Piece . Rot 0 @ (1,1) covers cols: 6 9 10 11 14 19 
-Row 52: Piece . Rot 1 @ (0,0) covers cols: 1 4 5 6 9 19 
-Row 53: Piece . Rot 1 @ (0,1) covers cols: 2 5 6 7 10 19 
-Row 54: Piece . Rot 1 @ (1,0) covers cols: 5 8 9 10 13 19 
-Row 55: Piece . Rot 1 @ (1,1) covers cols: 6 9 10 11 14 19 
-Row 56: Piece . Rot 2 @ (0,0) covers cols: 1 4 5 6 9 19 
-Row 57: Piece . Rot 2 @ (0,1) covers cols: 2 5 6 7 10 19 
-Row 58: Piece . Rot 2 @ (1,0) covers cols: 5 8 9 10 13 19 
-Row 59: Piece . Rot 2 @ (1,1) covers cols: 6 9 10 11 14 19 
-Row 60: Piece . Rot 3 @ (0,0) covers cols: 1 4 5 6 9 19 
-Row 61: Piece . Rot 3 @ (0,1) covers cols: 2 5 6 7 10 19 
-Row 62: Piece . Rot 3 @ (1,0) covers cols: 5 8 9 10 13 19 
-Row 63: Piece . Rot 3 @ (1,1) covers cols: 6 9 10 11 14 19 
+Row 0: Piece N Rot 0 @ (0,0) covers cols: 1 4 5 6 9 16 
+Row 1: Piece N Rot 0 @ (0,1) covers cols: 2 5 6 7 10 16 
+Row 2: Piece N Rot 0 @ (1,0) covers cols: 5 8 9 10 13 16 
+Row 3: Piece N Rot 0 @ (1,1) covers cols: 6 9 10 11 14 16 
+Row 4: Piece N Rot 1 @ (0,0) covers cols: 1 4 5 6 9 16 
+Row 5: Piece N Rot 1 @ (0,1) covers cols: 2 5 6 7 10 16 
+Row 6: Piece N Rot 1 @ (1,0) covers cols: 5 8 9 10 13 16 
+Row 7: Piece N Rot 1 @ (1,1) covers cols: 6 9 10 11 14 16 
+Row 8: Piece N Rot 2 @ (0,0) covers cols: 1 4 5 6 9 16 
+Row 9: Piece N Rot 2 @ (0,1) covers cols: 2 5 6 7 10 16 
+Row 10: Piece N Rot 2 @ (1,0) covers cols: 5 8 9 10 13 16 
+Row 11: Piece N Rot 2 @ (1,1) covers cols: 6 9 10 11 14 16 
+Row 12: Piece N Rot 3 @ (0,0) covers cols: 1 4 5 6 9 16 
+Row 13: Piece N Rot 3 @ (0,1) covers cols: 2 5 6 7 10 16 
+Row 14: Piece N Rot 3 @ (1,0) covers cols: 5 8 9 10 13 16 
+Row 15: Piece N Rot 3 @ (1,1) covers cols: 6 9 10 11 14 16 
+Row 16: Piece N Rot 0 @ (0,0) covers cols: 1 4 5 6 9 17 
+Row 17: Piece N Rot 0 @ (0,1) covers cols: 2 5 6 7 10 17 
+Row 18: Piece N Rot 0 @ (1,0) covers cols: 5 8 9 10 13 17 
+Row 19: Piece N Rot 0 @ (1,1) covers cols: 6 9 10 11 14 17 
+Row 20: Piece N Rot 1 @ (0,0) covers cols: 1 4 5 6 9 17 
+Row 21: Piece N Rot 1 @ (0,1) covers cols: 2 5 6 7 10 17 
+Row 22: Piece N Rot 1 @ (1,0) covers cols: 5 8 9 10 13 17 
+Row 23: Piece N Rot 1 @ (1,1) covers cols: 6 9 10 11 14 17 
+Row 24: Piece N Rot 2 @ (0,0) covers cols: 1 4 5 6 9 17 
+Row 25: Piece N Rot 2 @ (0,1) covers cols: 2 5 6 7 10 17 
+Row 26: Piece N Rot 2 @ (1,0) covers cols: 5 8 9 10 13 17 
+Row 27: Piece N Rot 2 @ (1,1) covers cols: 6 9 10 11 14 17 
+Row 28: Piece N Rot 3 @ (0,0) covers cols: 1 4 5 6 9 17 
+Row 29: Piece N Rot 3 @ (0,1) covers cols: 2 5 6 7 10 17 
+Row 30: Piece N Rot 3 @ (1,0) covers cols: 5 8 9 10 13 17 
+Row 31: Piece N Rot 3 @ (1,1) covers cols: 6 9 10 11 14 17 
+Row 32: Piece N Rot 0 @ (0,0) covers cols: 1 4 5 6 9 18 
+Row 33: Piece N Rot 0 @ (0,1) covers cols: 2 5 6 7 10 18 
+Row 34: Piece N Rot 0 @ (1,0) covers cols: 5 8 9 10 13 18 
+Row 35: Piece N Rot 0 @ (1,1) covers cols: 6 9 10 11 14 18 
+Row 36: Piece N Rot 1 @ (0,0) covers cols: 1 4 5 6 9 18 
+Row 37: Piece N Rot 1 @ (0,1) covers cols: 2 5 6 7 10 18 
+Row 38: Piece N Rot 1 @ (1,0) covers cols: 5 8 9 10 13 18 
+Row 39: Piece N Rot 1 @ (1,1) covers cols: 6 9 10 11 14 18 
+Row 40: Piece N Rot 2 @ (0,0) covers cols: 1 4 5 6 9 18 
+Row 41: Piece N Rot 2 @ (0,1) covers cols: 2 5 6 7 10 18 
+Row 42: Piece N Rot 2 @ (1,0) covers cols: 5 8 9 10 13 18 
+Row 43: Piece N Rot 2 @ (1,1) covers cols: 6 9 10 11 14 18 
+Row 44: Piece N Rot 3 @ (0,0) covers cols: 1 4 5 6 9 18 
+Row 45: Piece N Rot 3 @ (0,1) covers cols: 2 5 6 7 10 18 
+Row 46: Piece N Rot 3 @ (1,0) covers cols: 5 8 9 10 13 18 
+Row 47: Piece N Rot 3 @ (1,1) covers cols: 6 9 10 11 14 18 
+Row 48: Piece N Rot 0 @ (0,0) covers cols: 1 4 5 6 9 19 
+Row 49: Piece N Rot 0 @ (0,1) covers cols: 2 5 6 7 10 19 
+Row 50: Piece N Rot 0 @ (1,0) covers cols: 5 8 9 10 13 19 
+Row 51: Piece N Rot 0 @ (1,1) covers cols: 6 9 10 11 14 19 
+Row 52: Piece N Rot 1 @ (0,0) covers cols: 1 4 5 6 9 19 
+Row 53: Piece N Rot 1 @ (0,1) covers cols: 2 5 6 7 10 19 
+Row 54: Piece N Rot 1 @ (1,0) covers cols: 5 8 9 10 13 19 
+Row 55: Piece N Rot 1 @ (1,1) covers cols: 6 9 10 11 14 19 
+Row 56: Piece N Rot 2 @ (0,0) covers cols: 1 4 5 6 9 19 
+Row 57: Piece N Rot 2 @ (0,1) covers cols: 2 5 6 7 10 19 
+Row 58: Piece N Rot 2 @ (1,0) covers cols: 5 8 9 10 13 19 
+Row 59: Piece N Rot 2 @ (1,1) covers cols: 6 9 10 11 14 19 
+Row 60: Piece N Rot 3 @ (0,0) covers cols: 1 4 5 6 9 19 
+Row 61: Piece N Rot 3 @ (0,1) covers cols: 2 5 6 7 10 19 
+Row 62: Piece N Rot 3 @ (1,0) covers cols: 5 8 9 10 13 19 
+Row 63: Piece N Rot 3 @ (1,1) covers cols: 6 9 10 11 14 19 
 Initial Canvas:
 ----
 ----

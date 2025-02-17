@@ -1,62 +1,155 @@
-[2x6] AA | Solutions: 0 | Best: -1 | Time: 0.03ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.52ms
-[4x4] IIII | Solutions: 0 | Best: -1 | Time: 0.30ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 1.00ms
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 1.45ms
-[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.02ms (Timeout)
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.10ms
-[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 72.02ms
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 1.85ms
-[5x5] ..... | Solutions: 0 | Best: -1 | Time: 33.43ms
-[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 33.10ms
-[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 0.43ms
-[2x6] AA | Solutions: 16 | Best: 2 | Time: 0.02ms
-[2x6] AA | Solutions: 0 | Best: -1 | Time: 0.03ms
-[2x6] AA | Solutions: 0 | Best: -1 | Time: 0.64ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 39.97ms
-[4x4] IIII | Solutions: 0 | Best: -1 | Time: 24.14ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 81.68ms
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
+[2x3] JJ | Solutions: 0 | Best: -1 | Time: 0.05ms
+[6x6] ACCC.IJ | Solutions: 0 | Best: -1 | Time: 101.36ms (Timeout)
+[6x6] AAAAAA | Solutions: 25000 | Best: 6 | Time: 101.18ms (Timeout)
+[2x6] AA | Solutions: 16 | Best: 2 | Time: 0.04ms
+[5x4] IIK. | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
+[2x2] A | Solutions: 0 | Best: -1 | Time: 0.05ms
+[5x6] IIIIII | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
+[1x6] A | Solutions: 2 | Best: 1 | Time: 0.02ms
+[7x3] AIII | Solutions: 0 | Best: -1 | Time: 101.17ms (Timeout)
+[3x7] AIII | Solutions: 0 | Best: -1 | Time: 42.99ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 27.93ms
+[4x4] IIII | Solutions: 0 | Best: -1 | Time: 18.55ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 47.20ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 72.29ms
+[3x6] AAA | Solutions: 288 | Best: 3 | Time: 0.59ms
 [5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.11ms (Timeout)
 [4x4] .... | Solutions: 0 | Best: -1 | Time: 4.49ms
-[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
-[5x5] ..... | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
-[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.11ms (Timeout)
-[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 26.83ms
-[2x6] AA | Solutions: 0 | Best: -1 | Time: 0.47ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 37.74ms
-[4x4] IIII | Solutions: 0 | Best: -1 | Time: 21.21ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 61.62ms
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 96.10ms
-[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.08ms (Timeout)
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 4.83ms
-[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.02ms (Timeout)
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
-[5x5] ..... | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
-[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.07ms (Timeout)
-[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 27.23ms
+[5x5] JJJJJ | Solutions: 0 | Best: -1 | Time: 101.02ms (Timeout)
+[6x1] A | Solutions: 2 | Best: 1 | Time: 0.03ms
+[6x5] FFFFFF | Solutions: 0 | Best: -1 | Time: 101.12ms (Timeout)
+[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.04ms (Timeout)
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 98.19ms
+[1x1] . | Solutions: 0 | Best: -1 | Time: 0.03ms
+[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.08ms (Timeout)
+[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 19.53ms
+[2x3] JJ | Solutions: 0 | Best: -1 | Time: 0.05ms
+[6x6] ACCC.IJ | Solutions: 0 | Best: -1 | Time: 101.25ms (Timeout)
+[6x6] AAAAAA | Solutions: 23300 | Best: 6 | Time: 101.07ms (Timeout)
 [2x6] AA | Solutions: 16 | Best: 2 | Time: 0.04ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 28.28ms
-[4x4] IIII | Solutions: 0 | Best: -1 | Time: 16.62ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 51.62ms
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 91.75ms
-[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 4.67ms
-[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.09ms (Timeout)
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
-[5x5] ..... | Solutions: 0 | Best: -1 | Time: 101.43ms (Timeout)
-[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
-[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 21.35ms
+[5x4] IIK. | Solutions: 0 | Best: -1 | Time: 101.04ms (Timeout)
+[2x2] A | Solutions: 0 | Best: -1 | Time: 0.05ms
+[5x6] IIIIII | Solutions: 0 | Best: -1 | Time: 101.08ms (Timeout)
+[1x6] A | Solutions: 2 | Best: 1 | Time: 0.03ms
+[7x3] AIII | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
+[3x7] AIII | Solutions: 0 | Best: -1 | Time: 45.29ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 30.58ms
+[4x4] IIII | Solutions: 0 | Best: -1 | Time: 17.89ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 52.79ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 75.98ms
+[3x6] AAA | Solutions: 288 | Best: 3 | Time: 0.64ms
+[8x16] AAACC..FFIIJJKK......OO.. | Solutions: 0 | Best: -1 | Time: 107.08ms (Timeout)
+[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.19ms (Timeout)
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 4.55ms
+[5x5] JJJJJ | Solutions: 0 | Best: -1 | Time: 101.17ms (Timeout)
+[6x1] A | Solutions: 2 | Best: 1 | Time: 0.02ms
+[6x5] FFFFFF | Solutions: 0 | Best: -1 | Time: 101.07ms (Timeout)
+[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.04ms (Timeout)
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.01ms (Timeout)
+[1x1] . | Solutions: 0 | Best: -1 | Time: 0.04ms
+[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.19ms (Timeout)
+[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 20.09ms
+[2x3] JJ | Solutions: 0 | Best: -1 | Time: 0.03ms
+[6x6] ACCC.IJ | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
+[6x6] AAAAAA | Solutions: 61136 | Best: 6 | Time: 101.04ms (Timeout)
 [2x6] AA | Solutions: 16 | Best: 2 | Time: 0.04ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 29.59ms
-[4x4] IIII | Solutions: 0 | Best: -1 | Time: 17.47ms
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 52.10ms
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 80.62ms
-[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
-[4x4] .... | Solutions: 0 | Best: -1 | Time: 4.56ms
-[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.09ms (Timeout)
-[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
-[5x5] ..... | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
-[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.04ms (Timeout)
-[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 22.22ms
+[5x4] IIK. | Solutions: 0 | Best: -1 | Time: 3.19ms
+[2x2] A | Solutions: 0 | Best: -1 | Time: 0.02ms
+[5x6] IIIIII | Solutions: 0 | Best: -1 | Time: 101.02ms (Timeout)
+[1x6] A | Solutions: 2 | Best: 1 | Time: 0.03ms
+[7x3] AIII | Solutions: 0 | Best: -1 | Time: 1.27ms
+[3x7] AIII | Solutions: 0 | Best: -1 | Time: 0.70ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.44ms
+[4x4] IIII | Solutions: 0 | Best: -1 | Time: 0.32ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.83ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 1.41ms
+[3x6] AAA | Solutions: 288 | Best: 3 | Time: 0.41ms
+[8x16] AAACC..FFIIJJKK......OO.. | Solutions: 0 | Best: -1 | Time: 106.04ms (Timeout)
+[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.02ms (Timeout)
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.13ms
+[5x5] JJJJJ | Solutions: 0 | Best: -1 | Time: 44.77ms
+[6x1] A | Solutions: 2 | Best: 1 | Time: 0.02ms
+[6x5] FFFFFF | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
+[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 32.40ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 1.58ms
+[1x1] . | Solutions: 0 | Best: -1 | Time: 0.02ms
+[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 14.96ms
+[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 0.38ms
+[2x3] JJ | Solutions: 0 | Best: -1 | Time: 0.03ms
+[6x6] ACCC.IJ | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
+[6x6] AAAAAA | Solutions: 63292 | Best: 6 | Time: 101.03ms (Timeout)
+[2x6] AA | Solutions: 16 | Best: 2 | Time: 0.04ms
+[5x4] IIK. | Solutions: 0 | Best: -1 | Time: 2.99ms
+[2x2] A | Solutions: 0 | Best: -1 | Time: 0.03ms
+[5x6] IIIIII | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
+[1x6] A | Solutions: 2 | Best: 1 | Time: 0.03ms
+[7x3] AIII | Solutions: 0 | Best: -1 | Time: 1.23ms
+[3x7] AIII | Solutions: 0 | Best: -1 | Time: 0.62ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.44ms
+[4x4] IIII | Solutions: 0 | Best: -1 | Time: 0.28ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.80ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 1.15ms
+[3x6] AAA | Solutions: 288 | Best: 3 | Time: 0.36ms
+[8x16] AAACC..FFIIJJKK......OO.. | Solutions: 0 | Best: -1 | Time: 105.69ms (Timeout)
+[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.02ms (Timeout)
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.13ms
+[5x5] JJJJJ | Solutions: 0 | Best: -1 | Time: 46.40ms
+[6x1] A | Solutions: 2 | Best: 1 | Time: 0.02ms
+[6x5] FFFFFF | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
+[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 32.44ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 1.49ms
+[1x1] . | Solutions: 0 | Best: -1 | Time: 0.02ms
+[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 15.38ms
+[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 0.33ms
+[2x3] Sequence: JJ | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.02ms
+[6x6] Sequence: ACCC.IJ | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 101.06ms (Timeout)
+[6x6] Sequence: AAAAAA | Solutions: 61379 | Best Pieces: 6 | Elapsed Time: 101.03ms (Timeout)
+[2x6] Sequence: AA | Solutions: 16 | Best Pieces: 2 | Elapsed Time: 0.04ms
+[5x4] Sequence: IIK. | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 3.86ms
+[2x2] Sequence: A | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.02ms
+[5x6] Sequence: IIIIII | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 101.03ms (Timeout)
+[1x6] Sequence: A | Solutions: 2 | Best Pieces: 1 | Elapsed Time: 0.03ms
+[7x3] Sequence: AIII | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 1.26ms
+[3x7] Sequence: AIII | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.78ms
+[4x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.48ms
+[4x4] Sequence: IIII | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.29ms
+[4x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.96ms
+[5x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 1.30ms
+[3x6] Sequence: AAA | Solutions: 288 | Best Pieces: 3 | Elapsed Time: 0.43ms
+[8x16] Sequence: AAACC..FFIIJJKK......OO.. | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 105.79ms (Timeout)
+[5x5] Sequence: KKKKK | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 101.02ms (Timeout)
+[4x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.13ms
+[5x5] Sequence: JJJJJ | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 44.30ms
+[6x1] Sequence: A | Solutions: 2 | Best Pieces: 1 | Elapsed Time: 0.02ms
+[6x5] Sequence: FFFFFF | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 101.04ms (Timeout)
+[5x5] Sequence: CCCCC | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 32.23ms
+[5x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 1.45ms
+[1x1] Sequence: . | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.02ms
+[4x5] Sequence: FFFF | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 15.99ms
+[4x4] Sequence: OOOO | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.34ms
+[2x3] Sequence: JJ | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.03ms
+[6x6] Sequence: ACCC.IJ | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 101.05ms (Timeout)
+[6x6] Sequence: AAAAAA | Solutions: 61189 | Best Pieces: 6 | Elapsed Time: 101.03ms (Timeout)
+[2x6] Sequence: AA | Solutions: 16 | Best Pieces: 2 | Elapsed Time: 0.04ms
+[5x4] Sequence: IIK. | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 3.06ms
+[2x2] Sequence: A | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.02ms
+[5x6] Sequence: IIIIII | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 101.02ms (Timeout)
+[1x6] Sequence: A | Solutions: 2 | Best Pieces: 1 | Elapsed Time: 0.02ms
+[7x3] Sequence: AIII | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 1.23ms
+[3x7] Sequence: AIII | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.98ms
+[4x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.45ms
+[4x4] Sequence: IIII | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.28ms
+[4x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.89ms
+[5x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 1.26ms
+[3x6] Sequence: AAA | Solutions: 288 | Best Pieces: 3 | Elapsed Time: 0.44ms
+[8x16] Sequence: AAACC..FFIIJJKK......OO.. | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 105.66ms (Timeout)
+[5x5] Sequence: KKKKK | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 101.02ms (Timeout)
+[4x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.12ms
+[5x5] Sequence: JJJJJ | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 44.70ms
+[6x1] Sequence: A | Solutions: 2 | Best Pieces: 1 | Elapsed Time: 0.02ms
+[6x5] Sequence: FFFFFF | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 101.04ms (Timeout)
+[5x5] Sequence: CCCCC | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 32.14ms
+[5x4] Sequence: .... | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 1.38ms
+[1x1] Sequence: . | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.02ms
+[4x5] Sequence: FFFF | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 14.69ms
+[4x4] Sequence: OOOO | Solutions: 0 | Best Pieces: -1 | Elapsed Time: 0.32ms
