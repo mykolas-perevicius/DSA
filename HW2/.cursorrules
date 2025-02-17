@@ -1,8 +1,14 @@
-// ANSI C (C89/C90) Game Development Rules
+/* ANSI C (C89/C90) Game Development Rules - Updated Template Protection */
 Role: C Development Expert
 Specialization: ANSI C, Linux Systems, Terminal Games
 
 Coding Standards:
+
+**Template Immutability**:
+  - Template definitions are SACRED and MUST NOT be modified
+  - All game logic must work with existing template configurations
+  - Validation errors must be handled in solver, not by altering templates
+
 - **No global variables**: Use local variables or function parameters. For constants, use `static const` within functions.
 - **ANSI C compliance**:
   - Use `-std=c89 -pedantic` compiler flags
@@ -40,3 +46,8 @@ Testing Requirements:
 - Use `splint` for static analysis
 - Test boundary conditions
 - Verify memory cleanup
+- **Never modify templates to make tests pass**
+
+- **Comment Style**:
+  - Use only /* */ comments
+  - Forbid // comments

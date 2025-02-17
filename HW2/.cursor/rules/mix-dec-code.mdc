@@ -1,8 +1,0 @@
----
-description: Avoiding errors
-globs: artetris.c
----
-
-[artetris.c](mdc:artetris.c)
-
-Do not mix declarations and code. Anytime you encounter declarations after code, move it to the start of the block

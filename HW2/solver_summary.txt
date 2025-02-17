@@ -1,0 +1,62 @@
+[2x6] AA | Solutions: 0 | Best: -1 | Time: 0.03ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.52ms
+[4x4] IIII | Solutions: 0 | Best: -1 | Time: 0.30ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 1.00ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 1.45ms
+[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.02ms (Timeout)
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 0.10ms
+[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 72.02ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 1.85ms
+[5x5] ..... | Solutions: 0 | Best: -1 | Time: 33.43ms
+[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 33.10ms
+[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 0.43ms
+[2x6] AA | Solutions: 16 | Best: 2 | Time: 0.02ms
+[2x6] AA | Solutions: 0 | Best: -1 | Time: 0.03ms
+[2x6] AA | Solutions: 0 | Best: -1 | Time: 0.64ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 39.97ms
+[4x4] IIII | Solutions: 0 | Best: -1 | Time: 24.14ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 81.68ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
+[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.11ms (Timeout)
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 4.49ms
+[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
+[5x5] ..... | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
+[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.11ms (Timeout)
+[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 26.83ms
+[2x6] AA | Solutions: 0 | Best: -1 | Time: 0.47ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 37.74ms
+[4x4] IIII | Solutions: 0 | Best: -1 | Time: 21.21ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 61.62ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 96.10ms
+[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.08ms (Timeout)
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 4.83ms
+[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.02ms (Timeout)
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
+[5x5] ..... | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
+[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.07ms (Timeout)
+[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 27.23ms
+[2x6] AA | Solutions: 16 | Best: 2 | Time: 0.04ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 28.28ms
+[4x4] IIII | Solutions: 0 | Best: -1 | Time: 16.62ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 51.62ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 91.75ms
+[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.05ms (Timeout)
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 4.67ms
+[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.09ms (Timeout)
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
+[5x5] ..... | Solutions: 0 | Best: -1 | Time: 101.43ms (Timeout)
+[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
+[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 21.35ms
+[2x6] AA | Solutions: 16 | Best: 2 | Time: 0.04ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 29.59ms
+[4x4] IIII | Solutions: 0 | Best: -1 | Time: 17.47ms
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 52.10ms
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 80.62ms
+[5x5] KKKKK | Solutions: 0 | Best: -1 | Time: 101.06ms (Timeout)
+[4x4] .... | Solutions: 0 | Best: -1 | Time: 4.56ms
+[5x5] CCCCC | Solutions: 0 | Best: -1 | Time: 101.09ms (Timeout)
+[5x4] .... | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
+[5x5] ..... | Solutions: 0 | Best: -1 | Time: 101.03ms (Timeout)
+[4x5] FFFF | Solutions: 0 | Best: -1 | Time: 101.04ms (Timeout)
+[4x4] OOOO | Solutions: 0 | Best: -1 | Time: 22.22ms

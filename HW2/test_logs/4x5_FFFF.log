@@ -1,0 +1,7258 @@
+Starting DLX solver
+Starting DLX solver (time limit: 100s)
+Initial matrix: 136 rows, 24 columns
+Current board state:
+FFFF-
+FFFF-
+-F-F-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-F--F
+-----
+Depth: 2, Candidates: 4
+Current board state:
+FF---
+FFFF-
+-FFF-
+---F-
+Depth: 2, Candidates: 0
+Current board state:
+FF---
+FF-FF
+-F-FF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+FF---
+FF-FF
+-FFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FF---
+-FFF-
+-FFF-
+Depth: 2, Candidates: 6
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FF---
+-F-FF
+--FFF
+Depth: 2, Candidates: 4
+Current board state:
+FFF--
+FFFF-
+-FFF-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-F-
+FF-FF
+-F-FF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FFF--
+-FFF-
+--FF-
+Depth: 2, Candidates: 2
+Current board state:
+FF---
+FF-F-
+-F-FF
+---FF
+Depth: 2, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+FF---
+FFFFF
+-FFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FF---
+-FFFF
+--FFF
+Depth: 2, Candidates: 4
+Current board state:
+FFFF-
+FFFF-
+-F-F-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-F--F
+-----
+Depth: 2, Candidates: 4
+Current board state:
+FF---
+FFFF-
+-FFF-
+---F-
+Depth: 2, Candidates: 0
+Current board state:
+FF---
+FF-FF
+-F-FF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+FF---
+FF-FF
+-FFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FF---
+-FFF-
+-FFF-
+Depth: 2, Candidates: 6
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FF---
+-F-FF
+--FFF
+Depth: 2, Candidates: 4
+Current board state:
+FFF--
+FFFF-
+-FFF-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-F-
+FF-FF
+-F-FF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FFF--
+-FFF-
+--FF-
+Depth: 2, Candidates: 2
+Current board state:
+FF---
+FF-F-
+-F-FF
+---FF
+Depth: 2, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+FF---
+FFFFF
+-FFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FF---
+-FFFF
+--FFF
+Depth: 2, Candidates: 4
+Current board state:
+FFFF-
+FFFF-
+-F-F-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-F--F
+-----
+Depth: 2, Candidates: 4
+Current board state:
+FF---
+FFFF-
+-FFF-
+---F-
+Depth: 2, Candidates: 0
+Current board state:
+FF---
+FF-FF
+-F-FF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+FF---
+FF-FF
+-FFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FF---
+-FFF-
+-FFF-
+Depth: 2, Candidates: 6
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FF---
+-F-FF
+--FFF
+Depth: 2, Candidates: 4
+Current board state:
+FFF--
+FFFF-
+-FFF-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-F-
+FF-FF
+-F-FF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FFF--
+-FFF-
+--FF-
+Depth: 2, Candidates: 2
+Current board state:
+FF---
+FF-F-
+-F-FF
+---FF
+Depth: 2, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-F---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+FF---
+FFFFF
+-FFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF---
+FF---
+-FFFF
+--FFF
+Depth: 2, Candidates: 4
+Current board state:
+FF---
+FF---
+-F---
+-----
+Depth: 1, Candidates: 45
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+-FFFF
+--F-F
+-----
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FFFF
+--FFF
+----F
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FF--
+--FFF
+--FFF
+Depth: 2, Candidates: 2
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+-FFFF
+--FFF
+-----
+Depth: 2, Candidates: 2
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFF--
+FF---
+Depth: 2, Candidates: 10
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FFF-
+--FFF
+---FF
+Depth: 2, Candidates: 2
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+-FFFF
+--F-F
+-----
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FFFF
+--FFF
+----F
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FF--
+--FFF
+--FFF
+Depth: 2, Candidates: 2
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+-FFFF
+--FFF
+-----
+Depth: 2, Candidates: 2
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFF--
+FF---
+Depth: 2, Candidates: 10
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FFF-
+--FFF
+---FF
+Depth: 2, Candidates: 2
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+-FFFF
+--F-F
+-----
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FFFF
+--FFF
+----F
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FF--
+--FFF
+--FFF
+Depth: 2, Candidates: 2
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+-FFFF
+--FFF
+-----
+Depth: 2, Candidates: 2
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFF--
+FF---
+Depth: 2, Candidates: 10
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FF-FF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FFF-
+--FFF
+---FF
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+-FF--
+--F--
+-----
+Depth: 1, Candidates: 18
+Current board state:
+FFFF-
+FFFF-
+-F-F-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-F-
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+--FF-
+-FFF-
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+F-FF-
+FFFF-
+FF-F-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+F-FF-
+FF-F-
+FF---
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+-FFF-
+-FF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+--FF-
+FFFF-
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+FFFF-
+FFFF-
+-F-F-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-F-
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+--FF-
+-FFF-
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+F-FF-
+FFFF-
+FF-F-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+F-FF-
+FF-F-
+FF---
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+-FFF-
+-FF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+--FF-
+FFFF-
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+FFFF-
+FFFF-
+-F-F-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-F-
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+--FF-
+-FFF-
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+F-FF-
+FFFF-
+FF-F-
+-----
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+F-FF-
+FF-F-
+FF---
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+-FFF-
+-FF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+--FF-
+FFFF-
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+--FF-
+---F-
+-----
+Depth: 1, Candidates: 21
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-F--F
+-----
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+-FFFF
+--F-F
+-----
+Depth: 2, Candidates: 2
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FF-FF
+FF--F
+-F---
+Depth: 2, Candidates: 2
+Current board state:
+---FF
+-FFFF
+-FF-F
+--F--
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+----F
+-----
+Depth: 2, Candidates: 8
+Current board state:
+---FF
+-FFFF
+FFF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+-FF-F
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+--FFF
+-FFF-
+Depth: 2, Candidates: 8
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FF--F
+-----
+Depth: 2, Candidates: 4
+Current board state:
+-F-FF
+-FFFF
+-FF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F--FF
+FF--F
+FF---
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+-F-FF
+-FF-F
+-FF--
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+--FFF
+--FF-
+Depth: 2, Candidates: 8
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+----F
+-----
+Depth: 2, Candidates: 8
+Current board state:
+---FF
+FFFFF
+FFF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+FFF-F
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+-FFFF
+-FFF-
+Depth: 2, Candidates: 4
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-F--F
+-----
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+-FFFF
+--F-F
+-----
+Depth: 2, Candidates: 2
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FF-FF
+FF--F
+-F---
+Depth: 2, Candidates: 2
+Current board state:
+---FF
+-FFFF
+-FF-F
+--F--
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+----F
+-----
+Depth: 2, Candidates: 8
+Current board state:
+---FF
+-FFFF
+FFF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+-FF-F
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+--FFF
+-FFF-
+Depth: 2, Candidates: 8
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FF--F
+-----
+Depth: 2, Candidates: 4
+Current board state:
+-F-FF
+-FFFF
+-FF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F--FF
+FF--F
+FF---
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+-F-FF
+-FF-F
+-FF--
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+--FFF
+--FF-
+Depth: 2, Candidates: 8
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+----F
+-----
+Depth: 2, Candidates: 8
+Current board state:
+---FF
+FFFFF
+FFF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+FFF-F
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+-FFFF
+-FFF-
+Depth: 2, Candidates: 4
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-F--F
+-----
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+-FFFF
+--F-F
+-----
+Depth: 2, Candidates: 2
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FF-FF
+FF--F
+-F---
+Depth: 2, Candidates: 2
+Current board state:
+---FF
+-FFFF
+-FF-F
+--F--
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+----F
+-----
+Depth: 2, Candidates: 8
+Current board state:
+---FF
+-FFFF
+FFF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+-FF-F
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FF-FF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+--FFF
+-FFF-
+Depth: 2, Candidates: 8
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FF-FF
+FF--F
+-----
+Depth: 2, Candidates: 4
+Current board state:
+-F-FF
+-FFFF
+-FF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FF---
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F--FF
+FF--F
+FF---
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+-F-FF
+-FF-F
+-FF--
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+--FFF
+--FF-
+Depth: 2, Candidates: 8
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+----F
+-----
+Depth: 2, Candidates: 8
+Current board state:
+---FF
+FFFFF
+FFF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+FFF-F
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+-FFFF
+-FFF-
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+---FF
+----F
+-----
+Depth: 1, Candidates: 51
+Current board state:
+--FF-
+FFFF-
+FF-F-
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FF-FF
+FF--F
+-F---
+Depth: 2, Candidates: 2
+Current board state:
+-----
+FFFF-
+FFFF-
+-F-F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+FF-FF
+FF-FF
+-F--F
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF---
+-F---
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FF-FF
+FFFFF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+-----
+FF---
+FF-FF
+-FFFF
+Depth: 2, Candidates: 4
+Current board state:
+--F--
+FFFF-
+FFFF-
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---F-
+FF-FF
+FF-FF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-----
+FFF--
+FFFF-
+-FFF-
+Depth: 2, Candidates: 2
+Current board state:
+-----
+FF-F-
+FF-FF
+-F-FF
+Depth: 2, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF---
+-F---
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FFFFF
+FFFFF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+-----
+FF---
+FFFFF
+-FFFF
+Depth: 2, Candidates: 4
+Current board state:
+--FF-
+FFFF-
+FF-F-
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FF-FF
+FF--F
+-F---
+Depth: 2, Candidates: 2
+Current board state:
+-----
+FFFF-
+FFFF-
+-F-F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+FF-FF
+FF-FF
+-F--F
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF---
+-F---
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FF-FF
+FFFFF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+-----
+FF---
+FF-FF
+-FFFF
+Depth: 2, Candidates: 4
+Current board state:
+--F--
+FFFF-
+FFFF-
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---F-
+FF-FF
+FF-FF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-----
+FFF--
+FFFF-
+-FFF-
+Depth: 2, Candidates: 2
+Current board state:
+-----
+FF-F-
+FF-FF
+-F-FF
+Depth: 2, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF---
+-F---
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FFFFF
+FFFFF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+-----
+FF---
+FFFFF
+-FFFF
+Depth: 2, Candidates: 4
+Current board state:
+--FF-
+FFFF-
+FF-F-
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FF-FF
+FF--F
+-F---
+Depth: 2, Candidates: 2
+Current board state:
+-----
+FFFF-
+FFFF-
+-F-F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+FF-FF
+FF-FF
+-F--F
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF---
+-F---
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FF-FF
+FFFFF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+-----
+FF---
+FF-FF
+-FFFF
+Depth: 2, Candidates: 4
+Current board state:
+--F--
+FFFF-
+FFFF-
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---F-
+FF-FF
+FF-FF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-----
+FFF--
+FFFF-
+-FFF-
+Depth: 2, Candidates: 2
+Current board state:
+-----
+FF-F-
+FF-FF
+-F-FF
+Depth: 2, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FF---
+-F---
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FFFFF
+FFFFF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FFF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+-----
+FF---
+FFFFF
+-FFFF
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FF---
+FF---
+-F---
+Depth: 1, Candidates: 42
+Current board state:
+---FF
+-FFFF
+-FF-F
+--F--
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFFF
+-FFFF
+--F-F
+Depth: 2, Candidates: 0
+Current board state:
+---F-
+-FFFF
+-FFFF
+--F--
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFF-
+-FFFF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+-FFFF
+-FF-F
+--F--
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFFF
+-FFFF
+--F-F
+Depth: 2, Candidates: 0
+Current board state:
+---F-
+-FFFF
+-FFFF
+--F--
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFF-
+-FFFF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+-FFFF
+-FF-F
+--F--
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFFF
+-FFFF
+--F-F
+Depth: 2, Candidates: 0
+Current board state:
+---F-
+-FFFF
+-FFFF
+--F--
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFF-
+-FFFF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FF--
+-FF--
+--F--
+Depth: 1, Candidates: 12
+Current board state:
+FF---
+FFFF-
+-FFF-
+---F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+FFFF-
+FFFF-
+-F-F-
+Depth: 2, Candidates: 0
+Current board state:
+F----
+FFFF-
+FFFF-
+---F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+F-FF-
+FFFF-
+FF-F-
+Depth: 2, Candidates: 0
+Current board state:
+FF---
+FFFF-
+-FFF-
+---F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+FFFF-
+FFFF-
+-F-F-
+Depth: 2, Candidates: 0
+Current board state:
+F----
+FFFF-
+FFFF-
+---F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+F-FF-
+FFFF-
+FF-F-
+Depth: 2, Candidates: 0
+Current board state:
+FF---
+FFFF-
+-FFF-
+---F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+FFFF-
+FFFF-
+-F-F-
+Depth: 2, Candidates: 0
+Current board state:
+F----
+FFFF-
+FFFF-
+---F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+F-FF-
+FFFF-
+FF-F-
+Depth: 2, Candidates: 0
+Current board state:
+-----
+--FF-
+--FF-
+---F-
+Depth: 1, Candidates: 12
+Current board state:
+FF---
+FF-FF
+-F-FF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FFFF
+--FFF
+----F
+Depth: 2, Candidates: 2
+Current board state:
+-----
+FF-FF
+FF-FF
+-F--F
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFFF
+-FFFF
+--F-F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+---FF
+----F
+Depth: 2, Candidates: 4
+Current board state:
+-----
+-FFFF
+FFFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---FF
+-FFFF
+FFF-F
+Depth: 2, Candidates: 4
+Current board state:
+F----
+FF-FF
+FF-FF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-F---
+-FFFF
+-FFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+F--FF
+FF-FF
+FF--F
+Depth: 2, Candidates: 2
+Current board state:
+-----
+-F-FF
+-FFFF
+-FF-F
+Depth: 2, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+---FF
+----F
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FFFFF
+FFFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---FF
+FFFFF
+FFF-F
+Depth: 2, Candidates: 4
+Current board state:
+FF---
+FF-FF
+-F-FF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FFFF
+--FFF
+----F
+Depth: 2, Candidates: 2
+Current board state:
+-----
+FF-FF
+FF-FF
+-F--F
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFFF
+-FFFF
+--F-F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+---FF
+----F
+Depth: 2, Candidates: 4
+Current board state:
+-----
+-FFFF
+FFFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---FF
+-FFFF
+FFF-F
+Depth: 2, Candidates: 4
+Current board state:
+F----
+FF-FF
+FF-FF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-F---
+-FFFF
+-FFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+F--FF
+FF-FF
+FF--F
+Depth: 2, Candidates: 2
+Current board state:
+-----
+-F-FF
+-FFFF
+-FF-F
+Depth: 2, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+---FF
+----F
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FFFFF
+FFFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---FF
+FFFFF
+FFF-F
+Depth: 2, Candidates: 4
+Current board state:
+FF---
+FF-FF
+-F-FF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+-FFFF
+--FFF
+----F
+Depth: 2, Candidates: 2
+Current board state:
+-----
+FF-FF
+FF-FF
+-F--F
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFFF
+-FFFF
+--F-F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+---FF
+----F
+Depth: 2, Candidates: 4
+Current board state:
+-----
+-FFFF
+FFFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---FF
+-FFFF
+FFF-F
+Depth: 2, Candidates: 4
+Current board state:
+F----
+FF-FF
+FF-FF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-F---
+-FFFF
+-FFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FF--F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+F--FF
+FF-FF
+FF--F
+Depth: 2, Candidates: 2
+Current board state:
+-----
+-F-FF
+-FFFF
+-FF-F
+Depth: 2, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+---FF
+----F
+Depth: 2, Candidates: 4
+Current board state:
+-----
+FFFFF
+FFFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---FF
+FFFFF
+FFF-F
+Depth: 2, Candidates: 4
+Current board state:
+-----
+---FF
+---FF
+----F
+Depth: 1, Candidates: 42
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+----F
+-----
+Depth: 2, Candidates: 8
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+---FF
+----F
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFFF
+--FFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+-FF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+--FF-
+-FFF-
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFF--
+---FF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+---FF
+-----
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+---FF
+---FF
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+-FFF-
+-FFF-
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFF--
+--FFF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+----F
+-----
+Depth: 2, Candidates: 8
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+---FF
+----F
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFFF
+--FFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+-FF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+--FF-
+-FFF-
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFF--
+---FF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+---FF
+-----
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+---FF
+---FF
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+-FFF-
+-FFF-
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFF--
+--FFF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+----F
+-----
+Depth: 2, Candidates: 8
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+---FF
+----F
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFFF
+--FFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+-FF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+--FFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+--FF-
+-FFF-
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFF--
+---FF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+---FF
+-----
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+---FF
+---FF
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+FFF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+FFFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+FFFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+FFF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FFFF
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+-FFF-
+-FFF-
+Depth: 2, Candidates: 2
+Current board state:
+-FF--
+FFF--
+--FFF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFF--
+-----
+-----
+Depth: 1, Candidates: 33
+Current board state:
+--FF-
+-FFF-
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+--FF-
+-FFF-
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+---FF
+--FFF
+Depth: 2, Candidates: 2
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF---
+FF---
+Depth: 2, Candidates: 4
+Current board state:
+--FF-
+-FFF-
+FFF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+-FFF-
+-FFF-
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+--FFF
+--FFF
+Depth: 2, Candidates: 2
+Current board state:
+--FF-
+-FFF-
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+--FF-
+-FFF-
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+---FF
+--FFF
+Depth: 2, Candidates: 2
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF---
+FF---
+Depth: 2, Candidates: 4
+Current board state:
+--FF-
+-FFF-
+FFF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+-FFF-
+-FFF-
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+--FFF
+--FFF
+Depth: 2, Candidates: 2
+Current board state:
+--FF-
+-FFF-
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+--FF-
+-FFF-
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+---FF
+--FFF
+Depth: 2, Candidates: 2
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FF---
+FF---
+Depth: 2, Candidates: 4
+Current board state:
+--FF-
+-FFF-
+FFF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+-FFF-
+-FFF-
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+FFFF-
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+--FF-
+-FFF-
+--FFF
+--FFF
+Depth: 2, Candidates: 2
+Current board state:
+--FF-
+-FFF-
+-----
+-----
+Depth: 1, Candidates: 21
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF---
+-F---
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+--FFF
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+--FF-
+-FFF-
+Depth: 2, Candidates: 4
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+---FF
+--FFF
+Depth: 2, Candidates: 8
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF---
+FF---
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+-FFFF
+-FF--
+-FF--
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+--FFF
+FFF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+--FFF
+-FFF-
+-FFF-
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+--FFF
+--FFF
+Depth: 2, Candidates: 8
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF---
+-F---
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+--FFF
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+--FF-
+-FFF-
+Depth: 2, Candidates: 4
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+---FF
+--FFF
+Depth: 2, Candidates: 8
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF---
+FF---
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+-FFFF
+-FF--
+-FF--
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+--FFF
+FFF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+--FFF
+-FFF-
+-FFF-
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+--FFF
+--FFF
+Depth: 2, Candidates: 8
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF---
+-F---
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+--FFF
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+--FF-
+-FFF-
+Depth: 2, Candidates: 4
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-F-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FF-FF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+---FF
+--FFF
+Depth: 2, Candidates: 8
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFF-
+-FFF-
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF-FF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FF---
+-----
+Depth: 2, Candidates: 6
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF-FF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FF---
+FF---
+Depth: 2, Candidates: 4
+Current board state:
+---FF
+-FFFF
+-FF--
+-FF--
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+--FFF
+FFF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+--FFF
+-FFF-
+-FFF-
+Depth: 2, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FF-FF
+FFFFF
+-FFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+FFFFF
+FFFFF
+-FFFF
+Depth: 3, Candidates: 0
+Current board state:
+F--FF
+FFFFF
+FFFFF
+--FFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+F-FFF
+FFFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+--FFF
+--FFF
+--FFF
+Depth: 2, Candidates: 8
+Current board state:
+---FF
+--FFF
+-----
+-----
+Depth: 1, Candidates: 33
+Current board state:
+---FF
+-FFFF
+FFF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFFF
+FFFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FF--
+FFFFF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+---F-
+-FFFF
+FFFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFF-
+FFFFF
+---FF
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+-FFFF
+FFF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFFF
+FFFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FF--
+FFFFF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+---F-
+-FFFF
+FFFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFF-
+FFFFF
+---FF
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+-FFFF
+FFF-F
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFFF
+FFFFF
+----F
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FF--
+FFFFF
+--FFF
+Depth: 2, Candidates: 0
+Current board state:
+---F-
+-FFFF
+FFFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FFF-
+FFFFF
+---FF
+Depth: 2, Candidates: 0
+Current board state:
+-----
+-FF--
+FFF--
+-----
+Depth: 1, Candidates: 15
+Current board state:
+-----
+--FF-
+-FFF-
+-----
+Depth: 1, Candidates: 0
+Current board state:
+FF---
+FF-FF
+-FFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+FF-FF
+FFFFF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+--FFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+F----
+FF-FF
+FFFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+F--FF
+FFFFF
+FF---
+Depth: 2, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+--FFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF---
+FF-FF
+-FFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+FF-FF
+FFFFF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+--FFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+F----
+FF-FF
+FFFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+F--FF
+FFFFF
+FF---
+Depth: 2, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+--FFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+FF---
+FF-FF
+-FFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+FF-FF
+FFFFF
+-F---
+Depth: 2, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+--FFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+F----
+FF-FF
+FFFFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+F--FF
+FFFFF
+FF---
+Depth: 2, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+--FFF
+-----
+Depth: 2, Candidates: 0
+Current board state:
+-----
+---FF
+--FFF
+-----
+Depth: 1, Candidates: 18
+Current board state:
+--FF-
+--FF-
+-FFF-
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+-FF-F
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---FF
+-FFFF
+FFF-F
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+-FF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+--FF-
+-FFF-
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+--FFF
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---F-
+---FF
+-FFFF
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---F-
+-FFFF
+FFFFF
+Depth: 2, Candidates: 4
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFF--
+-FF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+-FFF-
+-FFF-
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FFF
+--FFF
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+--FF-
+-FFF-
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---FF
+---FF
+-FF-F
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---FF
+-FFFF
+FFF-F
+Depth: 2, Candidates: 4
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFF--
+-FF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+--FF-
+-FFF-
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+---FF
+--FFF
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+-FFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+---F-
+---FF
+-FFFF
+FFF--
+Depth: 2, Candidates: 4
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-FF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+-----
+---F-
+-FFFF
+FFFFF
+Depth: 2, Candidates: 4
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FFFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFFF
+-FFFF
+FFF-F
+Depth: 3, Candidates: 0
+Current board state:
+FFFF-
+FFFFF
+-FFFF
+FFF--
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFFF-
+-FFFF
+FFFFF
+Depth: 3, Candidates: 0
+Current board state:
+FFF--
+FFF--
+-FF--
+FFF--
+Depth: 2, Candidates: 8
+Current board state:
+-FFF-
+-FFF-
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FFF
+--FFF
+-FF--
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+--FF-
+--FF-
+-FFF-
+FFF--
+Depth: 2, Candidates: 0
+Current board state:
+-FFFF
+FFFFF
+-FF-F
+FFF--
+Depth: 3, Candidates: 0
+[DEBUG] Solver completed. Best solution: -1 pieces
+Built placement matrix with 136 rows
+Row 0: Piece F Rot 0 @ (0,0) covers cols: 0 1 5 6 11 20 
+Row 1: Piece F Rot 0 @ (0,1) covers cols: 1 2 6 7 12 20 
+Row 2: Piece F Rot 0 @ (0,2) covers cols: 2 3 7 8 13 20 
+Row 3: Piece F Rot 0 @ (0,3) covers cols: 3 4 8 9 14 20 
+Row 4: Piece F Rot 0 @ (1,0) covers cols: 5 6 10 11 16 20 
+Row 5: Piece F Rot 0 @ (1,1) covers cols: 6 7 11 12 17 20 
+Row 6: Piece F Rot 0 @ (1,2) covers cols: 7 8 12 13 18 20 
+Row 7: Piece F Rot 0 @ (1,3) covers cols: 8 9 13 14 19 20 
+Row 8: Piece F Rot 1 @ (0,0) covers cols: 1 2 5 6 7 20 
+Row 9: Piece F Rot 1 @ (0,1) covers cols: 2 3 6 7 8 20 
+Row 10: Piece F Rot 1 @ (0,2) covers cols: 3 4 7 8 9 20 
+Row 11: Piece F Rot 1 @ (1,0) covers cols: 6 7 10 11 12 20 
+Row 12: Piece F Rot 1 @ (1,1) covers cols: 7 8 11 12 13 20 
+Row 13: Piece F Rot 1 @ (1,2) covers cols: 8 9 12 13 14 20 
+Row 14: Piece F Rot 1 @ (2,0) covers cols: 11 12 15 16 17 20 
+Row 15: Piece F Rot 1 @ (2,1) covers cols: 12 13 16 17 18 20 
+Row 16: Piece F Rot 1 @ (2,2) covers cols: 13 14 17 18 19 20 
+Row 17: Piece F Rot 2 @ (0,0) covers cols: 0 5 6 10 11 20 
+Row 18: Piece F Rot 2 @ (0,1) covers cols: 1 6 7 11 12 20 
+Row 19: Piece F Rot 2 @ (0,2) covers cols: 2 7 8 12 13 20 
+Row 20: Piece F Rot 2 @ (0,3) covers cols: 3 8 9 13 14 20 
+Row 21: Piece F Rot 2 @ (1,0) covers cols: 5 10 11 15 16 20 
+Row 22: Piece F Rot 2 @ (1,1) covers cols: 6 11 12 16 17 20 
+Row 23: Piece F Rot 2 @ (1,2) covers cols: 7 12 13 17 18 20 
+Row 24: Piece F Rot 2 @ (1,3) covers cols: 8 13 14 18 19 20 
+Row 25: Piece F Rot 3 @ (0,0) covers cols: 0 1 2 5 6 7 20 
+Row 26: Piece F Rot 3 @ (0,1) covers cols: 1 2 3 6 7 8 20 
+Row 27: Piece F Rot 3 @ (0,2) covers cols: 2 3 4 7 8 9 20 
+Row 28: Piece F Rot 3 @ (1,0) covers cols: 5 6 7 10 11 12 20 
+Row 29: Piece F Rot 3 @ (1,1) covers cols: 6 7 8 11 12 13 20 
+Row 30: Piece F Rot 3 @ (1,2) covers cols: 7 8 9 12 13 14 20 
+Row 31: Piece F Rot 3 @ (2,0) covers cols: 10 11 12 15 16 17 20 
+Row 32: Piece F Rot 3 @ (2,1) covers cols: 11 12 13 16 17 18 20 
+Row 33: Piece F Rot 3 @ (2,2) covers cols: 12 13 14 17 18 19 20 
+Row 34: Piece F Rot 0 @ (0,0) covers cols: 0 1 5 6 11 21 
+Row 35: Piece F Rot 0 @ (0,1) covers cols: 1 2 6 7 12 21 
+Row 36: Piece F Rot 0 @ (0,2) covers cols: 2 3 7 8 13 21 
+Row 37: Piece F Rot 0 @ (0,3) covers cols: 3 4 8 9 14 21 
+Row 38: Piece F Rot 0 @ (1,0) covers cols: 5 6 10 11 16 21 
+Row 39: Piece F Rot 0 @ (1,1) covers cols: 6 7 11 12 17 21 
+Row 40: Piece F Rot 0 @ (1,2) covers cols: 7 8 12 13 18 21 
+Row 41: Piece F Rot 0 @ (1,3) covers cols: 8 9 13 14 19 21 
+Row 42: Piece F Rot 1 @ (0,0) covers cols: 1 2 5 6 7 21 
+Row 43: Piece F Rot 1 @ (0,1) covers cols: 2 3 6 7 8 21 
+Row 44: Piece F Rot 1 @ (0,2) covers cols: 3 4 7 8 9 21 
+Row 45: Piece F Rot 1 @ (1,0) covers cols: 6 7 10 11 12 21 
+Row 46: Piece F Rot 1 @ (1,1) covers cols: 7 8 11 12 13 21 
+Row 47: Piece F Rot 1 @ (1,2) covers cols: 8 9 12 13 14 21 
+Row 48: Piece F Rot 1 @ (2,0) covers cols: 11 12 15 16 17 21 
+Row 49: Piece F Rot 1 @ (2,1) covers cols: 12 13 16 17 18 21 
+Row 50: Piece F Rot 1 @ (2,2) covers cols: 13 14 17 18 19 21 
+Row 51: Piece F Rot 2 @ (0,0) covers cols: 0 5 6 10 11 21 
+Row 52: Piece F Rot 2 @ (0,1) covers cols: 1 6 7 11 12 21 
+Row 53: Piece F Rot 2 @ (0,2) covers cols: 2 7 8 12 13 21 
+Row 54: Piece F Rot 2 @ (0,3) covers cols: 3 8 9 13 14 21 
+Row 55: Piece F Rot 2 @ (1,0) covers cols: 5 10 11 15 16 21 
+Row 56: Piece F Rot 2 @ (1,1) covers cols: 6 11 12 16 17 21 
+Row 57: Piece F Rot 2 @ (1,2) covers cols: 7 12 13 17 18 21 
+Row 58: Piece F Rot 2 @ (1,3) covers cols: 8 13 14 18 19 21 
+Row 59: Piece F Rot 3 @ (0,0) covers cols: 0 1 2 5 6 7 21 
+Row 60: Piece F Rot 3 @ (0,1) covers cols: 1 2 3 6 7 8 21 
+Row 61: Piece F Rot 3 @ (0,2) covers cols: 2 3 4 7 8 9 21 
+Row 62: Piece F Rot 3 @ (1,0) covers cols: 5 6 7 10 11 12 21 
+Row 63: Piece F Rot 3 @ (1,1) covers cols: 6 7 8 11 12 13 21 
+Row 64: Piece F Rot 3 @ (1,2) covers cols: 7 8 9 12 13 14 21 
+Row 65: Piece F Rot 3 @ (2,0) covers cols: 10 11 12 15 16 17 21 
+Row 66: Piece F Rot 3 @ (2,1) covers cols: 11 12 13 16 17 18 21 
+Row 67: Piece F Rot 3 @ (2,2) covers cols: 12 13 14 17 18 19 21 
+Row 68: Piece F Rot 0 @ (0,0) covers cols: 0 1 5 6 11 22 
+Row 69: Piece F Rot 0 @ (0,1) covers cols: 1 2 6 7 12 22 
+Row 70: Piece F Rot 0 @ (0,2) covers cols: 2 3 7 8 13 22 
+Row 71: Piece F Rot 0 @ (0,3) covers cols: 3 4 8 9 14 22 
+Row 72: Piece F Rot 0 @ (1,0) covers cols: 5 6 10 11 16 22 
+Row 73: Piece F Rot 0 @ (1,1) covers cols: 6 7 11 12 17 22 
+Row 74: Piece F Rot 0 @ (1,2) covers cols: 7 8 12 13 18 22 
+Row 75: Piece F Rot 0 @ (1,3) covers cols: 8 9 13 14 19 22 
+Row 76: Piece F Rot 1 @ (0,0) covers cols: 1 2 5 6 7 22 
+Row 77: Piece F Rot 1 @ (0,1) covers cols: 2 3 6 7 8 22 
+Row 78: Piece F Rot 1 @ (0,2) covers cols: 3 4 7 8 9 22 
+Row 79: Piece F Rot 1 @ (1,0) covers cols: 6 7 10 11 12 22 
+Row 80: Piece F Rot 1 @ (1,1) covers cols: 7 8 11 12 13 22 
+Row 81: Piece F Rot 1 @ (1,2) covers cols: 8 9 12 13 14 22 
+Row 82: Piece F Rot 1 @ (2,0) covers cols: 11 12 15 16 17 22 
+Row 83: Piece F Rot 1 @ (2,1) covers cols: 12 13 16 17 18 22 
+Row 84: Piece F Rot 1 @ (2,2) covers cols: 13 14 17 18 19 22 
+Row 85: Piece F Rot 2 @ (0,0) covers cols: 0 5 6 10 11 22 
+Row 86: Piece F Rot 2 @ (0,1) covers cols: 1 6 7 11 12 22 
+Row 87: Piece F Rot 2 @ (0,2) covers cols: 2 7 8 12 13 22 
+Row 88: Piece F Rot 2 @ (0,3) covers cols: 3 8 9 13 14 22 
+Row 89: Piece F Rot 2 @ (1,0) covers cols: 5 10 11 15 16 22 
+Row 90: Piece F Rot 2 @ (1,1) covers cols: 6 11 12 16 17 22 
+Row 91: Piece F Rot 2 @ (1,2) covers cols: 7 12 13 17 18 22 
+Row 92: Piece F Rot 2 @ (1,3) covers cols: 8 13 14 18 19 22 
+Row 93: Piece F Rot 3 @ (0,0) covers cols: 0 1 2 5 6 7 22 
+Row 94: Piece F Rot 3 @ (0,1) covers cols: 1 2 3 6 7 8 22 
+Row 95: Piece F Rot 3 @ (0,2) covers cols: 2 3 4 7 8 9 22 
+Row 96: Piece F Rot 3 @ (1,0) covers cols: 5 6 7 10 11 12 22 
+Row 97: Piece F Rot 3 @ (1,1) covers cols: 6 7 8 11 12 13 22 
+Row 98: Piece F Rot 3 @ (1,2) covers cols: 7 8 9 12 13 14 22 
+Row 99: Piece F Rot 3 @ (2,0) covers cols: 10 11 12 15 16 17 22 
+Row 100: Piece F Rot 3 @ (2,1) covers cols: 11 12 13 16 17 18 22 
+Row 101: Piece F Rot 3 @ (2,2) covers cols: 12 13 14 17 18 19 22 
+Row 102: Piece F Rot 0 @ (0,0) covers cols: 0 1 5 6 11 23 
+Row 103: Piece F Rot 0 @ (0,1) covers cols: 1 2 6 7 12 23 
+Row 104: Piece F Rot 0 @ (0,2) covers cols: 2 3 7 8 13 23 
+Row 105: Piece F Rot 0 @ (0,3) covers cols: 3 4 8 9 14 23 
+Row 106: Piece F Rot 0 @ (1,0) covers cols: 5 6 10 11 16 23 
+Row 107: Piece F Rot 0 @ (1,1) covers cols: 6 7 11 12 17 23 
+Row 108: Piece F Rot 0 @ (1,2) covers cols: 7 8 12 13 18 23 
+Row 109: Piece F Rot 0 @ (1,3) covers cols: 8 9 13 14 19 23 
+Row 110: Piece F Rot 1 @ (0,0) covers cols: 1 2 5 6 7 23 
+Row 111: Piece F Rot 1 @ (0,1) covers cols: 2 3 6 7 8 23 
+Row 112: Piece F Rot 1 @ (0,2) covers cols: 3 4 7 8 9 23 
+Row 113: Piece F Rot 1 @ (1,0) covers cols: 6 7 10 11 12 23 
+Row 114: Piece F Rot 1 @ (1,1) covers cols: 7 8 11 12 13 23 
+Row 115: Piece F Rot 1 @ (1,2) covers cols: 8 9 12 13 14 23 
+Row 116: Piece F Rot 1 @ (2,0) covers cols: 11 12 15 16 17 23 
+Row 117: Piece F Rot 1 @ (2,1) covers cols: 12 13 16 17 18 23 
+Row 118: Piece F Rot 1 @ (2,2) covers cols: 13 14 17 18 19 23 
+Row 119: Piece F Rot 2 @ (0,0) covers cols: 0 5 6 10 11 23 
+Row 120: Piece F Rot 2 @ (0,1) covers cols: 1 6 7 11 12 23 
+Row 121: Piece F Rot 2 @ (0,2) covers cols: 2 7 8 12 13 23 
+Row 122: Piece F Rot 2 @ (0,3) covers cols: 3 8 9 13 14 23 
+Row 123: Piece F Rot 2 @ (1,0) covers cols: 5 10 11 15 16 23 
+Row 124: Piece F Rot 2 @ (1,1) covers cols: 6 11 12 16 17 23 
+Row 125: Piece F Rot 2 @ (1,2) covers cols: 7 12 13 17 18 23 
+Row 126: Piece F Rot 2 @ (1,3) covers cols: 8 13 14 18 19 23 
+Row 127: Piece F Rot 3 @ (0,0) covers cols: 0 1 2 5 6 7 23 
+Row 128: Piece F Rot 3 @ (0,1) covers cols: 1 2 3 6 7 8 23 
+Row 129: Piece F Rot 3 @ (0,2) covers cols: 2 3 4 7 8 9 23 
+Row 130: Piece F Rot 3 @ (1,0) covers cols: 5 6 7 10 11 12 23 
+Row 131: Piece F Rot 3 @ (1,1) covers cols: 6 7 8 11 12 13 23 
+Row 132: Piece F Rot 3 @ (1,2) covers cols: 7 8 9 12 13 14 23 
+Row 133: Piece F Rot 3 @ (2,0) covers cols: 10 11 12 15 16 17 23 
+Row 134: Piece F Rot 3 @ (2,1) covers cols: 11 12 13 16 17 18 23 
+Row 135: Piece F Rot 3 @ (2,2) covers cols: 12 13 14 17 18 19 23 
+Initial Canvas:
+-----
+-----
+-----
+-----
+
+No valid tiling found for this configuration

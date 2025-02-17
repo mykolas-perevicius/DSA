@@ -1,0 +1,1506 @@
+Starting DLX solver
+Starting DLX solver (time limit: 100s)
+Initial matrix: 48 rows, 20 columns
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I---
+I---
+II--
+-I--
+Depth: 1, Candidates: 6
+Current board state:
+-I--
+-I--
+-II-
+--I-
+Depth: 1, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+--I-
+--I-
+--II
+---I
+Depth: 1, Candidates: 6
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+----
+----
+Depth: 1, Candidates: 6
+Current board state:
+----
+-III
+IIII
+----
+Depth: 1, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+----
+----
+-III
+IIII
+Depth: 1, Candidates: 6
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I---
+II--
+II--
+II--
+Depth: 1, Candidates: 6
+Current board state:
+-I--
+-II-
+-II-
+-II-
+Depth: 1, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+--I-
+--II
+--II
+--II
+Depth: 1, Candidates: 6
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+----
+----
+Depth: 1, Candidates: 6
+Current board state:
+----
+IIII
+IIII
+----
+Depth: 1, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+----
+----
+IIII
+IIII
+Depth: 1, Candidates: 6
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I---
+I---
+II--
+-I--
+Depth: 1, Candidates: 6
+Current board state:
+-I--
+-I--
+-II-
+--I-
+Depth: 1, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+--I-
+--I-
+--II
+---I
+Depth: 1, Candidates: 6
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+----
+----
+Depth: 1, Candidates: 6
+Current board state:
+----
+-III
+IIII
+----
+Depth: 1, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+----
+----
+-III
+IIII
+Depth: 1, Candidates: 6
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I---
+II--
+II--
+II--
+Depth: 1, Candidates: 6
+Current board state:
+-I--
+-II-
+-II-
+-II-
+Depth: 1, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+--I-
+--II
+--II
+--II
+Depth: 1, Candidates: 6
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+----
+----
+Depth: 1, Candidates: 6
+Current board state:
+----
+IIII
+IIII
+----
+Depth: 1, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+----
+----
+IIII
+IIII
+Depth: 1, Candidates: 6
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I---
+I---
+II--
+-I--
+Depth: 1, Candidates: 6
+Current board state:
+-I--
+-I--
+-II-
+--I-
+Depth: 1, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+--I-
+--I-
+--II
+---I
+Depth: 1, Candidates: 6
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+----
+----
+Depth: 1, Candidates: 6
+Current board state:
+----
+-III
+IIII
+----
+Depth: 1, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+----
+----
+-III
+IIII
+Depth: 1, Candidates: 6
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I---
+II--
+II--
+II--
+Depth: 1, Candidates: 6
+Current board state:
+-I--
+-II-
+-II-
+-II-
+Depth: 1, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+--I-
+--II
+--II
+--II
+Depth: 1, Candidates: 6
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+----
+----
+Depth: 1, Candidates: 6
+Current board state:
+----
+IIII
+IIII
+----
+Depth: 1, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+----
+----
+IIII
+IIII
+Depth: 1, Candidates: 6
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I---
+I---
+II--
+-I--
+Depth: 1, Candidates: 6
+Current board state:
+-I--
+-I--
+-II-
+--I-
+Depth: 1, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-I-
+IIII
+-I-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+--I-
+--I-
+--II
+---I
+Depth: 1, Candidates: 6
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+----
+----
+Depth: 1, Candidates: 6
+Current board state:
+----
+-III
+IIII
+----
+Depth: 1, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+----
+----
+-III
+IIII
+Depth: 1, Candidates: 6
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+III-
+IIII
+II-I
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I---
+II--
+II--
+II--
+Depth: 1, Candidates: 6
+Current board state:
+-I--
+-II-
+-II-
+-II-
+Depth: 1, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+I-II
+IIII
+-III
+Depth: 2, Candidates: 0
+Current board state:
+I-I-
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+--I-
+--II
+--II
+--II
+Depth: 1, Candidates: 6
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+-III
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+----
+----
+Depth: 1, Candidates: 6
+Current board state:
+----
+IIII
+IIII
+----
+Depth: 1, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+-III
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+IIII
+IIII
+IIII
+IIII
+Depth: 2, Candidates: 0
+Current board state:
+----
+----
+IIII
+IIII
+Depth: 1, Candidates: 6
+Current board state:
+----
+----
+----
+----
+Depth: 0, Candidates: 48
+[DEBUG] Solver completed. Best solution: -1 pieces
+Built placement matrix with 48 rows
+Row 0: Piece I Rot 0 @ (0,0) covers cols: 0 4 8 9 13 16 
+Row 1: Piece I Rot 0 @ (0,1) covers cols: 1 5 9 10 14 16 
+Row 2: Piece I Rot 0 @ (0,2) covers cols: 2 6 10 11 15 16 
+Row 3: Piece I Rot 1 @ (0,0) covers cols: 1 2 3 4 5 6 7 16 
+Row 4: Piece I Rot 1 @ (1,0) covers cols: 5 6 7 8 9 10 11 16 
+Row 5: Piece I Rot 1 @ (2,0) covers cols: 9 10 11 12 13 14 15 16 
+Row 6: Piece I Rot 2 @ (0,0) covers cols: 0 4 5 8 9 12 13 16 
+Row 7: Piece I Rot 2 @ (0,1) covers cols: 1 5 6 9 10 13 14 16 
+Row 8: Piece I Rot 2 @ (0,2) covers cols: 2 6 7 10 11 14 15 16 
+Row 9: Piece I Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 6 7 16 
+Row 10: Piece I Rot 3 @ (1,0) covers cols: 4 5 6 7 8 9 10 11 16 
+Row 11: Piece I Rot 3 @ (2,0) covers cols: 8 9 10 11 12 13 14 15 16 
+Row 12: Piece I Rot 0 @ (0,0) covers cols: 0 4 8 9 13 17 
+Row 13: Piece I Rot 0 @ (0,1) covers cols: 1 5 9 10 14 17 
+Row 14: Piece I Rot 0 @ (0,2) covers cols: 2 6 10 11 15 17 
+Row 15: Piece I Rot 1 @ (0,0) covers cols: 1 2 3 4 5 6 7 17 
+Row 16: Piece I Rot 1 @ (1,0) covers cols: 5 6 7 8 9 10 11 17 
+Row 17: Piece I Rot 1 @ (2,0) covers cols: 9 10 11 12 13 14 15 17 
+Row 18: Piece I Rot 2 @ (0,0) covers cols: 0 4 5 8 9 12 13 17 
+Row 19: Piece I Rot 2 @ (0,1) covers cols: 1 5 6 9 10 13 14 17 
+Row 20: Piece I Rot 2 @ (0,2) covers cols: 2 6 7 10 11 14 15 17 
+Row 21: Piece I Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 6 7 17 
+Row 22: Piece I Rot 3 @ (1,0) covers cols: 4 5 6 7 8 9 10 11 17 
+Row 23: Piece I Rot 3 @ (2,0) covers cols: 8 9 10 11 12 13 14 15 17 
+Row 24: Piece I Rot 0 @ (0,0) covers cols: 0 4 8 9 13 18 
+Row 25: Piece I Rot 0 @ (0,1) covers cols: 1 5 9 10 14 18 
+Row 26: Piece I Rot 0 @ (0,2) covers cols: 2 6 10 11 15 18 
+Row 27: Piece I Rot 1 @ (0,0) covers cols: 1 2 3 4 5 6 7 18 
+Row 28: Piece I Rot 1 @ (1,0) covers cols: 5 6 7 8 9 10 11 18 
+Row 29: Piece I Rot 1 @ (2,0) covers cols: 9 10 11 12 13 14 15 18 
+Row 30: Piece I Rot 2 @ (0,0) covers cols: 0 4 5 8 9 12 13 18 
+Row 31: Piece I Rot 2 @ (0,1) covers cols: 1 5 6 9 10 13 14 18 
+Row 32: Piece I Rot 2 @ (0,2) covers cols: 2 6 7 10 11 14 15 18 
+Row 33: Piece I Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 6 7 18 
+Row 34: Piece I Rot 3 @ (1,0) covers cols: 4 5 6 7 8 9 10 11 18 
+Row 35: Piece I Rot 3 @ (2,0) covers cols: 8 9 10 11 12 13 14 15 18 
+Row 36: Piece I Rot 0 @ (0,0) covers cols: 0 4 8 9 13 19 
+Row 37: Piece I Rot 0 @ (0,1) covers cols: 1 5 9 10 14 19 
+Row 38: Piece I Rot 0 @ (0,2) covers cols: 2 6 10 11 15 19 
+Row 39: Piece I Rot 1 @ (0,0) covers cols: 1 2 3 4 5 6 7 19 
+Row 40: Piece I Rot 1 @ (1,0) covers cols: 5 6 7 8 9 10 11 19 
+Row 41: Piece I Rot 1 @ (2,0) covers cols: 9 10 11 12 13 14 15 19 
+Row 42: Piece I Rot 2 @ (0,0) covers cols: 0 4 5 8 9 12 13 19 
+Row 43: Piece I Rot 2 @ (0,1) covers cols: 1 5 6 9 10 13 14 19 
+Row 44: Piece I Rot 2 @ (0,2) covers cols: 2 6 7 10 11 14 15 19 
+Row 45: Piece I Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 6 7 19 
+Row 46: Piece I Rot 3 @ (1,0) covers cols: 4 5 6 7 8 9 10 11 19 
+Row 47: Piece I Rot 3 @ (2,0) covers cols: 8 9 10 11 12 13 14 15 19 
+Initial Canvas:
+----
+----
+----
+----
+
+No valid tiling found for this configuration

@@ -1,0 +1,12 @@
+2x6_AA                    COMPLETED                            pieces    
+4x4_MMMM                  COMPLETED                            pieces    
+4x4_IIII                  COMPLETED                            pieces    
+4x4_LLLL                  COMPLETED                            pieces    
+5x4_DDDD                  COMPLETED                            pieces    
+5x5_KKKKK                 COMPLETED                            pieces    
+4x4_NNNN                  COMPLETED                            pieces    
+5x5_CCCCC                 COMPLETED                            pieces    
+5x4_QQQQ                  COMPLETED                            pieces    
+5x5_QQQQQ                 COMPLETED                            pieces    
+4x5_FFFF                  COMPLETED                            pieces    
+4x4_OOOO                  COMPLETED                            pieces    
