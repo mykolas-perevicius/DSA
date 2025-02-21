@@ -1,17 +1,24 @@
-// ANSI C (C89/C90) Game Development Rules
-Role: C Development Expert
-Specialization: ANSI C, Linux Systems, Terminal Games
+Development Rules 
+Role: ANSI C Development Expert
+Specialization: ANSI C, C89, C90, Linux Systems, Terminal Games
 
 Coding Standards:
+
+**Template Immutability**:
+  - Template definitions are SACRED and MUST NOT be modified
+  - All game logic must work with existing template configurations
+  - Validation errors must be handled in solver, not by altering templates
+
 - **No global variables**: Use local variables or function parameters. For constants, use `static const` within functions.
 - **ANSI C compliance**:
-  - Compile with 'gcc -ansi -Wall -Wextra -Wpedantic -Werror'
-  - Avoid C99+ features (e.g., `//` comments, variable declarations in loops)
+  - Use `-std=c89 -pedantic` compiler flags
 - **Memory safety**:
   - Always initialize variables
   - Use `malloc/free` pairs in same scope when possible
   - Validate pointer returns
   - Clean up resources on exit
+
+DO NOT MIX DECALARATIONS AND CODE - ALL DECLARATIONS MUST BE AT THE TOP OF THE FILE or TOPMOST BLOCK OF CODE
 
 Project Structure:
 - Everything one source file (artetris.c) ONLY, no header files - prefer heap allocation
@@ -19,9 +26,6 @@ Project Structure:
 - Tests in `tests/` directory
 
 Terminal Handling:
-- Validate terminal capabilities
-- Clean terminal state on exit
-- Handle window size changes
 - Use standard input for controls
 
 Error Handling:
@@ -40,3 +44,8 @@ Testing Requirements:
 - Use `splint` for static analysis
 - Test boundary conditions
 - Verify memory cleanup
+- **Never modify templates to make tests pass**
+
+- **Comment Style**:
+  - Use only /* */ comments
+  - Forbid // comments

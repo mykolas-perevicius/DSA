@@ -80,7 +80,7 @@ int canPlacePiece(char *board, int boardRows, int boardCols, BlockRotation *piec
 void placePiece(char *board, int boardRows, int boardCols, BlockRotation *piece, int block_dim, int top, int left, char letter);
 void removePiece(char *board, int boardRows, int boardCols, BlockRotation *piece, int block_dim, int top, int left);
 void solvePuzzle(char *board, int boardRows, int boardCols, Block *blocks, int nblocks, int curIndex, int placedCount, SolverState *state);
-void solvePuzzleDLX(int boardRows, int boardCols, Block *blocks, int nblocks, char * /*canvas*/, SolverState *state, int debug);
+void solvePuzzleDLX(int boardRows, int boardCols, Block *blocks, int nblocks, char *unused_canvas, SolverState *state, int debug);
 PlacementRow *buildPlacementMatrix(int boardRows, int boardCols, Block *blocks, int nblocks, int *outRowsCount, int debug);
 void freePlacementMatrix(PlacementRow *matrix, int rowCount);
 int row_conflicts(PlacementRow *r1, PlacementRow *r2);
@@ -746,7 +746,7 @@ void algorithm_x(int total_columns, int total_rows, PlacementRow *matrix, int *a
         printf("algorithm_x: depth=%d, covered_count=%d, ", sol_depth, covered_count);
         printf("active_rows=%d, covered_cols=%d\n",
                total_rows - (int) (sol_depth + (total_rows - *best_depth)),
-               covered_count); // Example of summarized info
+               covered_count); /* Example of summarized info */
     }
 
     if (sol_depth > *best_depth) {
@@ -869,16 +869,18 @@ void algorithm_x(int total_columns, int total_rows, PlacementRow *matrix, int *a
         }
     }
 }
-
-/* In solvePuzzleDLX, we update the call to algorithm_x with the new parameters. */
-void solvePuzzleDLX(int boardRows, int boardCols, Block *blocks, int nblocks, char * /*canvas*/, SolverState *state, int debug) { /* Add debug flag, and remove unused parameter */
-    PlacementRow *matrix;
-    int *active, *col_covered, *solution, *best_solution;
-    int rowCount, total_columns, i;
-    clock_t start_time;
+/* Solve exact cover problem using Dancing Links algorithm (Algorithm X) */
+void solvePuzzleDLX(int boardRows, int boardCols, Block *blocks, int nblocks, char *unused_canvas, SolverState *state, int debug) {
+    PlacementRow *matrix = NULL;
+    int *active = NULL, *col_covered = NULL, *solution = NULL, *best_solution = NULL;
+    int rowCount = 0, total_columns = 0, i = 0;
+    clock_t start_time = 0;
     int time_limit = 10; /* seconds */
 
-    matrix = buildPlacementMatrix(boardRows, boardCols, blocks, nblocks, &rowCount, debug); /* Pass debug flag */
+    /* Mark unused parameter to avoid compiler warnings */
+    (void)unused_canvas;
+
+    matrix = buildPlacementMatrix(boardRows, boardCols, blocks, nblocks, &rowCount, debug);
     if (matrix == NULL) {
         return;
     }
