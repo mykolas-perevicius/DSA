@@ -1,0 +1,89 @@
+Starting DLX solver
+Starting DLX solver (time limit: 100s)
+Initial matrix: 78 rows, 21 columns
+[DEBUG] Solver completed. Best solution: 3 pieces
+Built placement matrix with 78 rows
+Row 0: Piece A Rot 1 @ (0,0) covers cols: 0 1 2 3 4 5 18 
+Row 1: Piece A Rot 1 @ (0,1) covers cols: 1 2 3 4 5 6 18 
+Row 2: Piece A Rot 1 @ (0,2) covers cols: 2 3 4 5 6 7 18 
+Row 3: Piece A Rot 1 @ (0,3) covers cols: 3 4 5 6 7 8 18 
+Row 4: Piece A Rot 1 @ (0,4) covers cols: 4 5 6 7 8 9 18 
+Row 5: Piece A Rot 1 @ (0,5) covers cols: 5 6 7 8 9 10 18 
+Row 6: Piece A Rot 1 @ (0,6) covers cols: 6 7 8 9 10 11 18 
+Row 7: Piece A Rot 1 @ (0,7) covers cols: 7 8 9 10 11 12 18 
+Row 8: Piece A Rot 1 @ (0,8) covers cols: 8 9 10 11 12 13 18 
+Row 9: Piece A Rot 1 @ (0,9) covers cols: 9 10 11 12 13 14 18 
+Row 10: Piece A Rot 1 @ (0,10) covers cols: 10 11 12 13 14 15 18 
+Row 11: Piece A Rot 1 @ (0,11) covers cols: 11 12 13 14 15 16 18 
+Row 12: Piece A Rot 1 @ (0,12) covers cols: 12 13 14 15 16 17 18 
+Row 13: Piece A Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 18 
+Row 14: Piece A Rot 3 @ (0,1) covers cols: 1 2 3 4 5 6 18 
+Row 15: Piece A Rot 3 @ (0,2) covers cols: 2 3 4 5 6 7 18 
+Row 16: Piece A Rot 3 @ (0,3) covers cols: 3 4 5 6 7 8 18 
+Row 17: Piece A Rot 3 @ (0,4) covers cols: 4 5 6 7 8 9 18 
+Row 18: Piece A Rot 3 @ (0,5) covers cols: 5 6 7 8 9 10 18 
+Row 19: Piece A Rot 3 @ (0,6) covers cols: 6 7 8 9 10 11 18 
+Row 20: Piece A Rot 3 @ (0,7) covers cols: 7 8 9 10 11 12 18 
+Row 21: Piece A Rot 3 @ (0,8) covers cols: 8 9 10 11 12 13 18 
+Row 22: Piece A Rot 3 @ (0,9) covers cols: 9 10 11 12 13 14 18 
+Row 23: Piece A Rot 3 @ (0,10) covers cols: 10 11 12 13 14 15 18 
+Row 24: Piece A Rot 3 @ (0,11) covers cols: 11 12 13 14 15 16 18 
+Row 25: Piece A Rot 3 @ (0,12) covers cols: 12 13 14 15 16 17 18 
+Row 26: Piece A Rot 1 @ (0,0) covers cols: 0 1 2 3 4 5 19 
+Row 27: Piece A Rot 1 @ (0,1) covers cols: 1 2 3 4 5 6 19 
+Row 28: Piece A Rot 1 @ (0,2) covers cols: 2 3 4 5 6 7 19 
+Row 29: Piece A Rot 1 @ (0,3) covers cols: 3 4 5 6 7 8 19 
+Row 30: Piece A Rot 1 @ (0,4) covers cols: 4 5 6 7 8 9 19 
+Row 31: Piece A Rot 1 @ (0,5) covers cols: 5 6 7 8 9 10 19 
+Row 32: Piece A Rot 1 @ (0,6) covers cols: 6 7 8 9 10 11 19 
+Row 33: Piece A Rot 1 @ (0,7) covers cols: 7 8 9 10 11 12 19 
+Row 34: Piece A Rot 1 @ (0,8) covers cols: 8 9 10 11 12 13 19 
+Row 35: Piece A Rot 1 @ (0,9) covers cols: 9 10 11 12 13 14 19 
+Row 36: Piece A Rot 1 @ (0,10) covers cols: 10 11 12 13 14 15 19 
+Row 37: Piece A Rot 1 @ (0,11) covers cols: 11 12 13 14 15 16 19 
+Row 38: Piece A Rot 1 @ (0,12) covers cols: 12 13 14 15 16 17 19 
+Row 39: Piece A Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 19 
+Row 40: Piece A Rot 3 @ (0,1) covers cols: 1 2 3 4 5 6 19 
+Row 41: Piece A Rot 3 @ (0,2) covers cols: 2 3 4 5 6 7 19 
+Row 42: Piece A Rot 3 @ (0,3) covers cols: 3 4 5 6 7 8 19 
+Row 43: Piece A Rot 3 @ (0,4) covers cols: 4 5 6 7 8 9 19 
+Row 44: Piece A Rot 3 @ (0,5) covers cols: 5 6 7 8 9 10 19 
+Row 45: Piece A Rot 3 @ (0,6) covers cols: 6 7 8 9 10 11 19 
+Row 46: Piece A Rot 3 @ (0,7) covers cols: 7 8 9 10 11 12 19 
+Row 47: Piece A Rot 3 @ (0,8) covers cols: 8 9 10 11 12 13 19 
+Row 48: Piece A Rot 3 @ (0,9) covers cols: 9 10 11 12 13 14 19 
+Row 49: Piece A Rot 3 @ (0,10) covers cols: 10 11 12 13 14 15 19 
+Row 50: Piece A Rot 3 @ (0,11) covers cols: 11 12 13 14 15 16 19 
+Row 51: Piece A Rot 3 @ (0,12) covers cols: 12 13 14 15 16 17 19 
+Row 52: Piece A Rot 1 @ (0,0) covers cols: 0 1 2 3 4 5 20 
+Row 53: Piece A Rot 1 @ (0,1) covers cols: 1 2 3 4 5 6 20 
+Row 54: Piece A Rot 1 @ (0,2) covers cols: 2 3 4 5 6 7 20 
+Row 55: Piece A Rot 1 @ (0,3) covers cols: 3 4 5 6 7 8 20 
+Row 56: Piece A Rot 1 @ (0,4) covers cols: 4 5 6 7 8 9 20 
+Row 57: Piece A Rot 1 @ (0,5) covers cols: 5 6 7 8 9 10 20 
+Row 58: Piece A Rot 1 @ (0,6) covers cols: 6 7 8 9 10 11 20 
+Row 59: Piece A Rot 1 @ (0,7) covers cols: 7 8 9 10 11 12 20 
+Row 60: Piece A Rot 1 @ (0,8) covers cols: 8 9 10 11 12 13 20 
+Row 61: Piece A Rot 1 @ (0,9) covers cols: 9 10 11 12 13 14 20 
+Row 62: Piece A Rot 1 @ (0,10) covers cols: 10 11 12 13 14 15 20 
+Row 63: Piece A Rot 1 @ (0,11) covers cols: 11 12 13 14 15 16 20 
+Row 64: Piece A Rot 1 @ (0,12) covers cols: 12 13 14 15 16 17 20 
+Row 65: Piece A Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 20 
+Row 66: Piece A Rot 3 @ (0,1) covers cols: 1 2 3 4 5 6 20 
+Row 67: Piece A Rot 3 @ (0,2) covers cols: 2 3 4 5 6 7 20 
+Row 68: Piece A Rot 3 @ (0,3) covers cols: 3 4 5 6 7 8 20 
+Row 69: Piece A Rot 3 @ (0,4) covers cols: 4 5 6 7 8 9 20 
+Row 70: Piece A Rot 3 @ (0,5) covers cols: 5 6 7 8 9 10 20 
+Row 71: Piece A Rot 3 @ (0,6) covers cols: 6 7 8 9 10 11 20 
+Row 72: Piece A Rot 3 @ (0,7) covers cols: 7 8 9 10 11 12 20 
+Row 73: Piece A Rot 3 @ (0,8) covers cols: 8 9 10 11 12 13 20 
+Row 74: Piece A Rot 3 @ (0,9) covers cols: 9 10 11 12 13 14 20 
+Row 75: Piece A Rot 3 @ (0,10) covers cols: 10 11 12 13 14 15 20 
+Row 76: Piece A Rot 3 @ (0,11) covers cols: 11 12 13 14 15 16 20 
+Row 77: Piece A Rot 3 @ (0,12) covers cols: 12 13 14 15 16 17 20 
+Initial Canvas:
+------------------
+
+Found 288 solutions, best solution has 3 pieces.
+Best Solution:
+AAAAAAAAAAAAAAAAAA

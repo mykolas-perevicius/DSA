@@ -1,0 +1,891 @@
+Starting DLX solver
+Starting DLX solver (time limit: 100s)
+Initial matrix: 868 rows, 58 columns
+[DEBUG] Solver completed. Best solution: 7 pieces
+Built placement matrix with 868 rows
+Row 0: Piece A Rot 0 @ (0,0) covers cols: 0 7 14 21 28 35 49 
+Row 1: Piece A Rot 0 @ (0,1) covers cols: 1 8 15 22 29 36 49 
+Row 2: Piece A Rot 0 @ (0,2) covers cols: 2 9 16 23 30 37 49 
+Row 3: Piece A Rot 0 @ (0,3) covers cols: 3 10 17 24 31 38 49 
+Row 4: Piece A Rot 0 @ (0,4) covers cols: 4 11 18 25 32 39 49 
+Row 5: Piece A Rot 0 @ (0,5) covers cols: 5 12 19 26 33 40 49 
+Row 6: Piece A Rot 0 @ (0,6) covers cols: 6 13 20 27 34 41 49 
+Row 7: Piece A Rot 0 @ (1,0) covers cols: 7 14 21 28 35 42 49 
+Row 8: Piece A Rot 0 @ (1,1) covers cols: 8 15 22 29 36 43 49 
+Row 9: Piece A Rot 0 @ (1,2) covers cols: 9 16 23 30 37 44 49 
+Row 10: Piece A Rot 0 @ (1,3) covers cols: 10 17 24 31 38 45 49 
+Row 11: Piece A Rot 0 @ (1,4) covers cols: 11 18 25 32 39 46 49 
+Row 12: Piece A Rot 0 @ (1,5) covers cols: 12 19 26 33 40 47 49 
+Row 13: Piece A Rot 0 @ (1,6) covers cols: 13 20 27 34 41 48 49 
+Row 14: Piece A Rot 1 @ (0,0) covers cols: 0 1 2 3 4 5 49 
+Row 15: Piece A Rot 1 @ (0,1) covers cols: 1 2 3 4 5 6 49 
+Row 16: Piece A Rot 1 @ (1,0) covers cols: 7 8 9 10 11 12 49 
+Row 17: Piece A Rot 1 @ (1,1) covers cols: 8 9 10 11 12 13 49 
+Row 18: Piece A Rot 1 @ (2,0) covers cols: 14 15 16 17 18 19 49 
+Row 19: Piece A Rot 1 @ (2,1) covers cols: 15 16 17 18 19 20 49 
+Row 20: Piece A Rot 1 @ (3,0) covers cols: 21 22 23 24 25 26 49 
+Row 21: Piece A Rot 1 @ (3,1) covers cols: 22 23 24 25 26 27 49 
+Row 22: Piece A Rot 1 @ (4,0) covers cols: 28 29 30 31 32 33 49 
+Row 23: Piece A Rot 1 @ (4,1) covers cols: 29 30 31 32 33 34 49 
+Row 24: Piece A Rot 1 @ (5,0) covers cols: 35 36 37 38 39 40 49 
+Row 25: Piece A Rot 1 @ (5,1) covers cols: 36 37 38 39 40 41 49 
+Row 26: Piece A Rot 1 @ (6,0) covers cols: 42 43 44 45 46 47 49 
+Row 27: Piece A Rot 1 @ (6,1) covers cols: 43 44 45 46 47 48 49 
+Row 28: Piece A Rot 2 @ (0,0) covers cols: 0 7 14 21 28 35 49 
+Row 29: Piece A Rot 2 @ (0,1) covers cols: 1 8 15 22 29 36 49 
+Row 30: Piece A Rot 2 @ (0,2) covers cols: 2 9 16 23 30 37 49 
+Row 31: Piece A Rot 2 @ (0,3) covers cols: 3 10 17 24 31 38 49 
+Row 32: Piece A Rot 2 @ (0,4) covers cols: 4 11 18 25 32 39 49 
+Row 33: Piece A Rot 2 @ (0,5) covers cols: 5 12 19 26 33 40 49 
+Row 34: Piece A Rot 2 @ (0,6) covers cols: 6 13 20 27 34 41 49 
+Row 35: Piece A Rot 2 @ (1,0) covers cols: 7 14 21 28 35 42 49 
+Row 36: Piece A Rot 2 @ (1,1) covers cols: 8 15 22 29 36 43 49 
+Row 37: Piece A Rot 2 @ (1,2) covers cols: 9 16 23 30 37 44 49 
+Row 38: Piece A Rot 2 @ (1,3) covers cols: 10 17 24 31 38 45 49 
+Row 39: Piece A Rot 2 @ (1,4) covers cols: 11 18 25 32 39 46 49 
+Row 40: Piece A Rot 2 @ (1,5) covers cols: 12 19 26 33 40 47 49 
+Row 41: Piece A Rot 2 @ (1,6) covers cols: 13 20 27 34 41 48 49 
+Row 42: Piece A Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 49 
+Row 43: Piece A Rot 3 @ (0,1) covers cols: 1 2 3 4 5 6 49 
+Row 44: Piece A Rot 3 @ (1,0) covers cols: 7 8 9 10 11 12 49 
+Row 45: Piece A Rot 3 @ (1,1) covers cols: 8 9 10 11 12 13 49 
+Row 46: Piece A Rot 3 @ (2,0) covers cols: 14 15 16 17 18 19 49 
+Row 47: Piece A Rot 3 @ (2,1) covers cols: 15 16 17 18 19 20 49 
+Row 48: Piece A Rot 3 @ (3,0) covers cols: 21 22 23 24 25 26 49 
+Row 49: Piece A Rot 3 @ (3,1) covers cols: 22 23 24 25 26 27 49 
+Row 50: Piece A Rot 3 @ (4,0) covers cols: 28 29 30 31 32 33 49 
+Row 51: Piece A Rot 3 @ (4,1) covers cols: 29 30 31 32 33 34 49 
+Row 52: Piece A Rot 3 @ (5,0) covers cols: 35 36 37 38 39 40 49 
+Row 53: Piece A Rot 3 @ (5,1) covers cols: 36 37 38 39 40 41 49 
+Row 54: Piece A Rot 3 @ (6,0) covers cols: 42 43 44 45 46 47 49 
+Row 55: Piece A Rot 3 @ (6,1) covers cols: 43 44 45 46 47 48 49 
+Row 56: Piece C Rot 0 @ (0,0) covers cols: 0 1 8 9 15 50 
+Row 57: Piece C Rot 0 @ (0,1) covers cols: 1 2 9 10 16 50 
+Row 58: Piece C Rot 0 @ (0,2) covers cols: 2 3 10 11 17 50 
+Row 59: Piece C Rot 0 @ (0,3) covers cols: 3 4 11 12 18 50 
+Row 60: Piece C Rot 0 @ (0,4) covers cols: 4 5 12 13 19 50 
+Row 61: Piece C Rot 0 @ (1,0) covers cols: 7 8 15 16 22 50 
+Row 62: Piece C Rot 0 @ (1,1) covers cols: 8 9 16 17 23 50 
+Row 63: Piece C Rot 0 @ (1,2) covers cols: 9 10 17 18 24 50 
+Row 64: Piece C Rot 0 @ (1,3) covers cols: 10 11 18 19 25 50 
+Row 65: Piece C Rot 0 @ (1,4) covers cols: 11 12 19 20 26 50 
+Row 66: Piece C Rot 0 @ (2,0) covers cols: 14 15 22 23 29 50 
+Row 67: Piece C Rot 0 @ (2,1) covers cols: 15 16 23 24 30 50 
+Row 68: Piece C Rot 0 @ (2,2) covers cols: 16 17 24 25 31 50 
+Row 69: Piece C Rot 0 @ (2,3) covers cols: 17 18 25 26 32 50 
+Row 70: Piece C Rot 0 @ (2,4) covers cols: 18 19 26 27 33 50 
+Row 71: Piece C Rot 0 @ (3,0) covers cols: 21 22 29 30 36 50 
+Row 72: Piece C Rot 0 @ (3,1) covers cols: 22 23 30 31 37 50 
+Row 73: Piece C Rot 0 @ (3,2) covers cols: 23 24 31 32 38 50 
+Row 74: Piece C Rot 0 @ (3,3) covers cols: 24 25 32 33 39 50 
+Row 75: Piece C Rot 0 @ (3,4) covers cols: 25 26 33 34 40 50 
+Row 76: Piece C Rot 0 @ (4,0) covers cols: 28 29 36 37 43 50 
+Row 77: Piece C Rot 0 @ (4,1) covers cols: 29 30 37 38 44 50 
+Row 78: Piece C Rot 0 @ (4,2) covers cols: 30 31 38 39 45 50 
+Row 79: Piece C Rot 0 @ (4,3) covers cols: 31 32 39 40 46 50 
+Row 80: Piece C Rot 0 @ (4,4) covers cols: 32 33 40 41 47 50 
+Row 81: Piece C Rot 1 @ (0,0) covers cols: 2 7 8 9 15 50 
+Row 82: Piece C Rot 1 @ (0,1) covers cols: 3 8 9 10 16 50 
+Row 83: Piece C Rot 1 @ (0,2) covers cols: 4 9 10 11 17 50 
+Row 84: Piece C Rot 1 @ (0,3) covers cols: 5 10 11 12 18 50 
+Row 85: Piece C Rot 1 @ (0,4) covers cols: 6 11 12 13 19 50 
+Row 86: Piece C Rot 1 @ (1,0) covers cols: 9 14 15 16 22 50 
+Row 87: Piece C Rot 1 @ (1,1) covers cols: 10 15 16 17 23 50 
+Row 88: Piece C Rot 1 @ (1,2) covers cols: 11 16 17 18 24 50 
+Row 89: Piece C Rot 1 @ (1,3) covers cols: 12 17 18 19 25 50 
+Row 90: Piece C Rot 1 @ (1,4) covers cols: 13 18 19 20 26 50 
+Row 91: Piece C Rot 1 @ (2,0) covers cols: 16 21 22 23 29 50 
+Row 92: Piece C Rot 1 @ (2,1) covers cols: 17 22 23 24 30 50 
+Row 93: Piece C Rot 1 @ (2,2) covers cols: 18 23 24 25 31 50 
+Row 94: Piece C Rot 1 @ (2,3) covers cols: 19 24 25 26 32 50 
+Row 95: Piece C Rot 1 @ (2,4) covers cols: 20 25 26 27 33 50 
+Row 96: Piece C Rot 1 @ (3,0) covers cols: 23 28 29 30 36 50 
+Row 97: Piece C Rot 1 @ (3,1) covers cols: 24 29 30 31 37 50 
+Row 98: Piece C Rot 1 @ (3,2) covers cols: 25 30 31 32 38 50 
+Row 99: Piece C Rot 1 @ (3,3) covers cols: 26 31 32 33 39 50 
+Row 100: Piece C Rot 1 @ (3,4) covers cols: 27 32 33 34 40 50 
+Row 101: Piece C Rot 1 @ (4,0) covers cols: 30 35 36 37 43 50 
+Row 102: Piece C Rot 1 @ (4,1) covers cols: 31 36 37 38 44 50 
+Row 103: Piece C Rot 1 @ (4,2) covers cols: 32 37 38 39 45 50 
+Row 104: Piece C Rot 1 @ (4,3) covers cols: 33 38 39 40 46 50 
+Row 105: Piece C Rot 1 @ (4,4) covers cols: 34 39 40 41 47 50 
+Row 106: Piece C Rot 2 @ (0,0) covers cols: 1 7 8 15 16 50 
+Row 107: Piece C Rot 2 @ (0,1) covers cols: 2 8 9 16 17 50 
+Row 108: Piece C Rot 2 @ (0,2) covers cols: 3 9 10 17 18 50 
+Row 109: Piece C Rot 2 @ (0,3) covers cols: 4 10 11 18 19 50 
+Row 110: Piece C Rot 2 @ (0,4) covers cols: 5 11 12 19 20 50 
+Row 111: Piece C Rot 2 @ (1,0) covers cols: 8 14 15 22 23 50 
+Row 112: Piece C Rot 2 @ (1,1) covers cols: 9 15 16 23 24 50 
+Row 113: Piece C Rot 2 @ (1,2) covers cols: 10 16 17 24 25 50 
+Row 114: Piece C Rot 2 @ (1,3) covers cols: 11 17 18 25 26 50 
+Row 115: Piece C Rot 2 @ (1,4) covers cols: 12 18 19 26 27 50 
+Row 116: Piece C Rot 2 @ (2,0) covers cols: 15 21 22 29 30 50 
+Row 117: Piece C Rot 2 @ (2,1) covers cols: 16 22 23 30 31 50 
+Row 118: Piece C Rot 2 @ (2,2) covers cols: 17 23 24 31 32 50 
+Row 119: Piece C Rot 2 @ (2,3) covers cols: 18 24 25 32 33 50 
+Row 120: Piece C Rot 2 @ (2,4) covers cols: 19 25 26 33 34 50 
+Row 121: Piece C Rot 2 @ (3,0) covers cols: 22 28 29 36 37 50 
+Row 122: Piece C Rot 2 @ (3,1) covers cols: 23 29 30 37 38 50 
+Row 123: Piece C Rot 2 @ (3,2) covers cols: 24 30 31 38 39 50 
+Row 124: Piece C Rot 2 @ (3,3) covers cols: 25 31 32 39 40 50 
+Row 125: Piece C Rot 2 @ (3,4) covers cols: 26 32 33 40 41 50 
+Row 126: Piece C Rot 2 @ (4,0) covers cols: 29 35 36 43 44 50 
+Row 127: Piece C Rot 2 @ (4,1) covers cols: 30 36 37 44 45 50 
+Row 128: Piece C Rot 2 @ (4,2) covers cols: 31 37 38 45 46 50 
+Row 129: Piece C Rot 2 @ (4,3) covers cols: 32 38 39 46 47 50 
+Row 130: Piece C Rot 2 @ (4,4) covers cols: 33 39 40 47 48 50 
+Row 131: Piece C Rot 3 @ (0,0) covers cols: 1 7 8 9 14 50 
+Row 132: Piece C Rot 3 @ (0,1) covers cols: 2 8 9 10 15 50 
+Row 133: Piece C Rot 3 @ (0,2) covers cols: 3 9 10 11 16 50 
+Row 134: Piece C Rot 3 @ (0,3) covers cols: 4 10 11 12 17 50 
+Row 135: Piece C Rot 3 @ (0,4) covers cols: 5 11 12 13 18 50 
+Row 136: Piece C Rot 3 @ (1,0) covers cols: 8 14 15 16 21 50 
+Row 137: Piece C Rot 3 @ (1,1) covers cols: 9 15 16 17 22 50 
+Row 138: Piece C Rot 3 @ (1,2) covers cols: 10 16 17 18 23 50 
+Row 139: Piece C Rot 3 @ (1,3) covers cols: 11 17 18 19 24 50 
+Row 140: Piece C Rot 3 @ (1,4) covers cols: 12 18 19 20 25 50 
+Row 141: Piece C Rot 3 @ (2,0) covers cols: 15 21 22 23 28 50 
+Row 142: Piece C Rot 3 @ (2,1) covers cols: 16 22 23 24 29 50 
+Row 143: Piece C Rot 3 @ (2,2) covers cols: 17 23 24 25 30 50 
+Row 144: Piece C Rot 3 @ (2,3) covers cols: 18 24 25 26 31 50 
+Row 145: Piece C Rot 3 @ (2,4) covers cols: 19 25 26 27 32 50 
+Row 146: Piece C Rot 3 @ (3,0) covers cols: 22 28 29 30 35 50 
+Row 147: Piece C Rot 3 @ (3,1) covers cols: 23 29 30 31 36 50 
+Row 148: Piece C Rot 3 @ (3,2) covers cols: 24 30 31 32 37 50 
+Row 149: Piece C Rot 3 @ (3,3) covers cols: 25 31 32 33 38 50 
+Row 150: Piece C Rot 3 @ (3,4) covers cols: 26 32 33 34 39 50 
+Row 151: Piece C Rot 3 @ (4,0) covers cols: 29 35 36 37 42 50 
+Row 152: Piece C Rot 3 @ (4,1) covers cols: 30 36 37 38 43 50 
+Row 153: Piece C Rot 3 @ (4,2) covers cols: 31 37 38 39 44 50 
+Row 154: Piece C Rot 3 @ (4,3) covers cols: 32 38 39 40 45 50 
+Row 155: Piece C Rot 3 @ (4,4) covers cols: 33 39 40 41 46 50 
+Row 156: Piece D Rot 0 @ (0,0) covers cols: 1 8 15 21 22 51 
+Row 157: Piece D Rot 0 @ (0,1) covers cols: 2 9 16 22 23 51 
+Row 158: Piece D Rot 0 @ (0,2) covers cols: 3 10 17 23 24 51 
+Row 159: Piece D Rot 0 @ (0,3) covers cols: 4 11 18 24 25 51 
+Row 160: Piece D Rot 0 @ (0,4) covers cols: 5 12 19 25 26 51 
+Row 161: Piece D Rot 0 @ (0,5) covers cols: 6 13 20 26 27 51 
+Row 162: Piece D Rot 0 @ (1,0) covers cols: 8 15 22 28 29 51 
+Row 163: Piece D Rot 0 @ (1,1) covers cols: 9 16 23 29 30 51 
+Row 164: Piece D Rot 0 @ (1,2) covers cols: 10 17 24 30 31 51 
+Row 165: Piece D Rot 0 @ (1,3) covers cols: 11 18 25 31 32 51 
+Row 166: Piece D Rot 0 @ (1,4) covers cols: 12 19 26 32 33 51 
+Row 167: Piece D Rot 0 @ (1,5) covers cols: 13 20 27 33 34 51 
+Row 168: Piece D Rot 0 @ (2,0) covers cols: 15 22 29 35 36 51 
+Row 169: Piece D Rot 0 @ (2,1) covers cols: 16 23 30 36 37 51 
+Row 170: Piece D Rot 0 @ (2,2) covers cols: 17 24 31 37 38 51 
+Row 171: Piece D Rot 0 @ (2,3) covers cols: 18 25 32 38 39 51 
+Row 172: Piece D Rot 0 @ (2,4) covers cols: 19 26 33 39 40 51 
+Row 173: Piece D Rot 0 @ (2,5) covers cols: 20 27 34 40 41 51 
+Row 174: Piece D Rot 0 @ (3,0) covers cols: 22 29 36 42 43 51 
+Row 175: Piece D Rot 0 @ (3,1) covers cols: 23 30 37 43 44 51 
+Row 176: Piece D Rot 0 @ (3,2) covers cols: 24 31 38 44 45 51 
+Row 177: Piece D Rot 0 @ (3,3) covers cols: 25 32 39 45 46 51 
+Row 178: Piece D Rot 0 @ (3,4) covers cols: 26 33 40 46 47 51 
+Row 179: Piece D Rot 0 @ (3,5) covers cols: 27 34 41 47 48 51 
+Row 180: Piece D Rot 1 @ (0,0) covers cols: 0 2 3 7 8 9 10 51 
+Row 181: Piece D Rot 1 @ (0,1) covers cols: 1 3 4 8 9 10 11 51 
+Row 182: Piece D Rot 1 @ (0,2) covers cols: 2 4 5 9 10 11 12 51 
+Row 183: Piece D Rot 1 @ (0,3) covers cols: 3 5 6 10 11 12 13 51 
+Row 184: Piece D Rot 1 @ (1,0) covers cols: 7 9 10 14 15 16 17 51 
+Row 185: Piece D Rot 1 @ (1,1) covers cols: 8 10 11 15 16 17 18 51 
+Row 186: Piece D Rot 1 @ (1,2) covers cols: 9 11 12 16 17 18 19 51 
+Row 187: Piece D Rot 1 @ (1,3) covers cols: 10 12 13 17 18 19 20 51 
+Row 188: Piece D Rot 1 @ (2,0) covers cols: 14 16 17 21 22 23 24 51 
+Row 189: Piece D Rot 1 @ (2,1) covers cols: 15 17 18 22 23 24 25 51 
+Row 190: Piece D Rot 1 @ (2,2) covers cols: 16 18 19 23 24 25 26 51 
+Row 191: Piece D Rot 1 @ (2,3) covers cols: 17 19 20 24 25 26 27 51 
+Row 192: Piece D Rot 1 @ (3,0) covers cols: 21 23 24 28 29 30 31 51 
+Row 193: Piece D Rot 1 @ (3,1) covers cols: 22 24 25 29 30 31 32 51 
+Row 194: Piece D Rot 1 @ (3,2) covers cols: 23 25 26 30 31 32 33 51 
+Row 195: Piece D Rot 1 @ (3,3) covers cols: 24 26 27 31 32 33 34 51 
+Row 196: Piece D Rot 1 @ (4,0) covers cols: 28 30 31 35 36 37 38 51 
+Row 197: Piece D Rot 1 @ (4,1) covers cols: 29 31 32 36 37 38 39 51 
+Row 198: Piece D Rot 1 @ (4,2) covers cols: 30 32 33 37 38 39 40 51 
+Row 199: Piece D Rot 1 @ (4,3) covers cols: 31 33 34 38 39 40 41 51 
+Row 200: Piece D Rot 1 @ (5,0) covers cols: 35 37 38 42 43 44 45 51 
+Row 201: Piece D Rot 1 @ (5,1) covers cols: 36 38 39 43 44 45 46 51 
+Row 202: Piece D Rot 1 @ (5,2) covers cols: 37 39 40 44 45 46 47 51 
+Row 203: Piece D Rot 1 @ (5,3) covers cols: 38 40 41 45 46 47 48 51 
+Row 204: Piece D Rot 2 @ (0,0) covers cols: 0 1 7 14 15 21 22 51 
+Row 205: Piece D Rot 2 @ (0,1) covers cols: 1 2 8 15 16 22 23 51 
+Row 206: Piece D Rot 2 @ (0,2) covers cols: 2 3 9 16 17 23 24 51 
+Row 207: Piece D Rot 2 @ (0,3) covers cols: 3 4 10 17 18 24 25 51 
+Row 208: Piece D Rot 2 @ (0,4) covers cols: 4 5 11 18 19 25 26 51 
+Row 209: Piece D Rot 2 @ (0,5) covers cols: 5 6 12 19 20 26 27 51 
+Row 210: Piece D Rot 2 @ (1,0) covers cols: 7 8 14 21 22 28 29 51 
+Row 211: Piece D Rot 2 @ (1,1) covers cols: 8 9 15 22 23 29 30 51 
+Row 212: Piece D Rot 2 @ (1,2) covers cols: 9 10 16 23 24 30 31 51 
+Row 213: Piece D Rot 2 @ (1,3) covers cols: 10 11 17 24 25 31 32 51 
+Row 214: Piece D Rot 2 @ (1,4) covers cols: 11 12 18 25 26 32 33 51 
+Row 215: Piece D Rot 2 @ (1,5) covers cols: 12 13 19 26 27 33 34 51 
+Row 216: Piece D Rot 2 @ (2,0) covers cols: 14 15 21 28 29 35 36 51 
+Row 217: Piece D Rot 2 @ (2,1) covers cols: 15 16 22 29 30 36 37 51 
+Row 218: Piece D Rot 2 @ (2,2) covers cols: 16 17 23 30 31 37 38 51 
+Row 219: Piece D Rot 2 @ (2,3) covers cols: 17 18 24 31 32 38 39 51 
+Row 220: Piece D Rot 2 @ (2,4) covers cols: 18 19 25 32 33 39 40 51 
+Row 221: Piece D Rot 2 @ (2,5) covers cols: 19 20 26 33 34 40 41 51 
+Row 222: Piece D Rot 2 @ (3,0) covers cols: 21 22 28 35 36 42 43 51 
+Row 223: Piece D Rot 2 @ (3,1) covers cols: 22 23 29 36 37 43 44 51 
+Row 224: Piece D Rot 2 @ (3,2) covers cols: 23 24 30 37 38 44 45 51 
+Row 225: Piece D Rot 2 @ (3,3) covers cols: 24 25 31 38 39 45 46 51 
+Row 226: Piece D Rot 2 @ (3,4) covers cols: 25 26 32 39 40 46 47 51 
+Row 227: Piece D Rot 2 @ (3,5) covers cols: 26 27 33 40 41 47 48 51 
+Row 228: Piece D Rot 3 @ (0,0) covers cols: 0 1 2 3 7 8 9 10 51 
+Row 229: Piece D Rot 3 @ (0,1) covers cols: 1 2 3 4 8 9 10 11 51 
+Row 230: Piece D Rot 3 @ (0,2) covers cols: 2 3 4 5 9 10 11 12 51 
+Row 231: Piece D Rot 3 @ (0,3) covers cols: 3 4 5 6 10 11 12 13 51 
+Row 232: Piece D Rot 3 @ (1,0) covers cols: 7 8 9 10 14 15 16 17 51 
+Row 233: Piece D Rot 3 @ (1,1) covers cols: 8 9 10 11 15 16 17 18 51 
+Row 234: Piece D Rot 3 @ (1,2) covers cols: 9 10 11 12 16 17 18 19 51 
+Row 235: Piece D Rot 3 @ (1,3) covers cols: 10 11 12 13 17 18 19 20 51 
+Row 236: Piece D Rot 3 @ (2,0) covers cols: 14 15 16 17 21 22 23 24 51 
+Row 237: Piece D Rot 3 @ (2,1) covers cols: 15 16 17 18 22 23 24 25 51 
+Row 238: Piece D Rot 3 @ (2,2) covers cols: 16 17 18 19 23 24 25 26 51 
+Row 239: Piece D Rot 3 @ (2,3) covers cols: 17 18 19 20 24 25 26 27 51 
+Row 240: Piece D Rot 3 @ (3,0) covers cols: 21 22 23 24 28 29 30 31 51 
+Row 241: Piece D Rot 3 @ (3,1) covers cols: 22 23 24 25 29 30 31 32 51 
+Row 242: Piece D Rot 3 @ (3,2) covers cols: 23 24 25 26 30 31 32 33 51 
+Row 243: Piece D Rot 3 @ (3,3) covers cols: 24 25 26 27 31 32 33 34 51 
+Row 244: Piece D Rot 3 @ (4,0) covers cols: 28 29 30 31 35 36 37 38 51 
+Row 245: Piece D Rot 3 @ (4,1) covers cols: 29 30 31 32 36 37 38 39 51 
+Row 246: Piece D Rot 3 @ (4,2) covers cols: 30 31 32 33 37 38 39 40 51 
+Row 247: Piece D Rot 3 @ (4,3) covers cols: 31 32 33 34 38 39 40 41 51 
+Row 248: Piece D Rot 3 @ (5,0) covers cols: 35 36 37 38 42 43 44 45 51 
+Row 249: Piece D Rot 3 @ (5,1) covers cols: 36 37 38 39 43 44 45 46 51 
+Row 250: Piece D Rot 3 @ (5,2) covers cols: 37 38 39 40 44 45 46 47 51 
+Row 251: Piece D Rot 3 @ (5,3) covers cols: 38 39 40 41 45 46 47 48 51 
+Row 252: Piece F Rot 0 @ (0,0) covers cols: 0 1 7 8 15 52 
+Row 253: Piece F Rot 0 @ (0,1) covers cols: 1 2 8 9 16 52 
+Row 254: Piece F Rot 0 @ (0,2) covers cols: 2 3 9 10 17 52 
+Row 255: Piece F Rot 0 @ (0,3) covers cols: 3 4 10 11 18 52 
+Row 256: Piece F Rot 0 @ (0,4) covers cols: 4 5 11 12 19 52 
+Row 257: Piece F Rot 0 @ (0,5) covers cols: 5 6 12 13 20 52 
+Row 258: Piece F Rot 0 @ (1,0) covers cols: 7 8 14 15 22 52 
+Row 259: Piece F Rot 0 @ (1,1) covers cols: 8 9 15 16 23 52 
+Row 260: Piece F Rot 0 @ (1,2) covers cols: 9 10 16 17 24 52 
+Row 261: Piece F Rot 0 @ (1,3) covers cols: 10 11 17 18 25 52 
+Row 262: Piece F Rot 0 @ (1,4) covers cols: 11 12 18 19 26 52 
+Row 263: Piece F Rot 0 @ (1,5) covers cols: 12 13 19 20 27 52 
+Row 264: Piece F Rot 0 @ (2,0) covers cols: 14 15 21 22 29 52 
+Row 265: Piece F Rot 0 @ (2,1) covers cols: 15 16 22 23 30 52 
+Row 266: Piece F Rot 0 @ (2,2) covers cols: 16 17 23 24 31 52 
+Row 267: Piece F Rot 0 @ (2,3) covers cols: 17 18 24 25 32 52 
+Row 268: Piece F Rot 0 @ (2,4) covers cols: 18 19 25 26 33 52 
+Row 269: Piece F Rot 0 @ (2,5) covers cols: 19 20 26 27 34 52 
+Row 270: Piece F Rot 0 @ (3,0) covers cols: 21 22 28 29 36 52 
+Row 271: Piece F Rot 0 @ (3,1) covers cols: 22 23 29 30 37 52 
+Row 272: Piece F Rot 0 @ (3,2) covers cols: 23 24 30 31 38 52 
+Row 273: Piece F Rot 0 @ (3,3) covers cols: 24 25 31 32 39 52 
+Row 274: Piece F Rot 0 @ (3,4) covers cols: 25 26 32 33 40 52 
+Row 275: Piece F Rot 0 @ (3,5) covers cols: 26 27 33 34 41 52 
+Row 276: Piece F Rot 0 @ (4,0) covers cols: 28 29 35 36 43 52 
+Row 277: Piece F Rot 0 @ (4,1) covers cols: 29 30 36 37 44 52 
+Row 278: Piece F Rot 0 @ (4,2) covers cols: 30 31 37 38 45 52 
+Row 279: Piece F Rot 0 @ (4,3) covers cols: 31 32 38 39 46 52 
+Row 280: Piece F Rot 0 @ (4,4) covers cols: 32 33 39 40 47 52 
+Row 281: Piece F Rot 0 @ (4,5) covers cols: 33 34 40 41 48 52 
+Row 282: Piece F Rot 1 @ (0,0) covers cols: 1 2 7 8 9 52 
+Row 283: Piece F Rot 1 @ (0,1) covers cols: 2 3 8 9 10 52 
+Row 284: Piece F Rot 1 @ (0,2) covers cols: 3 4 9 10 11 52 
+Row 285: Piece F Rot 1 @ (0,3) covers cols: 4 5 10 11 12 52 
+Row 286: Piece F Rot 1 @ (0,4) covers cols: 5 6 11 12 13 52 
+Row 287: Piece F Rot 1 @ (1,0) covers cols: 8 9 14 15 16 52 
+Row 288: Piece F Rot 1 @ (1,1) covers cols: 9 10 15 16 17 52 
+Row 289: Piece F Rot 1 @ (1,2) covers cols: 10 11 16 17 18 52 
+Row 290: Piece F Rot 1 @ (1,3) covers cols: 11 12 17 18 19 52 
+Row 291: Piece F Rot 1 @ (1,4) covers cols: 12 13 18 19 20 52 
+Row 292: Piece F Rot 1 @ (2,0) covers cols: 15 16 21 22 23 52 
+Row 293: Piece F Rot 1 @ (2,1) covers cols: 16 17 22 23 24 52 
+Row 294: Piece F Rot 1 @ (2,2) covers cols: 17 18 23 24 25 52 
+Row 295: Piece F Rot 1 @ (2,3) covers cols: 18 19 24 25 26 52 
+Row 296: Piece F Rot 1 @ (2,4) covers cols: 19 20 25 26 27 52 
+Row 297: Piece F Rot 1 @ (3,0) covers cols: 22 23 28 29 30 52 
+Row 298: Piece F Rot 1 @ (3,1) covers cols: 23 24 29 30 31 52 
+Row 299: Piece F Rot 1 @ (3,2) covers cols: 24 25 30 31 32 52 
+Row 300: Piece F Rot 1 @ (3,3) covers cols: 25 26 31 32 33 52 
+Row 301: Piece F Rot 1 @ (3,4) covers cols: 26 27 32 33 34 52 
+Row 302: Piece F Rot 1 @ (4,0) covers cols: 29 30 35 36 37 52 
+Row 303: Piece F Rot 1 @ (4,1) covers cols: 30 31 36 37 38 52 
+Row 304: Piece F Rot 1 @ (4,2) covers cols: 31 32 37 38 39 52 
+Row 305: Piece F Rot 1 @ (4,3) covers cols: 32 33 38 39 40 52 
+Row 306: Piece F Rot 1 @ (4,4) covers cols: 33 34 39 40 41 52 
+Row 307: Piece F Rot 1 @ (5,0) covers cols: 36 37 42 43 44 52 
+Row 308: Piece F Rot 1 @ (5,1) covers cols: 37 38 43 44 45 52 
+Row 309: Piece F Rot 1 @ (5,2) covers cols: 38 39 44 45 46 52 
+Row 310: Piece F Rot 1 @ (5,3) covers cols: 39 40 45 46 47 52 
+Row 311: Piece F Rot 1 @ (5,4) covers cols: 40 41 46 47 48 52 
+Row 312: Piece F Rot 2 @ (0,0) covers cols: 0 7 8 14 15 52 
+Row 313: Piece F Rot 2 @ (0,1) covers cols: 1 8 9 15 16 52 
+Row 314: Piece F Rot 2 @ (0,2) covers cols: 2 9 10 16 17 52 
+Row 315: Piece F Rot 2 @ (0,3) covers cols: 3 10 11 17 18 52 
+Row 316: Piece F Rot 2 @ (0,4) covers cols: 4 11 12 18 19 52 
+Row 317: Piece F Rot 2 @ (0,5) covers cols: 5 12 13 19 20 52 
+Row 318: Piece F Rot 2 @ (1,0) covers cols: 7 14 15 21 22 52 
+Row 319: Piece F Rot 2 @ (1,1) covers cols: 8 15 16 22 23 52 
+Row 320: Piece F Rot 2 @ (1,2) covers cols: 9 16 17 23 24 52 
+Row 321: Piece F Rot 2 @ (1,3) covers cols: 10 17 18 24 25 52 
+Row 322: Piece F Rot 2 @ (1,4) covers cols: 11 18 19 25 26 52 
+Row 323: Piece F Rot 2 @ (1,5) covers cols: 12 19 20 26 27 52 
+Row 324: Piece F Rot 2 @ (2,0) covers cols: 14 21 22 28 29 52 
+Row 325: Piece F Rot 2 @ (2,1) covers cols: 15 22 23 29 30 52 
+Row 326: Piece F Rot 2 @ (2,2) covers cols: 16 23 24 30 31 52 
+Row 327: Piece F Rot 2 @ (2,3) covers cols: 17 24 25 31 32 52 
+Row 328: Piece F Rot 2 @ (2,4) covers cols: 18 25 26 32 33 52 
+Row 329: Piece F Rot 2 @ (2,5) covers cols: 19 26 27 33 34 52 
+Row 330: Piece F Rot 2 @ (3,0) covers cols: 21 28 29 35 36 52 
+Row 331: Piece F Rot 2 @ (3,1) covers cols: 22 29 30 36 37 52 
+Row 332: Piece F Rot 2 @ (3,2) covers cols: 23 30 31 37 38 52 
+Row 333: Piece F Rot 2 @ (3,3) covers cols: 24 31 32 38 39 52 
+Row 334: Piece F Rot 2 @ (3,4) covers cols: 25 32 33 39 40 52 
+Row 335: Piece F Rot 2 @ (3,5) covers cols: 26 33 34 40 41 52 
+Row 336: Piece F Rot 2 @ (4,0) covers cols: 28 35 36 42 43 52 
+Row 337: Piece F Rot 2 @ (4,1) covers cols: 29 36 37 43 44 52 
+Row 338: Piece F Rot 2 @ (4,2) covers cols: 30 37 38 44 45 52 
+Row 339: Piece F Rot 2 @ (4,3) covers cols: 31 38 39 45 46 52 
+Row 340: Piece F Rot 2 @ (4,4) covers cols: 32 39 40 46 47 52 
+Row 341: Piece F Rot 2 @ (4,5) covers cols: 33 40 41 47 48 52 
+Row 342: Piece F Rot 3 @ (0,0) covers cols: 0 1 2 7 8 9 52 
+Row 343: Piece F Rot 3 @ (0,1) covers cols: 1 2 3 8 9 10 52 
+Row 344: Piece F Rot 3 @ (0,2) covers cols: 2 3 4 9 10 11 52 
+Row 345: Piece F Rot 3 @ (0,3) covers cols: 3 4 5 10 11 12 52 
+Row 346: Piece F Rot 3 @ (0,4) covers cols: 4 5 6 11 12 13 52 
+Row 347: Piece F Rot 3 @ (1,0) covers cols: 7 8 9 14 15 16 52 
+Row 348: Piece F Rot 3 @ (1,1) covers cols: 8 9 10 15 16 17 52 
+Row 349: Piece F Rot 3 @ (1,2) covers cols: 9 10 11 16 17 18 52 
+Row 350: Piece F Rot 3 @ (1,3) covers cols: 10 11 12 17 18 19 52 
+Row 351: Piece F Rot 3 @ (1,4) covers cols: 11 12 13 18 19 20 52 
+Row 352: Piece F Rot 3 @ (2,0) covers cols: 14 15 16 21 22 23 52 
+Row 353: Piece F Rot 3 @ (2,1) covers cols: 15 16 17 22 23 24 52 
+Row 354: Piece F Rot 3 @ (2,2) covers cols: 16 17 18 23 24 25 52 
+Row 355: Piece F Rot 3 @ (2,3) covers cols: 17 18 19 24 25 26 52 
+Row 356: Piece F Rot 3 @ (2,4) covers cols: 18 19 20 25 26 27 52 
+Row 357: Piece F Rot 3 @ (3,0) covers cols: 21 22 23 28 29 30 52 
+Row 358: Piece F Rot 3 @ (3,1) covers cols: 22 23 24 29 30 31 52 
+Row 359: Piece F Rot 3 @ (3,2) covers cols: 23 24 25 30 31 32 52 
+Row 360: Piece F Rot 3 @ (3,3) covers cols: 24 25 26 31 32 33 52 
+Row 361: Piece F Rot 3 @ (3,4) covers cols: 25 26 27 32 33 34 52 
+Row 362: Piece F Rot 3 @ (4,0) covers cols: 28 29 30 35 36 37 52 
+Row 363: Piece F Rot 3 @ (4,1) covers cols: 29 30 31 36 37 38 52 
+Row 364: Piece F Rot 3 @ (4,2) covers cols: 30 31 32 37 38 39 52 
+Row 365: Piece F Rot 3 @ (4,3) covers cols: 31 32 33 38 39 40 52 
+Row 366: Piece F Rot 3 @ (4,4) covers cols: 32 33 34 39 40 41 52 
+Row 367: Piece F Rot 3 @ (5,0) covers cols: 35 36 37 42 43 44 52 
+Row 368: Piece F Rot 3 @ (5,1) covers cols: 36 37 38 43 44 45 52 
+Row 369: Piece F Rot 3 @ (5,2) covers cols: 37 38 39 44 45 46 52 
+Row 370: Piece F Rot 3 @ (5,3) covers cols: 38 39 40 45 46 47 52 
+Row 371: Piece F Rot 3 @ (5,4) covers cols: 39 40 41 46 47 48 52 
+Row 372: Piece J Rot 0 @ (0,0) covers cols: 0 1 2 8 15 53 
+Row 373: Piece J Rot 0 @ (0,1) covers cols: 1 2 3 9 16 53 
+Row 374: Piece J Rot 0 @ (0,2) covers cols: 2 3 4 10 17 53 
+Row 375: Piece J Rot 0 @ (0,3) covers cols: 3 4 5 11 18 53 
+Row 376: Piece J Rot 0 @ (0,4) covers cols: 4 5 6 12 19 53 
+Row 377: Piece J Rot 0 @ (1,0) covers cols: 7 8 9 15 22 53 
+Row 378: Piece J Rot 0 @ (1,1) covers cols: 8 9 10 16 23 53 
+Row 379: Piece J Rot 0 @ (1,2) covers cols: 9 10 11 17 24 53 
+Row 380: Piece J Rot 0 @ (1,3) covers cols: 10 11 12 18 25 53 
+Row 381: Piece J Rot 0 @ (1,4) covers cols: 11 12 13 19 26 53 
+Row 382: Piece J Rot 0 @ (2,0) covers cols: 14 15 16 22 29 53 
+Row 383: Piece J Rot 0 @ (2,1) covers cols: 15 16 17 23 30 53 
+Row 384: Piece J Rot 0 @ (2,2) covers cols: 16 17 18 24 31 53 
+Row 385: Piece J Rot 0 @ (2,3) covers cols: 17 18 19 25 32 53 
+Row 386: Piece J Rot 0 @ (2,4) covers cols: 18 19 20 26 33 53 
+Row 387: Piece J Rot 0 @ (3,0) covers cols: 21 22 23 29 36 53 
+Row 388: Piece J Rot 0 @ (3,1) covers cols: 22 23 24 30 37 53 
+Row 389: Piece J Rot 0 @ (3,2) covers cols: 23 24 25 31 38 53 
+Row 390: Piece J Rot 0 @ (3,3) covers cols: 24 25 26 32 39 53 
+Row 391: Piece J Rot 0 @ (3,4) covers cols: 25 26 27 33 40 53 
+Row 392: Piece J Rot 0 @ (4,0) covers cols: 28 29 30 36 43 53 
+Row 393: Piece J Rot 0 @ (4,1) covers cols: 29 30 31 37 44 53 
+Row 394: Piece J Rot 0 @ (4,2) covers cols: 30 31 32 38 45 53 
+Row 395: Piece J Rot 0 @ (4,3) covers cols: 31 32 33 39 46 53 
+Row 396: Piece J Rot 0 @ (4,4) covers cols: 32 33 34 40 47 53 
+Row 397: Piece J Rot 1 @ (0,0) covers cols: 2 7 8 9 16 53 
+Row 398: Piece J Rot 1 @ (0,1) covers cols: 3 8 9 10 17 53 
+Row 399: Piece J Rot 1 @ (0,2) covers cols: 4 9 10 11 18 53 
+Row 400: Piece J Rot 1 @ (0,3) covers cols: 5 10 11 12 19 53 
+Row 401: Piece J Rot 1 @ (0,4) covers cols: 6 11 12 13 20 53 
+Row 402: Piece J Rot 1 @ (1,0) covers cols: 9 14 15 16 23 53 
+Row 403: Piece J Rot 1 @ (1,1) covers cols: 10 15 16 17 24 53 
+Row 404: Piece J Rot 1 @ (1,2) covers cols: 11 16 17 18 25 53 
+Row 405: Piece J Rot 1 @ (1,3) covers cols: 12 17 18 19 26 53 
+Row 406: Piece J Rot 1 @ (1,4) covers cols: 13 18 19 20 27 53 
+Row 407: Piece J Rot 1 @ (2,0) covers cols: 16 21 22 23 30 53 
+Row 408: Piece J Rot 1 @ (2,1) covers cols: 17 22 23 24 31 53 
+Row 409: Piece J Rot 1 @ (2,2) covers cols: 18 23 24 25 32 53 
+Row 410: Piece J Rot 1 @ (2,3) covers cols: 19 24 25 26 33 53 
+Row 411: Piece J Rot 1 @ (2,4) covers cols: 20 25 26 27 34 53 
+Row 412: Piece J Rot 1 @ (3,0) covers cols: 23 28 29 30 37 53 
+Row 413: Piece J Rot 1 @ (3,1) covers cols: 24 29 30 31 38 53 
+Row 414: Piece J Rot 1 @ (3,2) covers cols: 25 30 31 32 39 53 
+Row 415: Piece J Rot 1 @ (3,3) covers cols: 26 31 32 33 40 53 
+Row 416: Piece J Rot 1 @ (3,4) covers cols: 27 32 33 34 41 53 
+Row 417: Piece J Rot 1 @ (4,0) covers cols: 30 35 36 37 44 53 
+Row 418: Piece J Rot 1 @ (4,1) covers cols: 31 36 37 38 45 53 
+Row 419: Piece J Rot 1 @ (4,2) covers cols: 32 37 38 39 46 53 
+Row 420: Piece J Rot 1 @ (4,3) covers cols: 33 38 39 40 47 53 
+Row 421: Piece J Rot 1 @ (4,4) covers cols: 34 39 40 41 48 53 
+Row 422: Piece J Rot 2 @ (0,0) covers cols: 1 8 14 15 16 53 
+Row 423: Piece J Rot 2 @ (0,1) covers cols: 2 9 15 16 17 53 
+Row 424: Piece J Rot 2 @ (0,2) covers cols: 3 10 16 17 18 53 
+Row 425: Piece J Rot 2 @ (0,3) covers cols: 4 11 17 18 19 53 
+Row 426: Piece J Rot 2 @ (0,4) covers cols: 5 12 18 19 20 53 
+Row 427: Piece J Rot 2 @ (1,0) covers cols: 8 15 21 22 23 53 
+Row 428: Piece J Rot 2 @ (1,1) covers cols: 9 16 22 23 24 53 
+Row 429: Piece J Rot 2 @ (1,2) covers cols: 10 17 23 24 25 53 
+Row 430: Piece J Rot 2 @ (1,3) covers cols: 11 18 24 25 26 53 
+Row 431: Piece J Rot 2 @ (1,4) covers cols: 12 19 25 26 27 53 
+Row 432: Piece J Rot 2 @ (2,0) covers cols: 15 22 28 29 30 53 
+Row 433: Piece J Rot 2 @ (2,1) covers cols: 16 23 29 30 31 53 
+Row 434: Piece J Rot 2 @ (2,2) covers cols: 17 24 30 31 32 53 
+Row 435: Piece J Rot 2 @ (2,3) covers cols: 18 25 31 32 33 53 
+Row 436: Piece J Rot 2 @ (2,4) covers cols: 19 26 32 33 34 53 
+Row 437: Piece J Rot 2 @ (3,0) covers cols: 22 29 35 36 37 53 
+Row 438: Piece J Rot 2 @ (3,1) covers cols: 23 30 36 37 38 53 
+Row 439: Piece J Rot 2 @ (3,2) covers cols: 24 31 37 38 39 53 
+Row 440: Piece J Rot 2 @ (3,3) covers cols: 25 32 38 39 40 53 
+Row 441: Piece J Rot 2 @ (3,4) covers cols: 26 33 39 40 41 53 
+Row 442: Piece J Rot 2 @ (4,0) covers cols: 29 36 42 43 44 53 
+Row 443: Piece J Rot 2 @ (4,1) covers cols: 30 37 43 44 45 53 
+Row 444: Piece J Rot 2 @ (4,2) covers cols: 31 38 44 45 46 53 
+Row 445: Piece J Rot 2 @ (4,3) covers cols: 32 39 45 46 47 53 
+Row 446: Piece J Rot 2 @ (4,4) covers cols: 33 40 46 47 48 53 
+Row 447: Piece J Rot 3 @ (0,0) covers cols: 0 7 8 9 14 53 
+Row 448: Piece J Rot 3 @ (0,1) covers cols: 1 8 9 10 15 53 
+Row 449: Piece J Rot 3 @ (0,2) covers cols: 2 9 10 11 16 53 
+Row 450: Piece J Rot 3 @ (0,3) covers cols: 3 10 11 12 17 53 
+Row 451: Piece J Rot 3 @ (0,4) covers cols: 4 11 12 13 18 53 
+Row 452: Piece J Rot 3 @ (1,0) covers cols: 7 14 15 16 21 53 
+Row 453: Piece J Rot 3 @ (1,1) covers cols: 8 15 16 17 22 53 
+Row 454: Piece J Rot 3 @ (1,2) covers cols: 9 16 17 18 23 53 
+Row 455: Piece J Rot 3 @ (1,3) covers cols: 10 17 18 19 24 53 
+Row 456: Piece J Rot 3 @ (1,4) covers cols: 11 18 19 20 25 53 
+Row 457: Piece J Rot 3 @ (2,0) covers cols: 14 21 22 23 28 53 
+Row 458: Piece J Rot 3 @ (2,1) covers cols: 15 22 23 24 29 53 
+Row 459: Piece J Rot 3 @ (2,2) covers cols: 16 23 24 25 30 53 
+Row 460: Piece J Rot 3 @ (2,3) covers cols: 17 24 25 26 31 53 
+Row 461: Piece J Rot 3 @ (2,4) covers cols: 18 25 26 27 32 53 
+Row 462: Piece J Rot 3 @ (3,0) covers cols: 21 28 29 30 35 53 
+Row 463: Piece J Rot 3 @ (3,1) covers cols: 22 29 30 31 36 53 
+Row 464: Piece J Rot 3 @ (3,2) covers cols: 23 30 31 32 37 53 
+Row 465: Piece J Rot 3 @ (3,3) covers cols: 24 31 32 33 38 53 
+Row 466: Piece J Rot 3 @ (3,4) covers cols: 25 32 33 34 39 53 
+Row 467: Piece J Rot 3 @ (4,0) covers cols: 28 35 36 37 42 53 
+Row 468: Piece J Rot 3 @ (4,1) covers cols: 29 36 37 38 43 53 
+Row 469: Piece J Rot 3 @ (4,2) covers cols: 30 37 38 39 44 53 
+Row 470: Piece J Rot 3 @ (4,3) covers cols: 31 38 39 40 45 53 
+Row 471: Piece J Rot 3 @ (4,4) covers cols: 32 39 40 41 46 53 
+Row 472: Piece L Rot 0 @ (0,0) covers cols: 2 9 14 15 16 54 
+Row 473: Piece L Rot 0 @ (0,1) covers cols: 3 10 15 16 17 54 
+Row 474: Piece L Rot 0 @ (0,2) covers cols: 4 11 16 17 18 54 
+Row 475: Piece L Rot 0 @ (0,3) covers cols: 5 12 17 18 19 54 
+Row 476: Piece L Rot 0 @ (0,4) covers cols: 6 13 18 19 20 54 
+Row 477: Piece L Rot 0 @ (1,0) covers cols: 9 16 21 22 23 54 
+Row 478: Piece L Rot 0 @ (1,1) covers cols: 10 17 22 23 24 54 
+Row 479: Piece L Rot 0 @ (1,2) covers cols: 11 18 23 24 25 54 
+Row 480: Piece L Rot 0 @ (1,3) covers cols: 12 19 24 25 26 54 
+Row 481: Piece L Rot 0 @ (1,4) covers cols: 13 20 25 26 27 54 
+Row 482: Piece L Rot 0 @ (2,0) covers cols: 16 23 28 29 30 54 
+Row 483: Piece L Rot 0 @ (2,1) covers cols: 17 24 29 30 31 54 
+Row 484: Piece L Rot 0 @ (2,2) covers cols: 18 25 30 31 32 54 
+Row 485: Piece L Rot 0 @ (2,3) covers cols: 19 26 31 32 33 54 
+Row 486: Piece L Rot 0 @ (2,4) covers cols: 20 27 32 33 34 54 
+Row 487: Piece L Rot 0 @ (3,0) covers cols: 23 30 35 36 37 54 
+Row 488: Piece L Rot 0 @ (3,1) covers cols: 24 31 36 37 38 54 
+Row 489: Piece L Rot 0 @ (3,2) covers cols: 25 32 37 38 39 54 
+Row 490: Piece L Rot 0 @ (3,3) covers cols: 26 33 38 39 40 54 
+Row 491: Piece L Rot 0 @ (3,4) covers cols: 27 34 39 40 41 54 
+Row 492: Piece L Rot 0 @ (4,0) covers cols: 30 37 42 43 44 54 
+Row 493: Piece L Rot 0 @ (4,1) covers cols: 31 38 43 44 45 54 
+Row 494: Piece L Rot 0 @ (4,2) covers cols: 32 39 44 45 46 54 
+Row 495: Piece L Rot 0 @ (4,3) covers cols: 33 40 45 46 47 54 
+Row 496: Piece L Rot 0 @ (4,4) covers cols: 34 41 46 47 48 54 
+Row 497: Piece L Rot 1 @ (0,0) covers cols: 0 7 14 15 16 54 
+Row 498: Piece L Rot 1 @ (0,1) covers cols: 1 8 15 16 17 54 
+Row 499: Piece L Rot 1 @ (0,2) covers cols: 2 9 16 17 18 54 
+Row 500: Piece L Rot 1 @ (0,3) covers cols: 3 10 17 18 19 54 
+Row 501: Piece L Rot 1 @ (0,4) covers cols: 4 11 18 19 20 54 
+Row 502: Piece L Rot 1 @ (1,0) covers cols: 7 14 21 22 23 54 
+Row 503: Piece L Rot 1 @ (1,1) covers cols: 8 15 22 23 24 54 
+Row 504: Piece L Rot 1 @ (1,2) covers cols: 9 16 23 24 25 54 
+Row 505: Piece L Rot 1 @ (1,3) covers cols: 10 17 24 25 26 54 
+Row 506: Piece L Rot 1 @ (1,4) covers cols: 11 18 25 26 27 54 
+Row 507: Piece L Rot 1 @ (2,0) covers cols: 14 21 28 29 30 54 
+Row 508: Piece L Rot 1 @ (2,1) covers cols: 15 22 29 30 31 54 
+Row 509: Piece L Rot 1 @ (2,2) covers cols: 16 23 30 31 32 54 
+Row 510: Piece L Rot 1 @ (2,3) covers cols: 17 24 31 32 33 54 
+Row 511: Piece L Rot 1 @ (2,4) covers cols: 18 25 32 33 34 54 
+Row 512: Piece L Rot 1 @ (3,0) covers cols: 21 28 35 36 37 54 
+Row 513: Piece L Rot 1 @ (3,1) covers cols: 22 29 36 37 38 54 
+Row 514: Piece L Rot 1 @ (3,2) covers cols: 23 30 37 38 39 54 
+Row 515: Piece L Rot 1 @ (3,3) covers cols: 24 31 38 39 40 54 
+Row 516: Piece L Rot 1 @ (3,4) covers cols: 25 32 39 40 41 54 
+Row 517: Piece L Rot 1 @ (4,0) covers cols: 28 35 42 43 44 54 
+Row 518: Piece L Rot 1 @ (4,1) covers cols: 29 36 43 44 45 54 
+Row 519: Piece L Rot 1 @ (4,2) covers cols: 30 37 44 45 46 54 
+Row 520: Piece L Rot 1 @ (4,3) covers cols: 31 38 45 46 47 54 
+Row 521: Piece L Rot 1 @ (4,4) covers cols: 32 39 46 47 48 54 
+Row 522: Piece L Rot 2 @ (0,0) covers cols: 0 1 2 7 14 54 
+Row 523: Piece L Rot 2 @ (0,1) covers cols: 1 2 3 8 15 54 
+Row 524: Piece L Rot 2 @ (0,2) covers cols: 2 3 4 9 16 54 
+Row 525: Piece L Rot 2 @ (0,3) covers cols: 3 4 5 10 17 54 
+Row 526: Piece L Rot 2 @ (0,4) covers cols: 4 5 6 11 18 54 
+Row 527: Piece L Rot 2 @ (1,0) covers cols: 7 8 9 14 21 54 
+Row 528: Piece L Rot 2 @ (1,1) covers cols: 8 9 10 15 22 54 
+Row 529: Piece L Rot 2 @ (1,2) covers cols: 9 10 11 16 23 54 
+Row 530: Piece L Rot 2 @ (1,3) covers cols: 10 11 12 17 24 54 
+Row 531: Piece L Rot 2 @ (1,4) covers cols: 11 12 13 18 25 54 
+Row 532: Piece L Rot 2 @ (2,0) covers cols: 14 15 16 21 28 54 
+Row 533: Piece L Rot 2 @ (2,1) covers cols: 15 16 17 22 29 54 
+Row 534: Piece L Rot 2 @ (2,2) covers cols: 16 17 18 23 30 54 
+Row 535: Piece L Rot 2 @ (2,3) covers cols: 17 18 19 24 31 54 
+Row 536: Piece L Rot 2 @ (2,4) covers cols: 18 19 20 25 32 54 
+Row 537: Piece L Rot 2 @ (3,0) covers cols: 21 22 23 28 35 54 
+Row 538: Piece L Rot 2 @ (3,1) covers cols: 22 23 24 29 36 54 
+Row 539: Piece L Rot 2 @ (3,2) covers cols: 23 24 25 30 37 54 
+Row 540: Piece L Rot 2 @ (3,3) covers cols: 24 25 26 31 38 54 
+Row 541: Piece L Rot 2 @ (3,4) covers cols: 25 26 27 32 39 54 
+Row 542: Piece L Rot 2 @ (4,0) covers cols: 28 29 30 35 42 54 
+Row 543: Piece L Rot 2 @ (4,1) covers cols: 29 30 31 36 43 54 
+Row 544: Piece L Rot 2 @ (4,2) covers cols: 30 31 32 37 44 54 
+Row 545: Piece L Rot 2 @ (4,3) covers cols: 31 32 33 38 45 54 
+Row 546: Piece L Rot 2 @ (4,4) covers cols: 32 33 34 39 46 54 
+Row 547: Piece L Rot 3 @ (0,0) covers cols: 0 1 2 9 16 54 
+Row 548: Piece L Rot 3 @ (0,1) covers cols: 1 2 3 10 17 54 
+Row 549: Piece L Rot 3 @ (0,2) covers cols: 2 3 4 11 18 54 
+Row 550: Piece L Rot 3 @ (0,3) covers cols: 3 4 5 12 19 54 
+Row 551: Piece L Rot 3 @ (0,4) covers cols: 4 5 6 13 20 54 
+Row 552: Piece L Rot 3 @ (1,0) covers cols: 7 8 9 16 23 54 
+Row 553: Piece L Rot 3 @ (1,1) covers cols: 8 9 10 17 24 54 
+Row 554: Piece L Rot 3 @ (1,2) covers cols: 9 10 11 18 25 54 
+Row 555: Piece L Rot 3 @ (1,3) covers cols: 10 11 12 19 26 54 
+Row 556: Piece L Rot 3 @ (1,4) covers cols: 11 12 13 20 27 54 
+Row 557: Piece L Rot 3 @ (2,0) covers cols: 14 15 16 23 30 54 
+Row 558: Piece L Rot 3 @ (2,1) covers cols: 15 16 17 24 31 54 
+Row 559: Piece L Rot 3 @ (2,2) covers cols: 16 17 18 25 32 54 
+Row 560: Piece L Rot 3 @ (2,3) covers cols: 17 18 19 26 33 54 
+Row 561: Piece L Rot 3 @ (2,4) covers cols: 18 19 20 27 34 54 
+Row 562: Piece L Rot 3 @ (3,0) covers cols: 21 22 23 30 37 54 
+Row 563: Piece L Rot 3 @ (3,1) covers cols: 22 23 24 31 38 54 
+Row 564: Piece L Rot 3 @ (3,2) covers cols: 23 24 25 32 39 54 
+Row 565: Piece L Rot 3 @ (3,3) covers cols: 24 25 26 33 40 54 
+Row 566: Piece L Rot 3 @ (3,4) covers cols: 25 26 27 34 41 54 
+Row 567: Piece L Rot 3 @ (4,0) covers cols: 28 29 30 37 44 54 
+Row 568: Piece L Rot 3 @ (4,1) covers cols: 29 30 31 38 45 54 
+Row 569: Piece L Rot 3 @ (4,2) covers cols: 30 31 32 39 46 54 
+Row 570: Piece L Rot 3 @ (4,3) covers cols: 31 32 33 40 47 54 
+Row 571: Piece L Rot 3 @ (4,4) covers cols: 32 33 34 41 48 54 
+Row 572: Piece N Rot 0 @ (0,0) covers cols: 1 7 8 9 15 55 
+Row 573: Piece N Rot 0 @ (0,1) covers cols: 2 8 9 10 16 55 
+Row 574: Piece N Rot 0 @ (0,2) covers cols: 3 9 10 11 17 55 
+Row 575: Piece N Rot 0 @ (0,3) covers cols: 4 10 11 12 18 55 
+Row 576: Piece N Rot 0 @ (0,4) covers cols: 5 11 12 13 19 55 
+Row 577: Piece N Rot 0 @ (1,0) covers cols: 8 14 15 16 22 55 
+Row 578: Piece N Rot 0 @ (1,1) covers cols: 9 15 16 17 23 55 
+Row 579: Piece N Rot 0 @ (1,2) covers cols: 10 16 17 18 24 55 
+Row 580: Piece N Rot 0 @ (1,3) covers cols: 11 17 18 19 25 55 
+Row 581: Piece N Rot 0 @ (1,4) covers cols: 12 18 19 20 26 55 
+Row 582: Piece N Rot 0 @ (2,0) covers cols: 15 21 22 23 29 55 
+Row 583: Piece N Rot 0 @ (2,1) covers cols: 16 22 23 24 30 55 
+Row 584: Piece N Rot 0 @ (2,2) covers cols: 17 23 24 25 31 55 
+Row 585: Piece N Rot 0 @ (2,3) covers cols: 18 24 25 26 32 55 
+Row 586: Piece N Rot 0 @ (2,4) covers cols: 19 25 26 27 33 55 
+Row 587: Piece N Rot 0 @ (3,0) covers cols: 22 28 29 30 36 55 
+Row 588: Piece N Rot 0 @ (3,1) covers cols: 23 29 30 31 37 55 
+Row 589: Piece N Rot 0 @ (3,2) covers cols: 24 30 31 32 38 55 
+Row 590: Piece N Rot 0 @ (3,3) covers cols: 25 31 32 33 39 55 
+Row 591: Piece N Rot 0 @ (3,4) covers cols: 26 32 33 34 40 55 
+Row 592: Piece N Rot 0 @ (4,0) covers cols: 29 35 36 37 43 55 
+Row 593: Piece N Rot 0 @ (4,1) covers cols: 30 36 37 38 44 55 
+Row 594: Piece N Rot 0 @ (4,2) covers cols: 31 37 38 39 45 55 
+Row 595: Piece N Rot 0 @ (4,3) covers cols: 32 38 39 40 46 55 
+Row 596: Piece N Rot 0 @ (4,4) covers cols: 33 39 40 41 47 55 
+Row 597: Piece N Rot 1 @ (0,0) covers cols: 1 7 8 9 15 55 
+Row 598: Piece N Rot 1 @ (0,1) covers cols: 2 8 9 10 16 55 
+Row 599: Piece N Rot 1 @ (0,2) covers cols: 3 9 10 11 17 55 
+Row 600: Piece N Rot 1 @ (0,3) covers cols: 4 10 11 12 18 55 
+Row 601: Piece N Rot 1 @ (0,4) covers cols: 5 11 12 13 19 55 
+Row 602: Piece N Rot 1 @ (1,0) covers cols: 8 14 15 16 22 55 
+Row 603: Piece N Rot 1 @ (1,1) covers cols: 9 15 16 17 23 55 
+Row 604: Piece N Rot 1 @ (1,2) covers cols: 10 16 17 18 24 55 
+Row 605: Piece N Rot 1 @ (1,3) covers cols: 11 17 18 19 25 55 
+Row 606: Piece N Rot 1 @ (1,4) covers cols: 12 18 19 20 26 55 
+Row 607: Piece N Rot 1 @ (2,0) covers cols: 15 21 22 23 29 55 
+Row 608: Piece N Rot 1 @ (2,1) covers cols: 16 22 23 24 30 55 
+Row 609: Piece N Rot 1 @ (2,2) covers cols: 17 23 24 25 31 55 
+Row 610: Piece N Rot 1 @ (2,3) covers cols: 18 24 25 26 32 55 
+Row 611: Piece N Rot 1 @ (2,4) covers cols: 19 25 26 27 33 55 
+Row 612: Piece N Rot 1 @ (3,0) covers cols: 22 28 29 30 36 55 
+Row 613: Piece N Rot 1 @ (3,1) covers cols: 23 29 30 31 37 55 
+Row 614: Piece N Rot 1 @ (3,2) covers cols: 24 30 31 32 38 55 
+Row 615: Piece N Rot 1 @ (3,3) covers cols: 25 31 32 33 39 55 
+Row 616: Piece N Rot 1 @ (3,4) covers cols: 26 32 33 34 40 55 
+Row 617: Piece N Rot 1 @ (4,0) covers cols: 29 35 36 37 43 55 
+Row 618: Piece N Rot 1 @ (4,1) covers cols: 30 36 37 38 44 55 
+Row 619: Piece N Rot 1 @ (4,2) covers cols: 31 37 38 39 45 55 
+Row 620: Piece N Rot 1 @ (4,3) covers cols: 32 38 39 40 46 55 
+Row 621: Piece N Rot 1 @ (4,4) covers cols: 33 39 40 41 47 55 
+Row 622: Piece N Rot 2 @ (0,0) covers cols: 1 7 8 9 15 55 
+Row 623: Piece N Rot 2 @ (0,1) covers cols: 2 8 9 10 16 55 
+Row 624: Piece N Rot 2 @ (0,2) covers cols: 3 9 10 11 17 55 
+Row 625: Piece N Rot 2 @ (0,3) covers cols: 4 10 11 12 18 55 
+Row 626: Piece N Rot 2 @ (0,4) covers cols: 5 11 12 13 19 55 
+Row 627: Piece N Rot 2 @ (1,0) covers cols: 8 14 15 16 22 55 
+Row 628: Piece N Rot 2 @ (1,1) covers cols: 9 15 16 17 23 55 
+Row 629: Piece N Rot 2 @ (1,2) covers cols: 10 16 17 18 24 55 
+Row 630: Piece N Rot 2 @ (1,3) covers cols: 11 17 18 19 25 55 
+Row 631: Piece N Rot 2 @ (1,4) covers cols: 12 18 19 20 26 55 
+Row 632: Piece N Rot 2 @ (2,0) covers cols: 15 21 22 23 29 55 
+Row 633: Piece N Rot 2 @ (2,1) covers cols: 16 22 23 24 30 55 
+Row 634: Piece N Rot 2 @ (2,2) covers cols: 17 23 24 25 31 55 
+Row 635: Piece N Rot 2 @ (2,3) covers cols: 18 24 25 26 32 55 
+Row 636: Piece N Rot 2 @ (2,4) covers cols: 19 25 26 27 33 55 
+Row 637: Piece N Rot 2 @ (3,0) covers cols: 22 28 29 30 36 55 
+Row 638: Piece N Rot 2 @ (3,1) covers cols: 23 29 30 31 37 55 
+Row 639: Piece N Rot 2 @ (3,2) covers cols: 24 30 31 32 38 55 
+Row 640: Piece N Rot 2 @ (3,3) covers cols: 25 31 32 33 39 55 
+Row 641: Piece N Rot 2 @ (3,4) covers cols: 26 32 33 34 40 55 
+Row 642: Piece N Rot 2 @ (4,0) covers cols: 29 35 36 37 43 55 
+Row 643: Piece N Rot 2 @ (4,1) covers cols: 30 36 37 38 44 55 
+Row 644: Piece N Rot 2 @ (4,2) covers cols: 31 37 38 39 45 55 
+Row 645: Piece N Rot 2 @ (4,3) covers cols: 32 38 39 40 46 55 
+Row 646: Piece N Rot 2 @ (4,4) covers cols: 33 39 40 41 47 55 
+Row 647: Piece N Rot 3 @ (0,0) covers cols: 1 7 8 9 15 55 
+Row 648: Piece N Rot 3 @ (0,1) covers cols: 2 8 9 10 16 55 
+Row 649: Piece N Rot 3 @ (0,2) covers cols: 3 9 10 11 17 55 
+Row 650: Piece N Rot 3 @ (0,3) covers cols: 4 10 11 12 18 55 
+Row 651: Piece N Rot 3 @ (0,4) covers cols: 5 11 12 13 19 55 
+Row 652: Piece N Rot 3 @ (1,0) covers cols: 8 14 15 16 22 55 
+Row 653: Piece N Rot 3 @ (1,1) covers cols: 9 15 16 17 23 55 
+Row 654: Piece N Rot 3 @ (1,2) covers cols: 10 16 17 18 24 55 
+Row 655: Piece N Rot 3 @ (1,3) covers cols: 11 17 18 19 25 55 
+Row 656: Piece N Rot 3 @ (1,4) covers cols: 12 18 19 20 26 55 
+Row 657: Piece N Rot 3 @ (2,0) covers cols: 15 21 22 23 29 55 
+Row 658: Piece N Rot 3 @ (2,1) covers cols: 16 22 23 24 30 55 
+Row 659: Piece N Rot 3 @ (2,2) covers cols: 17 23 24 25 31 55 
+Row 660: Piece N Rot 3 @ (2,3) covers cols: 18 24 25 26 32 55 
+Row 661: Piece N Rot 3 @ (2,4) covers cols: 19 25 26 27 33 55 
+Row 662: Piece N Rot 3 @ (3,0) covers cols: 22 28 29 30 36 55 
+Row 663: Piece N Rot 3 @ (3,1) covers cols: 23 29 30 31 37 55 
+Row 664: Piece N Rot 3 @ (3,2) covers cols: 24 30 31 32 38 55 
+Row 665: Piece N Rot 3 @ (3,3) covers cols: 25 31 32 33 39 55 
+Row 666: Piece N Rot 3 @ (3,4) covers cols: 26 32 33 34 40 55 
+Row 667: Piece N Rot 3 @ (4,0) covers cols: 29 35 36 37 43 55 
+Row 668: Piece N Rot 3 @ (4,1) covers cols: 30 36 37 38 44 55 
+Row 669: Piece N Rot 3 @ (4,2) covers cols: 31 37 38 39 45 55 
+Row 670: Piece N Rot 3 @ (4,3) covers cols: 32 38 39 40 46 55 
+Row 671: Piece N Rot 3 @ (4,4) covers cols: 33 39 40 41 47 55 
+Row 672: Piece O Rot 0 @ (0,0) covers cols: 0 7 8 14 21 56 
+Row 673: Piece O Rot 0 @ (0,1) covers cols: 1 8 9 15 22 56 
+Row 674: Piece O Rot 0 @ (0,2) covers cols: 2 9 10 16 23 56 
+Row 675: Piece O Rot 0 @ (0,3) covers cols: 3 10 11 17 24 56 
+Row 676: Piece O Rot 0 @ (0,4) covers cols: 4 11 12 18 25 56 
+Row 677: Piece O Rot 0 @ (0,5) covers cols: 5 12 13 19 26 56 
+Row 678: Piece O Rot 0 @ (1,0) covers cols: 7 14 15 21 28 56 
+Row 679: Piece O Rot 0 @ (1,1) covers cols: 8 15 16 22 29 56 
+Row 680: Piece O Rot 0 @ (1,2) covers cols: 9 16 17 23 30 56 
+Row 681: Piece O Rot 0 @ (1,3) covers cols: 10 17 18 24 31 56 
+Row 682: Piece O Rot 0 @ (1,4) covers cols: 11 18 19 25 32 56 
+Row 683: Piece O Rot 0 @ (1,5) covers cols: 12 19 20 26 33 56 
+Row 684: Piece O Rot 0 @ (2,0) covers cols: 14 21 22 28 35 56 
+Row 685: Piece O Rot 0 @ (2,1) covers cols: 15 22 23 29 36 56 
+Row 686: Piece O Rot 0 @ (2,2) covers cols: 16 23 24 30 37 56 
+Row 687: Piece O Rot 0 @ (2,3) covers cols: 17 24 25 31 38 56 
+Row 688: Piece O Rot 0 @ (2,4) covers cols: 18 25 26 32 39 56 
+Row 689: Piece O Rot 0 @ (2,5) covers cols: 19 26 27 33 40 56 
+Row 690: Piece O Rot 0 @ (3,0) covers cols: 21 28 29 35 42 56 
+Row 691: Piece O Rot 0 @ (3,1) covers cols: 22 29 30 36 43 56 
+Row 692: Piece O Rot 0 @ (3,2) covers cols: 23 30 31 37 44 56 
+Row 693: Piece O Rot 0 @ (3,3) covers cols: 24 31 32 38 45 56 
+Row 694: Piece O Rot 0 @ (3,4) covers cols: 25 32 33 39 46 56 
+Row 695: Piece O Rot 0 @ (3,5) covers cols: 26 33 34 40 47 56 
+Row 696: Piece O Rot 1 @ (0,0) covers cols: 0 1 2 3 9 10 56 
+Row 697: Piece O Rot 1 @ (0,1) covers cols: 1 2 3 4 10 11 56 
+Row 698: Piece O Rot 1 @ (0,2) covers cols: 2 3 4 5 11 12 56 
+Row 699: Piece O Rot 1 @ (0,3) covers cols: 3 4 5 6 12 13 56 
+Row 700: Piece O Rot 1 @ (1,0) covers cols: 7 8 9 10 16 17 56 
+Row 701: Piece O Rot 1 @ (1,1) covers cols: 8 9 10 11 17 18 56 
+Row 702: Piece O Rot 1 @ (1,2) covers cols: 9 10 11 12 18 19 56 
+Row 703: Piece O Rot 1 @ (1,3) covers cols: 10 11 12 13 19 20 56 
+Row 704: Piece O Rot 1 @ (2,0) covers cols: 14 15 16 17 23 24 56 
+Row 705: Piece O Rot 1 @ (2,1) covers cols: 15 16 17 18 24 25 56 
+Row 706: Piece O Rot 1 @ (2,2) covers cols: 16 17 18 19 25 26 56 
+Row 707: Piece O Rot 1 @ (2,3) covers cols: 17 18 19 20 26 27 56 
+Row 708: Piece O Rot 1 @ (3,0) covers cols: 21 22 23 24 30 31 56 
+Row 709: Piece O Rot 1 @ (3,1) covers cols: 22 23 24 25 31 32 56 
+Row 710: Piece O Rot 1 @ (3,2) covers cols: 23 24 25 26 32 33 56 
+Row 711: Piece O Rot 1 @ (3,3) covers cols: 24 25 26 27 33 34 56 
+Row 712: Piece O Rot 1 @ (4,0) covers cols: 28 29 30 31 37 38 56 
+Row 713: Piece O Rot 1 @ (4,1) covers cols: 29 30 31 32 38 39 56 
+Row 714: Piece O Rot 1 @ (4,2) covers cols: 30 31 32 33 39 40 56 
+Row 715: Piece O Rot 1 @ (4,3) covers cols: 31 32 33 34 40 41 56 
+Row 716: Piece O Rot 1 @ (5,0) covers cols: 35 36 37 38 44 45 56 
+Row 717: Piece O Rot 1 @ (5,1) covers cols: 36 37 38 39 45 46 56 
+Row 718: Piece O Rot 1 @ (5,2) covers cols: 37 38 39 40 46 47 56 
+Row 719: Piece O Rot 1 @ (5,3) covers cols: 38 39 40 41 47 48 56 
+Row 720: Piece O Rot 2 @ (0,0) covers cols: 1 8 14 15 21 22 56 
+Row 721: Piece O Rot 2 @ (0,1) covers cols: 2 9 15 16 22 23 56 
+Row 722: Piece O Rot 2 @ (0,2) covers cols: 3 10 16 17 23 24 56 
+Row 723: Piece O Rot 2 @ (0,3) covers cols: 4 11 17 18 24 25 56 
+Row 724: Piece O Rot 2 @ (0,4) covers cols: 5 12 18 19 25 26 56 
+Row 725: Piece O Rot 2 @ (0,5) covers cols: 6 13 19 20 26 27 56 
+Row 726: Piece O Rot 2 @ (1,0) covers cols: 8 15 21 22 28 29 56 
+Row 727: Piece O Rot 2 @ (1,1) covers cols: 9 16 22 23 29 30 56 
+Row 728: Piece O Rot 2 @ (1,2) covers cols: 10 17 23 24 30 31 56 
+Row 729: Piece O Rot 2 @ (1,3) covers cols: 11 18 24 25 31 32 56 
+Row 730: Piece O Rot 2 @ (1,4) covers cols: 12 19 25 26 32 33 56 
+Row 731: Piece O Rot 2 @ (1,5) covers cols: 13 20 26 27 33 34 56 
+Row 732: Piece O Rot 2 @ (2,0) covers cols: 15 22 28 29 35 36 56 
+Row 733: Piece O Rot 2 @ (2,1) covers cols: 16 23 29 30 36 37 56 
+Row 734: Piece O Rot 2 @ (2,2) covers cols: 17 24 30 31 37 38 56 
+Row 735: Piece O Rot 2 @ (2,3) covers cols: 18 25 31 32 38 39 56 
+Row 736: Piece O Rot 2 @ (2,4) covers cols: 19 26 32 33 39 40 56 
+Row 737: Piece O Rot 2 @ (2,5) covers cols: 20 27 33 34 40 41 56 
+Row 738: Piece O Rot 2 @ (3,0) covers cols: 22 29 35 36 42 43 56 
+Row 739: Piece O Rot 2 @ (3,1) covers cols: 23 30 36 37 43 44 56 
+Row 740: Piece O Rot 2 @ (3,2) covers cols: 24 31 37 38 44 45 56 
+Row 741: Piece O Rot 2 @ (3,3) covers cols: 25 32 38 39 45 46 56 
+Row 742: Piece O Rot 2 @ (3,4) covers cols: 26 33 39 40 46 47 56 
+Row 743: Piece O Rot 2 @ (3,5) covers cols: 27 34 40 41 47 48 56 
+Row 744: Piece O Rot 3 @ (0,0) covers cols: 0 1 2 3 7 8 9 10 56 
+Row 745: Piece O Rot 3 @ (0,1) covers cols: 1 2 3 4 8 9 10 11 56 
+Row 746: Piece O Rot 3 @ (0,2) covers cols: 2 3 4 5 9 10 11 12 56 
+Row 747: Piece O Rot 3 @ (0,3) covers cols: 3 4 5 6 10 11 12 13 56 
+Row 748: Piece O Rot 3 @ (1,0) covers cols: 7 8 9 10 14 15 16 17 56 
+Row 749: Piece O Rot 3 @ (1,1) covers cols: 8 9 10 11 15 16 17 18 56 
+Row 750: Piece O Rot 3 @ (1,2) covers cols: 9 10 11 12 16 17 18 19 56 
+Row 751: Piece O Rot 3 @ (1,3) covers cols: 10 11 12 13 17 18 19 20 56 
+Row 752: Piece O Rot 3 @ (2,0) covers cols: 14 15 16 17 21 22 23 24 56 
+Row 753: Piece O Rot 3 @ (2,1) covers cols: 15 16 17 18 22 23 24 25 56 
+Row 754: Piece O Rot 3 @ (2,2) covers cols: 16 17 18 19 23 24 25 26 56 
+Row 755: Piece O Rot 3 @ (2,3) covers cols: 17 18 19 20 24 25 26 27 56 
+Row 756: Piece O Rot 3 @ (3,0) covers cols: 21 22 23 24 28 29 30 31 56 
+Row 757: Piece O Rot 3 @ (3,1) covers cols: 22 23 24 25 29 30 31 32 56 
+Row 758: Piece O Rot 3 @ (3,2) covers cols: 23 24 25 26 30 31 32 33 56 
+Row 759: Piece O Rot 3 @ (3,3) covers cols: 24 25 26 27 31 32 33 34 56 
+Row 760: Piece O Rot 3 @ (4,0) covers cols: 28 29 30 31 35 36 37 38 56 
+Row 761: Piece O Rot 3 @ (4,1) covers cols: 29 30 31 32 36 37 38 39 56 
+Row 762: Piece O Rot 3 @ (4,2) covers cols: 30 31 32 33 37 38 39 40 56 
+Row 763: Piece O Rot 3 @ (4,3) covers cols: 31 32 33 34 38 39 40 41 56 
+Row 764: Piece O Rot 3 @ (5,0) covers cols: 35 36 37 38 42 43 44 45 56 
+Row 765: Piece O Rot 3 @ (5,1) covers cols: 36 37 38 39 43 44 45 46 56 
+Row 766: Piece O Rot 3 @ (5,2) covers cols: 37 38 39 40 44 45 46 47 56 
+Row 767: Piece O Rot 3 @ (5,3) covers cols: 38 39 40 41 45 46 47 48 56 
+Row 768: Piece Q Rot 0 @ (0,0) covers cols: 1 2 8 14 15 57 
+Row 769: Piece Q Rot 0 @ (0,1) covers cols: 2 3 9 15 16 57 
+Row 770: Piece Q Rot 0 @ (0,2) covers cols: 3 4 10 16 17 57 
+Row 771: Piece Q Rot 0 @ (0,3) covers cols: 4 5 11 17 18 57 
+Row 772: Piece Q Rot 0 @ (0,4) covers cols: 5 6 12 18 19 57 
+Row 773: Piece Q Rot 0 @ (1,0) covers cols: 8 9 15 21 22 57 
+Row 774: Piece Q Rot 0 @ (1,1) covers cols: 9 10 16 22 23 57 
+Row 775: Piece Q Rot 0 @ (1,2) covers cols: 10 11 17 23 24 57 
+Row 776: Piece Q Rot 0 @ (1,3) covers cols: 11 12 18 24 25 57 
+Row 777: Piece Q Rot 0 @ (1,4) covers cols: 12 13 19 25 26 57 
+Row 778: Piece Q Rot 0 @ (2,0) covers cols: 15 16 22 28 29 57 
+Row 779: Piece Q Rot 0 @ (2,1) covers cols: 16 17 23 29 30 57 
+Row 780: Piece Q Rot 0 @ (2,2) covers cols: 17 18 24 30 31 57 
+Row 781: Piece Q Rot 0 @ (2,3) covers cols: 18 19 25 31 32 57 
+Row 782: Piece Q Rot 0 @ (2,4) covers cols: 19 20 26 32 33 57 
+Row 783: Piece Q Rot 0 @ (3,0) covers cols: 22 23 29 35 36 57 
+Row 784: Piece Q Rot 0 @ (3,1) covers cols: 23 24 30 36 37 57 
+Row 785: Piece Q Rot 0 @ (3,2) covers cols: 24 25 31 37 38 57 
+Row 786: Piece Q Rot 0 @ (3,3) covers cols: 25 26 32 38 39 57 
+Row 787: Piece Q Rot 0 @ (3,4) covers cols: 26 27 33 39 40 57 
+Row 788: Piece Q Rot 0 @ (4,0) covers cols: 29 30 36 42 43 57 
+Row 789: Piece Q Rot 0 @ (4,1) covers cols: 30 31 37 43 44 57 
+Row 790: Piece Q Rot 0 @ (4,2) covers cols: 31 32 38 44 45 57 
+Row 791: Piece Q Rot 0 @ (4,3) covers cols: 32 33 39 45 46 57 
+Row 792: Piece Q Rot 0 @ (4,4) covers cols: 33 34 40 46 47 57 
+Row 793: Piece Q Rot 1 @ (0,0) covers cols: 0 7 8 9 16 57 
+Row 794: Piece Q Rot 1 @ (0,1) covers cols: 1 8 9 10 17 57 
+Row 795: Piece Q Rot 1 @ (0,2) covers cols: 2 9 10 11 18 57 
+Row 796: Piece Q Rot 1 @ (0,3) covers cols: 3 10 11 12 19 57 
+Row 797: Piece Q Rot 1 @ (0,4) covers cols: 4 11 12 13 20 57 
+Row 798: Piece Q Rot 1 @ (1,0) covers cols: 7 14 15 16 23 57 
+Row 799: Piece Q Rot 1 @ (1,1) covers cols: 8 15 16 17 24 57 
+Row 800: Piece Q Rot 1 @ (1,2) covers cols: 9 16 17 18 25 57 
+Row 801: Piece Q Rot 1 @ (1,3) covers cols: 10 17 18 19 26 57 
+Row 802: Piece Q Rot 1 @ (1,4) covers cols: 11 18 19 20 27 57 
+Row 803: Piece Q Rot 1 @ (2,0) covers cols: 14 21 22 23 30 57 
+Row 804: Piece Q Rot 1 @ (2,1) covers cols: 15 22 23 24 31 57 
+Row 805: Piece Q Rot 1 @ (2,2) covers cols: 16 23 24 25 32 57 
+Row 806: Piece Q Rot 1 @ (2,3) covers cols: 17 24 25 26 33 57 
+Row 807: Piece Q Rot 1 @ (2,4) covers cols: 18 25 26 27 34 57 
+Row 808: Piece Q Rot 1 @ (3,0) covers cols: 21 28 29 30 37 57 
+Row 809: Piece Q Rot 1 @ (3,1) covers cols: 22 29 30 31 38 57 
+Row 810: Piece Q Rot 1 @ (3,2) covers cols: 23 30 31 32 39 57 
+Row 811: Piece Q Rot 1 @ (3,3) covers cols: 24 31 32 33 40 57 
+Row 812: Piece Q Rot 1 @ (3,4) covers cols: 25 32 33 34 41 57 
+Row 813: Piece Q Rot 1 @ (4,0) covers cols: 28 35 36 37 44 57 
+Row 814: Piece Q Rot 1 @ (4,1) covers cols: 29 36 37 38 45 57 
+Row 815: Piece Q Rot 1 @ (4,2) covers cols: 30 37 38 39 46 57 
+Row 816: Piece Q Rot 1 @ (4,3) covers cols: 31 38 39 40 47 57 
+Row 817: Piece Q Rot 1 @ (4,4) covers cols: 32 39 40 41 48 57 
+Row 818: Piece Q Rot 2 @ (0,0) covers cols: 1 2 8 14 15 57 
+Row 819: Piece Q Rot 2 @ (0,1) covers cols: 2 3 9 15 16 57 
+Row 820: Piece Q Rot 2 @ (0,2) covers cols: 3 4 10 16 17 57 
+Row 821: Piece Q Rot 2 @ (0,3) covers cols: 4 5 11 17 18 57 
+Row 822: Piece Q Rot 2 @ (0,4) covers cols: 5 6 12 18 19 57 
+Row 823: Piece Q Rot 2 @ (1,0) covers cols: 8 9 15 21 22 57 
+Row 824: Piece Q Rot 2 @ (1,1) covers cols: 9 10 16 22 23 57 
+Row 825: Piece Q Rot 2 @ (1,2) covers cols: 10 11 17 23 24 57 
+Row 826: Piece Q Rot 2 @ (1,3) covers cols: 11 12 18 24 25 57 
+Row 827: Piece Q Rot 2 @ (1,4) covers cols: 12 13 19 25 26 57 
+Row 828: Piece Q Rot 2 @ (2,0) covers cols: 15 16 22 28 29 57 
+Row 829: Piece Q Rot 2 @ (2,1) covers cols: 16 17 23 29 30 57 
+Row 830: Piece Q Rot 2 @ (2,2) covers cols: 17 18 24 30 31 57 
+Row 831: Piece Q Rot 2 @ (2,3) covers cols: 18 19 25 31 32 57 
+Row 832: Piece Q Rot 2 @ (2,4) covers cols: 19 20 26 32 33 57 
+Row 833: Piece Q Rot 2 @ (3,0) covers cols: 22 23 29 35 36 57 
+Row 834: Piece Q Rot 2 @ (3,1) covers cols: 23 24 30 36 37 57 
+Row 835: Piece Q Rot 2 @ (3,2) covers cols: 24 25 31 37 38 57 
+Row 836: Piece Q Rot 2 @ (3,3) covers cols: 25 26 32 38 39 57 
+Row 837: Piece Q Rot 2 @ (3,4) covers cols: 26 27 33 39 40 57 
+Row 838: Piece Q Rot 2 @ (4,0) covers cols: 29 30 36 42 43 57 
+Row 839: Piece Q Rot 2 @ (4,1) covers cols: 30 31 37 43 44 57 
+Row 840: Piece Q Rot 2 @ (4,2) covers cols: 31 32 38 44 45 57 
+Row 841: Piece Q Rot 2 @ (4,3) covers cols: 32 33 39 45 46 57 
+Row 842: Piece Q Rot 2 @ (4,4) covers cols: 33 34 40 46 47 57 
+Row 843: Piece Q Rot 3 @ (0,0) covers cols: 0 7 8 9 16 57 
+Row 844: Piece Q Rot 3 @ (0,1) covers cols: 1 8 9 10 17 57 
+Row 845: Piece Q Rot 3 @ (0,2) covers cols: 2 9 10 11 18 57 
+Row 846: Piece Q Rot 3 @ (0,3) covers cols: 3 10 11 12 19 57 
+Row 847: Piece Q Rot 3 @ (0,4) covers cols: 4 11 12 13 20 57 
+Row 848: Piece Q Rot 3 @ (1,0) covers cols: 7 14 15 16 23 57 
+Row 849: Piece Q Rot 3 @ (1,1) covers cols: 8 15 16 17 24 57 
+Row 850: Piece Q Rot 3 @ (1,2) covers cols: 9 16 17 18 25 57 
+Row 851: Piece Q Rot 3 @ (1,3) covers cols: 10 17 18 19 26 57 
+Row 852: Piece Q Rot 3 @ (1,4) covers cols: 11 18 19 20 27 57 
+Row 853: Piece Q Rot 3 @ (2,0) covers cols: 14 21 22 23 30 57 
+Row 854: Piece Q Rot 3 @ (2,1) covers cols: 15 22 23 24 31 57 
+Row 855: Piece Q Rot 3 @ (2,2) covers cols: 16 23 24 25 32 57 
+Row 856: Piece Q Rot 3 @ (2,3) covers cols: 17 24 25 26 33 57 
+Row 857: Piece Q Rot 3 @ (2,4) covers cols: 18 25 26 27 34 57 
+Row 858: Piece Q Rot 3 @ (3,0) covers cols: 21 28 29 30 37 57 
+Row 859: Piece Q Rot 3 @ (3,1) covers cols: 22 29 30 31 38 57 
+Row 860: Piece Q Rot 3 @ (3,2) covers cols: 23 30 31 32 39 57 
+Row 861: Piece Q Rot 3 @ (3,3) covers cols: 24 31 32 33 40 57 
+Row 862: Piece Q Rot 3 @ (3,4) covers cols: 25 32 33 34 41 57 
+Row 863: Piece Q Rot 3 @ (4,0) covers cols: 28 35 36 37 44 57 
+Row 864: Piece Q Rot 3 @ (4,1) covers cols: 29 36 37 38 45 57 
+Row 865: Piece Q Rot 3 @ (4,2) covers cols: 30 37 38 39 46 57 
+Row 866: Piece Q Rot 3 @ (4,3) covers cols: 31 38 39 40 47 57 
+Row 867: Piece Q Rot 3 @ (4,4) covers cols: 32 39 40 41 48 57 
+Initial Canvas:
+-------
+-------
+-------
+-------
+-------
+-------
+-------
+
+No valid tiling found for this configuration
+Best Board State (partial solution):
+ACC-DFF
+A-CCDFF
+AOC-D-F
+AOODD--
+AOJJJ-L
+AO-J--L
+---JLLL

@@ -1,7 +1,7 @@
 Starting DLX solver
 Starting DLX solver (time limit: 100s)
 Initial matrix: 372 rows, 36 columns
-[DEBUG] Solver completed. Best solution: -1 pieces
+[DEBUG] Solver completed. Best solution: 4 pieces
 Built placement matrix with 372 rows
 Row 0: Piece F Rot 0 @ (0,0) covers cols: 0 1 5 6 11 30 
 Row 1: Piece F Rot 0 @ (0,1) covers cols: 1 2 6 7 12 30 
@@ -384,3 +384,10 @@ Initial Canvas:
 -----
 
 No valid tiling found for this configuration
+Best Board State (partial solution):
+FF-FF
+FF-FF
+-F--F
+FF---
+FF-FF
+-FFFF

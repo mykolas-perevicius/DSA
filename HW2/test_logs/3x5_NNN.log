@@ -1,0 +1,51 @@
+Starting DLX solver
+Starting DLX solver (time limit: 100s)
+Initial matrix: 36 rows, 18 columns
+[DEBUG] Solver completed. Best solution: 0 pieces
+Built placement matrix with 36 rows
+Row 0: Piece N Rot 0 @ (0,0) covers cols: 1 5 6 7 11 15 
+Row 1: Piece N Rot 0 @ (0,1) covers cols: 2 6 7 8 12 15 
+Row 2: Piece N Rot 0 @ (0,2) covers cols: 3 7 8 9 13 15 
+Row 3: Piece N Rot 1 @ (0,0) covers cols: 1 5 6 7 11 15 
+Row 4: Piece N Rot 1 @ (0,1) covers cols: 2 6 7 8 12 15 
+Row 5: Piece N Rot 1 @ (0,2) covers cols: 3 7 8 9 13 15 
+Row 6: Piece N Rot 2 @ (0,0) covers cols: 1 5 6 7 11 15 
+Row 7: Piece N Rot 2 @ (0,1) covers cols: 2 6 7 8 12 15 
+Row 8: Piece N Rot 2 @ (0,2) covers cols: 3 7 8 9 13 15 
+Row 9: Piece N Rot 3 @ (0,0) covers cols: 1 5 6 7 11 15 
+Row 10: Piece N Rot 3 @ (0,1) covers cols: 2 6 7 8 12 15 
+Row 11: Piece N Rot 3 @ (0,2) covers cols: 3 7 8 9 13 15 
+Row 12: Piece N Rot 0 @ (0,0) covers cols: 1 5 6 7 11 16 
+Row 13: Piece N Rot 0 @ (0,1) covers cols: 2 6 7 8 12 16 
+Row 14: Piece N Rot 0 @ (0,2) covers cols: 3 7 8 9 13 16 
+Row 15: Piece N Rot 1 @ (0,0) covers cols: 1 5 6 7 11 16 
+Row 16: Piece N Rot 1 @ (0,1) covers cols: 2 6 7 8 12 16 
+Row 17: Piece N Rot 1 @ (0,2) covers cols: 3 7 8 9 13 16 
+Row 18: Piece N Rot 2 @ (0,0) covers cols: 1 5 6 7 11 16 
+Row 19: Piece N Rot 2 @ (0,1) covers cols: 2 6 7 8 12 16 
+Row 20: Piece N Rot 2 @ (0,2) covers cols: 3 7 8 9 13 16 
+Row 21: Piece N Rot 3 @ (0,0) covers cols: 1 5 6 7 11 16 
+Row 22: Piece N Rot 3 @ (0,1) covers cols: 2 6 7 8 12 16 
+Row 23: Piece N Rot 3 @ (0,2) covers cols: 3 7 8 9 13 16 
+Row 24: Piece N Rot 0 @ (0,0) covers cols: 1 5 6 7 11 17 
+Row 25: Piece N Rot 0 @ (0,1) covers cols: 2 6 7 8 12 17 
+Row 26: Piece N Rot 0 @ (0,2) covers cols: 3 7 8 9 13 17 
+Row 27: Piece N Rot 1 @ (0,0) covers cols: 1 5 6 7 11 17 
+Row 28: Piece N Rot 1 @ (0,1) covers cols: 2 6 7 8 12 17 
+Row 29: Piece N Rot 1 @ (0,2) covers cols: 3 7 8 9 13 17 
+Row 30: Piece N Rot 2 @ (0,0) covers cols: 1 5 6 7 11 17 
+Row 31: Piece N Rot 2 @ (0,1) covers cols: 2 6 7 8 12 17 
+Row 32: Piece N Rot 2 @ (0,2) covers cols: 3 7 8 9 13 17 
+Row 33: Piece N Rot 3 @ (0,0) covers cols: 1 5 6 7 11 17 
+Row 34: Piece N Rot 3 @ (0,1) covers cols: 2 6 7 8 12 17 
+Row 35: Piece N Rot 3 @ (0,2) covers cols: 3 7 8 9 13 17 
+Initial Canvas:
+-----
+-----
+-----
+
+No valid tiling found for this configuration
+Best Board State (partial solution):
+-----
+-----
+-----

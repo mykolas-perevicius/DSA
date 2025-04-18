@@ -1,0 +1,29 @@
+Starting DLX solver
+Starting DLX solver (time limit: 100s)
+Initial matrix: 8 rows, 14 columns
+[DEBUG] Solver completed. Best solution: 2 pieces
+Built placement matrix with 8 rows
+Row 0: Piece A Rot 0 @ (0,0) covers cols: 0 2 4 6 8 10 12 
+Row 1: Piece A Rot 0 @ (0,1) covers cols: 1 3 5 7 9 11 12 
+Row 2: Piece A Rot 2 @ (0,0) covers cols: 0 2 4 6 8 10 12 
+Row 3: Piece A Rot 2 @ (0,1) covers cols: 1 3 5 7 9 11 12 
+Row 4: Piece A Rot 0 @ (0,0) covers cols: 0 2 4 6 8 10 13 
+Row 5: Piece A Rot 0 @ (0,1) covers cols: 1 3 5 7 9 11 13 
+Row 6: Piece A Rot 2 @ (0,0) covers cols: 0 2 4 6 8 10 13 
+Row 7: Piece A Rot 2 @ (0,1) covers cols: 1 3 5 7 9 11 13 
+Initial Canvas:
+--
+--
+--
+--
+--
+--
+
+Found 16 solutions, best solution has 2 pieces.
+Best Solution:
+AA
+AA
+AA
+AA
+AA
+AA

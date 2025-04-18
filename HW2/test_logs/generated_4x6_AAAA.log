@@ -1,0 +1,49 @@
+Starting DLX solver
+Starting DLX solver (time limit: 100s)
+Initial matrix: 32 rows, 28 columns
+[DEBUG] Solver completed. Best solution: 4 pieces
+Built placement matrix with 32 rows
+Row 0: Piece A Rot 1 @ (0,0) covers cols: 0 1 2 3 4 5 24 
+Row 1: Piece A Rot 1 @ (1,0) covers cols: 6 7 8 9 10 11 24 
+Row 2: Piece A Rot 1 @ (2,0) covers cols: 12 13 14 15 16 17 24 
+Row 3: Piece A Rot 1 @ (3,0) covers cols: 18 19 20 21 22 23 24 
+Row 4: Piece A Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 24 
+Row 5: Piece A Rot 3 @ (1,0) covers cols: 6 7 8 9 10 11 24 
+Row 6: Piece A Rot 3 @ (2,0) covers cols: 12 13 14 15 16 17 24 
+Row 7: Piece A Rot 3 @ (3,0) covers cols: 18 19 20 21 22 23 24 
+Row 8: Piece A Rot 1 @ (0,0) covers cols: 0 1 2 3 4 5 25 
+Row 9: Piece A Rot 1 @ (1,0) covers cols: 6 7 8 9 10 11 25 
+Row 10: Piece A Rot 1 @ (2,0) covers cols: 12 13 14 15 16 17 25 
+Row 11: Piece A Rot 1 @ (3,0) covers cols: 18 19 20 21 22 23 25 
+Row 12: Piece A Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 25 
+Row 13: Piece A Rot 3 @ (1,0) covers cols: 6 7 8 9 10 11 25 
+Row 14: Piece A Rot 3 @ (2,0) covers cols: 12 13 14 15 16 17 25 
+Row 15: Piece A Rot 3 @ (3,0) covers cols: 18 19 20 21 22 23 25 
+Row 16: Piece A Rot 1 @ (0,0) covers cols: 0 1 2 3 4 5 26 
+Row 17: Piece A Rot 1 @ (1,0) covers cols: 6 7 8 9 10 11 26 
+Row 18: Piece A Rot 1 @ (2,0) covers cols: 12 13 14 15 16 17 26 
+Row 19: Piece A Rot 1 @ (3,0) covers cols: 18 19 20 21 22 23 26 
+Row 20: Piece A Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 26 
+Row 21: Piece A Rot 3 @ (1,0) covers cols: 6 7 8 9 10 11 26 
+Row 22: Piece A Rot 3 @ (2,0) covers cols: 12 13 14 15 16 17 26 
+Row 23: Piece A Rot 3 @ (3,0) covers cols: 18 19 20 21 22 23 26 
+Row 24: Piece A Rot 1 @ (0,0) covers cols: 0 1 2 3 4 5 27 
+Row 25: Piece A Rot 1 @ (1,0) covers cols: 6 7 8 9 10 11 27 
+Row 26: Piece A Rot 1 @ (2,0) covers cols: 12 13 14 15 16 17 27 
+Row 27: Piece A Rot 1 @ (3,0) covers cols: 18 19 20 21 22 23 27 
+Row 28: Piece A Rot 3 @ (0,0) covers cols: 0 1 2 3 4 5 27 
+Row 29: Piece A Rot 3 @ (1,0) covers cols: 6 7 8 9 10 11 27 
+Row 30: Piece A Rot 3 @ (2,0) covers cols: 12 13 14 15 16 17 27 
+Row 31: Piece A Rot 3 @ (3,0) covers cols: 18 19 20 21 22 23 27 
+Initial Canvas:
+------
+------
+------
+------
+
+Found 9216 solutions, best solution has 4 pieces.
+Best Solution:
+AAAAAA
+AAAAAA
+AAAAAA
+AAAAAA

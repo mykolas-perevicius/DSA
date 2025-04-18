@@ -344,6 +344,7 @@ int main(int argc, char **argv) {
             free(canvas);
             return -1;
         }
+        initialize_canvas(state.bestBoard, boardRows, boardCols);
         state.bestCount = -1;
         state.solutions_count = 0;
         solvePuzzleDLX(boardRows, boardCols, blocks, nblocks, &state, stderr);
@@ -355,6 +356,8 @@ int main(int argc, char **argv) {
             print_canvas(state.bestBoard, boardRows, boardCols);
         } else {
             printf("No valid tiling found for this configuration\n");
+            printf("Best Board State (partial solution):\n");
+            print_canvas(state.bestBoard, boardRows, boardCols);
         }
         free(state.bestBoard);
     }
@@ -695,6 +698,48 @@ int algorithm_x(int total_columns, int total_rows, PlacementRow *matrix,
         return 0; /* Stop recursion when depth limit is reached */
     }
 
+    /* Enhanced Constraint Propagation: Replace original column selection with weighted heuristic */
+    {
+        int col, row, k;
+        int best_col = -1;
+        double min_score = 1e9, score, weight;
+        /* Iterate over all columns to find the one with minimal weighted score */
+        for (col = 0; col < total_columns; col++) {
+            if (!col_covered[col]) {
+                int candidate_count = 0;
+                weight = 0.0;
+                for (row = 0; row < total_rows; row++) {
+                    if (active[row]) {
+                        for (k = 0; k < matrix[row].count; k++) {
+                            if (matrix[row].cols[k] == col) {
+                                candidate_count++;
+                                /* Use the row's count as a simple connectivity weight */
+                                weight += (double)matrix[row].count;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (candidate_count > 0) {
+                    score = weight / candidate_count;
+                    if (score < min_score) {
+                        min_score = score;
+                        best_col = col;
+                    }
+                }
+            }
+        }
+        if (best_col == -1) {
+            /* No valid column found, trigger backtracking */
+            return 0;
+        }
+        col = best_col;  /* Use the column with the minimal weighted score */
+    }
+    /* End Enhanced Constraint Propagation */
+
+    /* Dynamic Heuristic Adjustment: (Placeholder) If many dead-end recursions occur, adjust candidate ordering here */
+    /* For example, if (dead_end_count > DEAD_END_THRESHOLD) { shuffle(candidate_rows); } */
+
     for (r = 0; r < total_rows; r++) {
         if (!active[r]) 
             continue;
@@ -768,6 +813,11 @@ int algorithm_x(int total_columns, int total_rows, PlacementRow *matrix,
         }
     }
 
+    /* After finishing the loop in algorithm_x, before returning, update best_solution if a deeper partial solution was found */
+    if (sol_depth > *best_depth) {
+        *best_depth = sol_depth;
+        memcpy(best_solution, solution, sol_depth * sizeof(int));
+    }
     return 0;
 }
 

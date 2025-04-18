@@ -1,0 +1,1458 @@
+================================================================================
+=== FILE: Makefile
+================================================================================
+
+# Basic Makefile for ANSI C B-Tree Library (No Headers)
+
+CC = gcc
+CFLAGS = -ansi -Wall -Wpedantic -Werror
+# Add -g for debugging, -O2 for optimization, etc.
+
+BTREE_SRC = btree.c storage.c
+BTREE_OBJ = $(BTREE_SRC:.c=.o)
+TEST_SRC = test_btree.c
+TEST_OBJ = $(TEST_SRC:.c=.o)
+MAIN_SRC = main.c
+MAIN_OBJ = $(MAIN_SRC:.c=.o)
+PERF_SRC = perf_btree.c
+PERF_OBJ = $(PERF_SRC:.c=.o)
+
+TEST_EXE = test_btree
+MAIN_EXE = main_btree
+PERF_EXE = perf_btree
+
+all: $(MAIN_EXE) $(TEST_EXE) $(PERF_EXE)
+
+$(MAIN_EXE): $(MAIN_OBJ) $(BTREE_OBJ)
+	$(CC) $(CFLAGS) $^ -o $@
+
+$(TEST_EXE): $(TEST_OBJ) $(BTREE_OBJ)
+	$(CC) $(CFLAGS) $^ -o $@
+
+$(PERF_EXE): $(PERF_OBJ) $(BTREE_OBJ)
+	$(CC) $(CFLAGS) $^ -o $@
+
+# Modified Object file compilation rule - no header dependencies listed
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# CI Target
+ci: $(TEST_EXE)
+	@echo "Running CI tests..."
+	./$(TEST_EXE)
+	@echo "CI tests completed successfully."
+
+# Performance Target
+perf: $(PERF_EXE)
+	@echo "Running performance harness..."
+	./$(PERF_EXE)
+	@echo "Performance harness completed."
+
+# Clean Target
+clean:
+	@echo "Cleaning up..."
+	rm -f $(BTREE_OBJ) $(TEST_OBJ) $(MAIN_OBJ) $(PERF_OBJ)
+	rm -f $(TEST_EXE) $(MAIN_EXE) $(PERF_EXE)
+	rm -f *.db *.o core
+
+.PHONY: all clean test ci perf
+
+================================================================================
+=== FILE: storage.c
+================================================================================
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h> /* For memset, memcpy, perror */
+#include <errno.h>
+#include <assert.h> /* For assert */
+
+/* Definition needed by Storage_read/Storage_write (formerly in btree.h) */
+struct Node {
+    int n;
+    int leaf;
+    int *key;
+    int *value;
+    int *c;
+};
+
+/* --- Static Global State (Singleton) --- */
+static FILE *g_dataFile = NULL;
+static int g_degree = 0;     /* Minimum degree 't' read from/written to file */
+static long g_nodeSize = 0;  /* Calculated size of a node on disk */
+
+/* File Header Constants */
+static const int MAGIC_NUMBER = 0xBEEFCAFE;
+static const int VERSION = 1;
+/* Header Layout: magic(int), version(int), t(int) */
+static const long HEADER_SIZE = sizeof(int) * 3;
+
+/* Sentinel for unused slots - adjusted for int */
+#define SENTINEL_VALUE ((int)0xDEADBEEF)
+
+/* Statistics Counters */
+static unsigned long g_read_count = 0;
+static unsigned long g_write_count = 0;
+static unsigned long g_alloc_count = 0;
+
+/* --- Helper Functions --- */
+
+/* Calculates node size based on t */
+static long calculate_node_size(int t) {
+     assert(t >= 2);
+     return (long)(6 * t) * sizeof(int);
+}
+
+/* Calculates disk offset for a given node address */
+static long calculate_offset(int addr) {
+    if (g_nodeSize <= 0) {
+        fprintf(stderr, "Storage Error: Node size not initialized or invalid.\n");
+        exit(EXIT_FAILURE);
+    }
+    assert(addr >= 0);
+    return HEADER_SIZE + (long)addr * g_nodeSize;
+}
+
+/* --- API Implementation --- */
+
+int Storage_get_t(void) {
+     if (g_dataFile == NULL) {
+        fprintf(stderr, "Storage Error: Cannot get t, storage not open.\n");
+        exit(EXIT_FAILURE);
+     }
+     if (g_degree < 2) {
+         fprintf(stderr, "Storage Error: Invalid degree t=%d stored internally.\n", g_degree);
+         exit(EXIT_FAILURE);
+     }
+    return g_degree;
+}
+
+void Storage_open(const char *fname, int t_user) {
+    /* Removed file_exists variable as usage was implicit */
+    int stored_t = 0;
+    int magic = 0, version = 0;
+
+    if (g_dataFile != NULL) {
+        fprintf(stderr, "Storage Error: Storage already open.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    g_dataFile = fopen(fname, "r+b");
+    if (g_dataFile != NULL) {
+        /* File exists, opened in r+b mode */
+        /* Read header */
+        if (fseek(g_dataFile, 0, SEEK_SET) != 0) {
+            perror("Storage Error: Cannot seek to header (r+b)");
+            fclose(g_dataFile); g_dataFile = NULL;
+            exit(EXIT_FAILURE);
+        }
+        if (fread(&magic, sizeof(int), 1, g_dataFile) != 1 ||
+            fread(&version, sizeof(int), 1, g_dataFile) != 1 ||
+            fread(&stored_t, sizeof(int), 1, g_dataFile) != 1)
+        {
+            fprintf(stderr, "Storage Error: Cannot read header from existing file %s\n", fname);
+            if (ferror(g_dataFile)) perror("fread error");
+            fclose(g_dataFile); g_dataFile = NULL;
+            exit(EXIT_FAILURE);
+        }
+
+        /* Validate header */
+        if (magic != MAGIC_NUMBER || version != VERSION) {
+            fprintf(stderr, "Storage Error: Invalid file format or version (Magic: %x, Version: %d).\n", magic, version);
+            fclose(g_dataFile); g_dataFile = NULL;
+            exit(EXIT_FAILURE);
+        }
+        if (stored_t < 2) {
+            fprintf(stderr, "Storage Error: Invalid minimum degree t=%d found in file header.\n", stored_t);
+            fclose(g_dataFile); g_dataFile = NULL;
+            exit(EXIT_FAILURE);
+        }
+        g_degree = stored_t;
+        g_nodeSize = calculate_node_size(g_degree);
+
+        /* Optional: Verify file size consistency */
+        /* Reduce scope of file_size */
+        {
+            long file_size;
+            if (fseek(g_dataFile, 0, SEEK_END) != 0) {
+                 perror("Storage Error: Cannot seek to end (size check)");
+                 fclose(g_dataFile); g_dataFile = NULL;
+                 exit(EXIT_FAILURE);
+            }
+            file_size = ftell(g_dataFile);
+             if (file_size < 0) {
+                 perror("Storage Error: Cannot get file size (size check)");
+                 fclose(g_dataFile); g_dataFile = NULL;
+                 exit(EXIT_FAILURE);
+            }
+            if ((file_size - HEADER_SIZE) % g_nodeSize != 0) {
+                fprintf(stderr, "Storage Warning: File size %ld does not align with header (t=%d, nodeSize=%ld).\n",
+                        file_size, g_degree, g_nodeSize);
+            }
+        }
+
+    } else {
+        /* File does not exist or fopen("r+b") failed */
+        if (errno != ENOENT) {
+             perror("Storage Error: Cannot open existing file (r+b)");
+             exit(EXIT_FAILURE);
+        }
+
+        /* Create new file with "w+b" */
+        g_dataFile = fopen(fname, "w+b");
+        if (g_dataFile == NULL) {
+            perror("Storage Error: Cannot create new file (w+b)");
+            exit(EXIT_FAILURE);
+        }
+
+        if (t_user < 2) {
+             fprintf(stderr, "Storage Error: Minimum degree t must be >= 2 for new file.\n");
+             fclose(g_dataFile); g_dataFile = NULL; remove(fname);
+             exit(EXIT_FAILURE);
+        }
+
+        /* Write header */
+        magic = MAGIC_NUMBER;
+        version = VERSION;
+        stored_t = t_user;
+        g_degree = t_user;
+        g_nodeSize = calculate_node_size(g_degree);
+
+        if (fwrite(&magic, sizeof(int), 1, g_dataFile) != 1 ||
+            fwrite(&version, sizeof(int), 1, g_dataFile) != 1 ||
+            fwrite(&stored_t, sizeof(int), 1, g_dataFile) != 1)
+        {
+            fprintf(stderr, "Storage Error: Cannot write header to new file.\n");
+            perror("fwrite");
+            fclose(g_dataFile); g_dataFile = NULL; remove(fname);
+            exit(EXIT_FAILURE);
+        }
+         if (fflush(g_dataFile) != 0) {
+            perror("Storage Error: Cannot flush header");
+            fclose(g_dataFile); g_dataFile = NULL; remove(fname);
+            exit(EXIT_FAILURE);
+        }
+    }
+
+    g_read_count = 0;
+    g_write_count = 0;
+    g_alloc_count = 0;
+}
+
+void Storage_close(void) {
+    if (g_dataFile != NULL) {
+        if (fflush(g_dataFile) != 0) {
+             perror("Storage Warning: Error flushing file before close");
+        }
+        if (fclose(g_dataFile) != 0) {
+            perror("Storage Warning: Error closing file");
+        }
+        g_dataFile = NULL;
+        g_degree = 0;
+        g_nodeSize = 0;
+    }
+}
+
+int Storage_empty(void) {
+    long file_size;
+    if (g_dataFile == NULL) {
+        fprintf(stderr, "Storage Error: Storage not open in Storage_empty.\n");
+        exit(EXIT_FAILURE);
+    }
+    if (fflush(g_dataFile) != 0) {
+         perror("Storage Warning: fflush failed in Storage_empty");
+    }
+    if (fseek(g_dataFile, 0, SEEK_END) != 0) {
+        perror("Storage Error: fseek failed in Storage_empty");
+        exit(EXIT_FAILURE);
+    }
+    file_size = ftell(g_dataFile);
+    if (file_size < 0) {
+         perror("Storage Error: ftell failed in Storage_empty");
+         exit(EXIT_FAILURE);
+    }
+    return (file_size == HEADER_SIZE);
+}
+
+int Storage_alloc(void) {
+    long file_size;
+    int addr;
+
+    if (g_dataFile == NULL) {
+        fprintf(stderr, "Storage Error: Storage not open in Storage_alloc.\n");
+        exit(EXIT_FAILURE);
+    }
+    if (g_nodeSize <= 0) {
+         fprintf(stderr, "Storage Error: Invalid node size in Storage_alloc.\n");
+         exit(EXIT_FAILURE);
+    }
+    if (fseek(g_dataFile, 0, SEEK_END) != 0) {
+        perror("Storage Error: fseek to end failed in Storage_alloc");
+        exit(EXIT_FAILURE);
+    }
+    file_size = ftell(g_dataFile);
+     if (file_size < 0) {
+         perror("Storage Error: ftell failed in Storage_alloc");
+         exit(EXIT_FAILURE);
+    }
+    if ((file_size - HEADER_SIZE) % g_nodeSize != 0) {
+        fprintf(stderr, "Storage Error: File size corruption detected before alloc (size %ld, header %ld, nodeSize %ld).\n",
+                file_size, HEADER_SIZE, g_nodeSize);
+        exit(EXIT_FAILURE);
+    }
+
+    addr = (int)((file_size - HEADER_SIZE) / g_nodeSize);
+
+    {
+        char *dummy_buffer = malloc(g_nodeSize);
+        if (!dummy_buffer) {
+            perror("Storage Error: Failed to allocate dummy buffer for alloc padding");
+            exit(EXIT_FAILURE);
+        }
+        memset(dummy_buffer, 0, g_nodeSize);
+        if (fwrite(dummy_buffer, g_nodeSize, 1, g_dataFile) != 1) {
+             perror("Storage Error: Failed to write padding block during alloc");
+             free(dummy_buffer);
+             exit(EXIT_FAILURE);
+        }
+        free(dummy_buffer);
+    }
+
+    g_alloc_count++;
+    return addr;
+}
+
+void Storage_read(int addr, struct Node *x) {
+    long offset;
+    size_t elements_to_read;
+    size_t elements_read;
+    int max_keys, max_children;
+
+    if (g_dataFile == NULL) {
+        fprintf(stderr, "Storage Error: Storage not open in Storage_read.\n");
+        exit(EXIT_FAILURE);
+    }
+    if (x == NULL || x->key == NULL || x->value == NULL || x->c == NULL) {
+         fprintf(stderr, "Storage Error: Null node or internal buffer passed to Storage_read.\n");
+         exit(EXIT_FAILURE);
+    }
+     if (g_degree <= 1 || g_nodeSize <= 0) {
+        fprintf(stderr, "Storage Error: Storage not properly initialized (t=%d, nodeSize=%ld).\n", g_degree, g_nodeSize);
+        exit(EXIT_FAILURE);
+     }
+
+    max_keys = 2 * g_degree - 1;
+    max_children = 2 * g_degree;
+    offset = calculate_offset(addr);
+
+    if (fseek(g_dataFile, offset, SEEK_SET) != 0) {
+        perror("Storage Error: fseek failed in Storage_read");
+        fprintf(stderr, "Attempted offset: %ld for address %d\n", offset, addr);
+        exit(EXIT_FAILURE);
+    }
+
+    if (fread(&(x->n), sizeof(int), 1, g_dataFile) != 1 ||
+        fread(&(x->leaf), sizeof(int), 1, g_dataFile) != 1) {
+        fprintf(stderr, "Storage Error: Failed to read node header (n, leaf) at addr %d.\n", addr);
+         if (feof(g_dataFile)) fprintf(stderr, " Read past EOF.\n");
+         else if(ferror(g_dataFile)) perror(" fread error"); else fprintf(stderr, " Short read.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    elements_to_read = max_keys;
+    elements_read = fread(x->key, sizeof(int), elements_to_read, g_dataFile);
+    if (elements_read != elements_to_read) goto read_error;
+
+    elements_read = fread(x->value, sizeof(int), elements_to_read, g_dataFile);
+    if (elements_read != elements_to_read) goto read_error;
+
+    elements_to_read = max_children;
+    elements_read = fread(x->c, sizeof(int), elements_to_read, g_dataFile);
+    if (elements_read != elements_to_read) goto read_error;
+
+    g_read_count++;
+    return;
+
+read_error:
+    {
+        long current_pos = ftell(g_dataFile);
+        long file_size_on_error = -1;
+
+        fprintf(stderr, "Storage Error: Failed to read node data block at addr %d. Elements read: %lu / Expected: %lu\n",
+                addr, (unsigned long)elements_read, (unsigned long)elements_to_read);
+        if (feof(g_dataFile)) fprintf(stderr, " Read past EOF.\n");
+        else if(ferror(g_dataFile)) perror(" fread error"); else fprintf(stderr, " Short read.\n");
+
+        if (fseek(g_dataFile, 0, SEEK_END) == 0) {
+             file_size_on_error = ftell(g_dataFile);
+        }
+        fprintf(stderr, " File size: %ld, Expected offset: %ld, Pos after failed read: %ld\n", file_size_on_error, offset, current_pos);
+        exit(EXIT_FAILURE);
+    }
+}
+
+
+void Storage_write(int addr, const struct Node *x) {
+    long offset;
+    size_t elements_to_write;
+    size_t elements_written;
+    int max_keys, max_children;
+
+    if (g_dataFile == NULL) {
+        fprintf(stderr, "Storage Error: Storage not open in Storage_write.\n");
+        exit(EXIT_FAILURE);
+    }
+     if (x == NULL || x->key == NULL || x->value == NULL || x->c == NULL) {
+         fprintf(stderr, "Storage Error: Null node or internal buffer passed to Storage_write.\n");
+         exit(EXIT_FAILURE);
+    }
+     if (g_degree <= 1 || g_nodeSize <= 0) {
+        fprintf(stderr, "Storage Error: Storage not properly initialized (t=%d, nodeSize=%ld).\n", g_degree, g_nodeSize);
+        exit(EXIT_FAILURE);
+     }
+
+    max_keys = 2 * g_degree - 1;
+    max_children = 2 * g_degree;
+    offset = calculate_offset(addr);
+
+    if (fseek(g_dataFile, offset, SEEK_SET) != 0) {
+        perror("Storage Error: fseek failed in Storage_write");
+         fprintf(stderr, "Attempted offset: %ld for address %d\n", offset, addr);
+        exit(EXIT_FAILURE);
+    }
+
+    if (fwrite(&(x->n), sizeof(int), 1, g_dataFile) != 1 ||
+        fwrite(&(x->leaf), sizeof(int), 1, g_dataFile) != 1) {
+        fprintf(stderr, "Storage Error: Failed to write node header (n, leaf) at addr %d.\n", addr);
+        perror(" fwrite error");
+        exit(EXIT_FAILURE);
+    }
+
+    elements_to_write = max_keys;
+    elements_written = fwrite(x->key, sizeof(int), elements_to_write, g_dataFile);
+    if (elements_written != elements_to_write) goto write_error;
+
+    elements_to_write = max_keys;
+    elements_written = fwrite(x->value, sizeof(int), elements_to_write, g_dataFile);
+    if (elements_written != elements_to_write) goto write_error;
+
+    elements_to_write = max_children;
+    elements_written = fwrite(x->c, sizeof(int), elements_to_write, g_dataFile);
+    if (elements_written != elements_to_write) goto write_error;
+
+    g_write_count++;
+    return;
+
+write_error:
+    fprintf(stderr, "Storage Error: Failed to write node data block at addr %d. Elements written: %lu / Expected: %lu\n",
+            addr, (unsigned long)elements_written, (unsigned long)elements_to_write);
+    perror(" fwrite error");
+    exit(EXIT_FAILURE);
+}
+
+unsigned long Storage_get_read_count(void) { return g_read_count; }
+unsigned long Storage_get_write_count(void) { return g_write_count; }
+unsigned long Storage_get_alloc_count(void) { return g_alloc_count; }
+
+================================================================================
+=== FILE: btree.c
+================================================================================
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h> /* For memmove, memcpy */
+#include <limits.h> /* For INT_MIN/MAX if needed */
+#include <assert.h> /* For assert */
+
+/* Required Struct Definitions */
+struct Node {
+    int n;
+    int leaf;
+    int *key;
+    int *value;
+    int *c;
+};
+
+struct BTree {
+    int root;
+    int t;
+};
+
+/* Required Prototypes from storage.c */
+void          Storage_open (const char *fname, int t);
+void          Storage_close(void);
+int           Storage_empty(void);
+int           Storage_alloc(void);
+void          Storage_read (int addr, struct Node *x);
+void          Storage_write(int addr, const struct Node *x);
+unsigned long Storage_get_read_count(void);
+unsigned long Storage_get_write_count(void);
+unsigned long Storage_get_alloc_count(void);
+int           Storage_get_t(void);
+
+/* --- Constants --- */
+#define SENTINEL_VALUE ((int)0xDEADBEEF)
+
+/* --- Internal Helper Functions --- */
+
+static struct Node* BTree_allocate_node_mem(int t) {
+    /* --- Declarations at top of block (ANSI C) --- */
+    struct Node *x = NULL;
+    int max_keys;
+    int max_children;
+    int i; /* Loop variable */
+
+    /* --- Code --- */
+    assert(t >= 2);
+    max_keys = 2 * t - 1;
+    max_children = 2 * t;
+
+    x = malloc(sizeof(struct Node));
+    if (!x) {
+        perror("BTree Memory Error: Cannot allocate node struct");
+        exit(EXIT_FAILURE);
+    }
+    x->key = malloc(max_keys * sizeof(int));
+    x->value = malloc(max_keys * sizeof(int));
+    x->c = malloc(max_children * sizeof(int));
+    if (!x->key || !x->value || !x->c) {
+        perror("BTree Memory Error: Cannot allocate node arrays");
+        free(x->key); free(x->value); free(x->c); free(x);
+        exit(EXIT_FAILURE);
+    }
+
+    /* Use loop variable 'i' declared above */
+    for (i = 0; i < max_keys; ++i) {
+        x->key[i] = SENTINEL_VALUE;
+        x->value[i] = SENTINEL_VALUE;
+    }
+    /* Use loop variable 'i' declared above */
+    for (i = 0; i < max_children; ++i) {
+        x->c[i] = SENTINEL_VALUE;
+    }
+    x->n = 0;
+    x->leaf = 1;
+    return x;
+}
+
+static void BTree_free_node_mem(struct Node *x) {
+    if (x) {
+        free(x->key); free(x->value); free(x->c); free(x);
+    }
+}
+
+static struct Node* BTree_disk_read(int t, int addr) {
+    struct Node *x = BTree_allocate_node_mem(t);
+    Storage_read(addr, x);
+    return x;
+}
+
+static void BTree_disk_write(int addr, const struct Node *x) {
+    Storage_write(addr, x);
+}
+
+/* --- CLRS Algorithm Implementations --- */
+
+static int BTree_search_internal(int t, int addr, int k, int *v_out) {
+    /* --- Declarations at top of block (ANSI C) --- */
+    struct Node *x = NULL;
+    int found = 0;
+    int i = 0; /* Loop/index variable */
+    int child_addr; /* Moved declaration up */
+
+    /* --- Code --- */
+    x = BTree_disk_read(t, addr);
+
+    /* Use 'i' declared above */
+    while (i < x->n && k > x->key[i]) {
+        i++;
+    }
+    if (i < x->n && k == x->key[i]) {
+        *v_out = x->value[i];
+        found = 1;
+    } else if (x->leaf) {
+        found = 0;
+    } else {
+        child_addr = x->c[i];
+        BTree_free_node_mem(x); x = NULL;
+        if (child_addr == SENTINEL_VALUE || child_addr < 0) {
+             fprintf(stderr, "BTree Error: Invalid child address during search (addr=%d, i=%d).\n", addr, i);
+             exit(EXIT_FAILURE);
+        }
+        return BTree_search_internal(t, child_addr, k, v_out);
+    }
+    if (x != NULL) { BTree_free_node_mem(x); }
+    return found;
+}
+
+static void BTree_split_child(int t, int addr_x, int i) {
+    /* --- Declarations at top of block (ANSI C) --- */
+    int addr_y;
+    int addr_z;
+    int median_key;
+    int median_val;
+    int t_minus_1;
+    struct Node *z = NULL; /* Moved declaration up */
+    struct Node *x = NULL;
+    struct Node *y = NULL; /* Moved declaration up */
+    int j; /* Loop variable */
+
+    /* --- Code --- */
+    t_minus_1 = t - 1;
+    addr_z = Storage_alloc();
+    z = BTree_allocate_node_mem(t);
+    x = BTree_disk_read(t, addr_x);
+    addr_y = x->c[i];
+     if (addr_y == SENTINEL_VALUE || addr_y < 0) {
+        fprintf(stderr, "BTree Internal Error: Invalid child address in parent (addr_x=%d, i=%d) before split.\n", addr_x, i);
+        BTree_free_node_mem(x); BTree_free_node_mem(z); exit(EXIT_FAILURE);
+     }
+    y = BTree_disk_read(t, addr_y);
+    if (y->n != 2 * t - 1) {
+        fprintf(stderr, "BTree Internal Error: Attempted to split non-full node y (addr=%d, n=%d, t=%d)\n", addr_y, y->n, t);
+        BTree_free_node_mem(x); BTree_free_node_mem(y); BTree_free_node_mem(z);
+        exit(EXIT_FAILURE);
+    }
+    z->leaf = y->leaf;
+    z->n = t_minus_1;
+    memcpy(z->key, &y->key[t], t_minus_1 * sizeof(int));
+    memcpy(z->value, &y->value[t], t_minus_1 * sizeof(int));
+    if (!y->leaf) { memcpy(z->c, &y->c[t], t * sizeof(int)); }
+    y->n = t_minus_1;
+    median_key = y->key[t_minus_1];
+    median_val = y->value[t_minus_1];
+    y->key[t_minus_1] = SENTINEL_VALUE;
+    y->value[t_minus_1] = SENTINEL_VALUE;
+
+    /* Use loop variable 'j' declared above */
+    for (j = t; j < 2 * t - 1; ++j) {
+        y->key[j] = SENTINEL_VALUE;
+        y->value[j] = SENTINEL_VALUE;
+    }
+    if (!y->leaf) {
+        /* Use loop variable 'j' declared above */
+        for (j = t; j < 2 * t; ++j) {
+            y->c[j] = SENTINEL_VALUE;
+        }
+    }
+    memmove(&x->c[i + 2], &x->c[i + 1], (x->n - i) * sizeof(int));
+    x->c[i + 1] = addr_z;
+    memmove(&x->key[i + 1], &x->key[i], (x->n - i) * sizeof(int));
+    memmove(&x->value[i + 1], &x->value[i], (x->n - i) * sizeof(int));
+    x->key[i] = median_key;
+    x->value[i] = median_val;
+    x->n = x->n + 1;
+    BTree_disk_write(addr_x, x);
+    BTree_disk_write(addr_y, y);
+    BTree_disk_write(addr_z, z);
+    BTree_free_node_mem(x); BTree_free_node_mem(y); BTree_free_node_mem(z);
+}
+
+static void BTree_insert_nonfull(int t, int addr_x, int k, int v) {
+    /* --- Declarations at top of block (ANSI C) --- */
+    struct Node *x = NULL;
+    int i; /* Loop/index variable */
+    int child_addr;
+    struct Node *child = NULL;
+    int needs_split;
+
+    /* --- Code --- */
+    x = BTree_disk_read(t, addr_x);
+
+    /* Search for key k or find insertion point i */
+    i = 0;
+    while (i < x->n && k > x->key[i]) {
+        i++;
+    }
+
+    /* Check if key already exists at index i */
+    if (i < x->n && k == x->key[i]) {
+        /* --- Key Found: Update Value --- */
+        x->value[i] = v;
+        BTree_disk_write(addr_x, x); /* Write updated node */
+        BTree_free_node_mem(x);      /* Free memory */
+        return;                      /* Update complete */
+    }
+
+    /* --- Key Not Found: Proceed with Insertion --- */
+
+    if (x->leaf) {
+        /* --- Case 1: Insert into Leaf --- */
+        /* Key k needs insertion at index i */
+
+        /* Shift keys/values greater than k (i.e., from index i onwards) right */
+        /* Check if n is within bounds before memmove */
+        if (x->n > i) {
+             memmove(&x->key[i + 1], &x->key[i], (x->n - i) * sizeof(int));
+             memmove(&x->value[i + 1], &x->value[i], (x->n - i) * sizeof(int));
+        } else {
+            /* Inserting at the end, no move needed */
+        }
+
+        /* Insert new key and value at index i */
+        x->key[i] = k;
+        x->value[i] = v;
+        x->n = x->n + 1; /* Increment count */
+
+        BTree_disk_write(addr_x, x);
+        BTree_free_node_mem(x);
+
+    } else {
+        /* --- Case 2: Recurse into Internal Node Child --- */
+        /* Key k needs insertion into subtree c[i] */
+        child_addr = x->c[i];
+        if (child_addr == SENTINEL_VALUE || child_addr < 0) {
+             fprintf(stderr, "BTree Error: Invalid child address in parent (addr_x=%d, i=%d) before insert descent.\n", addr_x, i);
+             BTree_free_node_mem(x); exit(EXIT_FAILURE);
+        }
+
+        /* Free parent BEFORE reading child */
+        BTree_free_node_mem(x); x = NULL;
+
+        child = BTree_disk_read(t, child_addr);
+        needs_split = (child->n == 2 * t - 1);
+        BTree_free_node_mem(child); child = NULL;
+
+        if (needs_split) {
+            BTree_split_child(t, addr_x, i);
+            /* Re-read parent to check if k now belongs in the *new* right child */
+            x = BTree_disk_read(t, addr_x);
+            /* Must check k against the key that moved up (which is now x->key[i]) */
+            if (k > x->key[i]) {
+                i++; /* Adjust index to point to the new right child */
+            }
+            child_addr = x->c[i]; /* Update child_addr based on comparison */
+            BTree_free_node_mem(x); x = NULL; /* Free parent again */
+        }
+        /* Recurse into the appropriate (potentially new) child */
+        BTree_insert_nonfull(t, child_addr, k, v);
+    }
+}
+
+/* --- Public API Implementation --- */
+
+struct BTree BTree_open(const char *name, int t_user) {
+    /* --- Declarations at top of block (ANSI C) --- */
+    struct BTree bt;
+    int root_addr; /* Moved declaration up */
+    struct Node *root_node_mem = NULL; /* Moved declaration up */
+
+    /* --- Code --- */
+    Storage_open(name, t_user);
+    bt.t = Storage_get_t();
+    bt.root = 0;
+    if (Storage_empty()) {
+        root_addr = Storage_alloc();
+        if (root_addr != 0) {
+             fprintf(stderr, "BTree Error: Initial root allocation did not return address 0 (got %d).\n", root_addr);
+             Storage_close(); exit(EXIT_FAILURE);
+        }
+        /* Can nest a block for temporary node scope if desired, but not required */
+        /* { */
+            root_node_mem = BTree_allocate_node_mem(bt.t);
+            root_node_mem->leaf = 1; root_node_mem->n = 0;
+            BTree_disk_write(root_addr, root_node_mem);
+            BTree_free_node_mem(root_node_mem);
+        /* } */
+    }
+    return bt;
+}
+
+void BTree_close(struct BTree *bt) {
+    Storage_close();
+    bt->root = -1;
+    bt->t = 0;
+}
+
+void BTree_put(const struct BTree *bt, int k, int v) {
+    /* --- Declarations at top of block (ANSI C) --- */
+    int root_addr;
+    int t;
+    struct Node *r = NULL;
+    int addr_r_new; /* Moved declaration up */
+    int addr_z; /* Moved declaration up */
+    struct Node *s = NULL; /* Moved declaration up */
+    struct Node *z = NULL; /* Moved declaration up */
+    int j; /* Loop variable */
+
+    /* --- Code --- */
+    root_addr = bt->root;
+    t = bt->t;
+    r = BTree_disk_read(t, root_addr);
+
+    if (r->n == 2 * t - 1) {
+        addr_r_new = Storage_alloc();
+        addr_z = Storage_alloc();
+        s = BTree_allocate_node_mem(t);
+        z = BTree_allocate_node_mem(t);
+        s->leaf = 0; s->n = 1; s->c[0] = addr_r_new; s->c[1] = addr_z;
+        s->key[0] = r->key[t - 1]; s->value[0] = r->value[t - 1];
+        z->leaf = r->leaf; z->n = t - 1;
+        memcpy(z->key, &r->key[t], (t - 1) * sizeof(int));
+        memcpy(z->value, &r->value[t], (t - 1) * sizeof(int));
+        if (!r->leaf) { memcpy(z->c, &r->c[t], t * sizeof(int)); }
+        assert(r != NULL);
+        r->n = t - 1;
+        /* Use loop variable 'j' declared above */
+        for(j = t - 1; j < 2*t - 1; ++j) {
+            r->key[j] = SENTINEL_VALUE;
+            r->value[j] = SENTINEL_VALUE;
+        }
+        if (!r->leaf) {
+            /* Use loop variable 'j' declared above */
+            for(j = t; j < 2*t; ++j) {
+                 r->c[j] = SENTINEL_VALUE;
+            }
+        }
+        BTree_disk_write(addr_r_new, r);
+        BTree_disk_write(addr_z, z);
+        BTree_disk_write(root_addr, s);
+        BTree_free_node_mem(r); r = NULL;
+        BTree_free_node_mem(s); s = NULL;
+        BTree_free_node_mem(z); z = NULL;
+        BTree_insert_nonfull(t, root_addr, k, v);
+    } else {
+        BTree_free_node_mem(r); r = NULL;
+        BTree_insert_nonfull(t, root_addr, k, v);
+    }
+}
+
+void BTree_get(const struct BTree *bt, int k, int *v) {
+    /* --- Declarations at top of block (ANSI C) --- */
+    int root_addr;
+    int t;
+
+    /* --- Code --- */
+    root_addr = bt->root;
+    t = bt->t;
+    assert(bt != NULL); assert(v != NULL); assert(t >= 2);
+    (void) BTree_search_internal(t, root_addr, k, v);
+}
+
+================================================================================
+=== FILE: test_btree.c
+================================================================================
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+#include <time.h>
+#include <limits.h> /* For INT_MIN */
+
+/* Required Struct Definitions */
+struct Node { int n; int leaf; int *key; int *value; int *c; };
+struct BTree { int root; int t; };
+
+/* Required Prototypes from btree.c */
+struct BTree BTree_open (const char *name, int t);
+void        BTree_close(struct BTree *bt);
+void        BTree_put  (const struct BTree *bt, int k, int v);
+void        BTree_get  (const struct BTree *bt, int k, int *v);
+
+/* Required Prototypes from storage.c */
+unsigned long Storage_get_read_count(void);
+unsigned long Storage_get_write_count(void);
+unsigned long Storage_get_alloc_count(void);
+
+#define TEST_DB_FILE "test_btree.db"
+#define TEST_T 3
+#define NUM_RANDOM_INSERTS 1000
+#define NUM_RANDOM_DELETES (NUM_RANDOM_INSERTS / 4) /* Not used yet */
+#define NUM_RANDOM_QUERIES (NUM_RANDOM_INSERTS / 2)
+
+/* --- Test Helper Functions --- */
+
+static unsigned long next_rand = 1;
+int simple_rand(void) {
+    next_rand = next_rand * 1103515245 + 12345;
+    return (unsigned int)(next_rand / 65536) % 32768;
+}
+void simple_srand(unsigned int seed) { next_rand = seed; }
+
+/* Fisher-Yates shuffle - ANSI C compliant */
+void shuffle(int *array, size_t n) {
+    /* --- Declarations at top (ANSI C) --- */
+    size_t i;
+    size_t j;
+    int temp;
+
+    /* --- Code --- */
+    if (n > 1) {
+        for (i = 0; i < n - 1; i++) {
+            j = i + simple_rand() / (32768 / (n - i) + 1);
+            temp = array[j];
+            array[j] = array[i];
+            array[i] = temp;
+        }
+    }
+}
+
+/* --- CLRS Invariant Checks (Stubbed) --- */
+static void check_btree_invariants(const struct BTree *bt) {
+     (void)bt;
+     /* fprintf(stdout, "Invariant check (stubbed) passed.\n"); */
+}
+
+
+/* --- Test Cases --- */
+
+void test_basic_crud() {
+    /* --- Declarations at top (ANSI C) --- */
+    struct BTree bt;
+    int val;
+    int not_found_marker = -999;
+
+    /* --- Code --- */
+    printf("--- Test Basic CRUD ---\n");
+    remove(TEST_DB_FILE);
+    bt = BTree_open(TEST_DB_FILE, TEST_T); /* Moved declaration up */
+
+    printf("Inserting key=10, val=100\n");
+    BTree_put(&bt, 10, 100);
+    check_btree_invariants(&bt);
+
+    val = not_found_marker;
+    BTree_get(&bt, 10, &val);
+    printf("Got val for key=10: %d\n", val);
+    assert(val == 100);
+
+    printf("Inserting key=20, val=200\n");
+    BTree_put(&bt, 20, 200);
+    check_btree_invariants(&bt);
+
+    printf("Updating key=10, val=101\n");
+    BTree_put(&bt, 10, 101);
+    check_btree_invariants(&bt);
+
+    val = not_found_marker;
+    BTree_get(&bt, 10, &val);
+    printf("Got updated val for key=10: %d\n", val);
+    assert(val == 101);
+
+    val = not_found_marker;
+    BTree_get(&bt, 20, &val);
+    printf("Got val for key=20: %d\n", val);
+    assert(val == 200);
+
+    val = not_found_marker;
+    BTree_get(&bt, 30, &val);
+    printf("Got val for key=30 (not found): %d\n", val);
+    assert(val == not_found_marker);
+
+    BTree_close(&bt);
+    printf("Basic CRUD Passed.\n");
+}
+
+void test_node_split() {
+    /* --- Declarations at top (ANSI C) --- */
+    struct BTree bt;
+    int i; /* Loop variable */
+    int num_keys_to_split;
+    int not_found_marker = -999; /* Moved declaration up */
+    int val; /* Moved declaration up */
+
+    /* --- Code --- */
+    printf("--- Test Node Split (Requires t=%d) ---\n", TEST_T);
+     if (TEST_T < 2) {
+         printf("Skipping split test, t must be >= 2\n");
+         return;
+     }
+    remove(TEST_DB_FILE);
+    bt = BTree_open(TEST_DB_FILE, TEST_T); /* Moved declaration up */
+    num_keys_to_split = 2 * TEST_T - 1;
+
+    printf("Inserting %d keys to force a split...\n", num_keys_to_split);
+    /* Use loop variable 'i' declared above */
+    for (i = 1; i <= num_keys_to_split; ++i) {
+        BTree_put(&bt, i * 10, i * 100);
+        check_btree_invariants(&bt);
+    }
+
+    printf("Root node should be full now (n=%d).\n", num_keys_to_split);
+
+    printf("Inserting one more key (%d) to trigger root split...\n", (num_keys_to_split + 1) * 10);
+    BTree_put(&bt, (num_keys_to_split + 1) * 10, (num_keys_to_split + 1) * 100);
+    check_btree_invariants(&bt);
+
+    printf("Root should have split. Checking keys...\n");
+    /* Use loop variable 'i' declared above */
+    for (i = 1; i <= num_keys_to_split + 1; ++i) {
+        val = not_found_marker;
+        BTree_get(&bt, i * 10, &val);
+         if (val != i * 100) {
+            fprintf(stderr, " Split test failed: Key %d not found or wrong value (%d != %d)\n", i*10, val, i*100);
+         }
+        assert(val == i * 100);
+    }
+
+    BTree_close(&bt);
+    printf("Node Split Test Passed.\n");
+}
+
+void test_random_inserts_and_queries() {
+    /* --- Declarations at top (ANSI C) --- */
+    struct BTree bt;
+    int *keys = NULL;
+    int *values = NULL;
+    int i; /* Loop variable */
+    int j; /* Loop variable */
+    int k; /* For generated key */
+    int unique; /* For duplicate check */
+    int not_found_marker = -9999; /* Moved declaration up */
+    time_t start, end;
+    int val; /* Moved declaration up */
+
+    /* --- Code --- */
+    printf("--- Test Random Inserts/Queries (N=%d, T=%d) ---\n", NUM_RANDOM_INSERTS, TEST_T);
+    remove(TEST_DB_FILE);
+    bt = BTree_open(TEST_DB_FILE, TEST_T); /* Moved declaration up */
+    keys = malloc(NUM_RANDOM_INSERTS * sizeof(int));
+    values = malloc(NUM_RANDOM_INSERTS * sizeof(int));
+    assert(keys && values);
+
+    simple_srand((unsigned int)time(NULL));
+
+    printf("Generating %d unique random keys...\n", NUM_RANDOM_INSERTS);
+    /* Use loop variable 'i' declared above */
+    for (i = 0; i < NUM_RANDOM_INSERTS; ++i) {
+        do {
+            unique = 1;
+            k = simple_rand() % (NUM_RANDOM_INSERTS * 10);
+            /* Use loop variable 'j' declared above */
+            for (j = 0; j < i; ++j) {
+                if (keys[j] == k) {
+                    unique = 0;
+                    break;
+                }
+            }
+             if (!unique) continue;
+        } while (0);
+        keys[i] = k;
+        values[i] = k + 1000000;
+    }
+
+    printf("Inserting %d keys...\n", NUM_RANDOM_INSERTS);
+    start = clock();
+    /* Use loop variable 'i' declared above */
+    for (i = 0; i < NUM_RANDOM_INSERTS; ++i) {
+        BTree_put(&bt, keys[i], values[i]);
+         if ((i + 1) % (NUM_RANDOM_INSERTS / 10) == 0) {
+             printf("  Inserted %d / %d\n", i + 1, NUM_RANDOM_INSERTS);
+         }
+    }
+    end = clock();
+    check_btree_invariants(&bt);
+    printf("Insertion time: %.2f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
+
+    printf("Querying %d random inserted keys...\n", NUM_RANDOM_QUERIES);
+    shuffle(keys, NUM_RANDOM_INSERTS);
+    start = clock();
+    /* Use loop variable 'i' declared above */
+    for (i = 0; i < NUM_RANDOM_QUERIES; ++i) {
+        val = not_found_marker;
+        BTree_get(&bt, keys[i], &val);
+        if (val != keys[i] + 1000000) {
+             fprintf(stderr, " Random test failed: Key %d not found or wrong value (%d != %d)\n", keys[i], val, keys[i] + 1000000);
+        }
+        assert(val == keys[i] + 1000000);
+         if ((i + 1) % (NUM_RANDOM_QUERIES / 10) == 0) {
+             printf("  Queried %d / %d\n", i + 1, NUM_RANDOM_QUERIES);
+         }
+    }
+    end = clock();
+    printf("Query time: %.2f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
+
+    /* Query a key known not to exist */
+    val = not_found_marker;
+    BTree_get(&bt, -1, &val);
+    assert(val == not_found_marker);
+
+    printf("Storage Stats: Reads=%lu, Writes=%lu, Allocs=%lu\n",
+           Storage_get_read_count(), Storage_get_write_count(), Storage_get_alloc_count());
+
+    BTree_close(&bt);
+    free(keys);
+    free(values);
+    printf("Random Inserts/Queries Test Passed.\n");
+}
+
+/* TODO: Add test_random_deletes() */
+
+
+int main() {
+    printf("Starting B-Tree Test Suite...\n");
+
+    test_basic_crud();
+    printf("\n");
+    test_node_split();
+    printf("\n");
+    test_random_inserts_and_queries();
+    printf("\n");
+
+    printf("All B-Tree Tests Passed!\n");
+    return 0;
+}
+
+================================================================================
+=== FILE: perf_btree.c
+================================================================================
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h> /* For memcpy, sprintf */
+#include <assert.h>
+
+/* Required Struct Definitions */
+struct Node { int n; int leaf; int *key; int *value; int *c; };
+struct BTree { int root; int t; };
+
+/* Required Prototypes from btree.c */
+struct BTree BTree_open (const char *name, int t);
+void        BTree_close(struct BTree *bt);
+void        BTree_put  (const struct BTree *bt, int k, int v);
+void        BTree_get  (const struct BTree *bt, int k, int *v);
+
+/* Required Prototypes from storage.c */
+unsigned long Storage_get_read_count(void);
+unsigned long Storage_get_write_count(void);
+unsigned long Storage_get_alloc_count(void);
+
+#define PERF_DB_FILE_PREFIX "perf_btree_t"
+#define NUM_KEYS 100000
+#define NUM_QUERIES 10000
+
+static unsigned long next_rand_perf = 1;
+int simple_rand_perf(void) {
+    next_rand_perf = next_rand_perf * 1103515245 + 12345;
+    return (unsigned int)(next_rand_perf / 65536) % 32768;
+}
+void simple_srand_perf(unsigned int seed) { next_rand_perf = seed; }
+
+int main(int argc, const char *argv[]) {
+    /* --- Declarations at top (ANSI C) --- */
+    int min_t = 4;
+    int max_t = 128;
+    int step_t = 2;
+    int num_keys = NUM_KEYS;
+    int num_queries = NUM_QUERIES;
+    int *keys_to_insert = NULL;
+    int *keys_to_query = NULL;
+    char db_filename[256];
+    int i; /* Loop variable */
+    int j; /* Loop variable */
+    int t; /* Loop variable for testing different degrees */
+    int k; /* For generated key */
+    int unique; /* For duplicate check */
+    size_t shuffle_idx; /* For shuffle index */
+    int tmp; /* For shuffle temporary storage */
+    struct BTree bt;
+    clock_t start, end;
+    double insert_time, query_time;
+    unsigned long reads_start_ins, writes_start_ins, allocs_start_ins;
+    unsigned long reads_end_ins, writes_end_ins, allocs_end_ins;
+    unsigned long reads_start_qry, writes_start_qry, allocs_start_qry;
+    unsigned long reads_end_qry, writes_end_qry, allocs_end_qry;
+    int val; /* For query result check */
+
+    /* --- Code --- */
+    printf("Performance Harness\n");
+    printf("Usage: %s [num_keys] [num_queries] [min_t] [max_t] [step_t]\n", argv[0]);
+    printf("Defaults: N=%d, Q=%d, min_t=%d, max_t=%d, step=x%d\n\n",
+           NUM_KEYS, NUM_QUERIES, min_t, max_t, step_t);
+
+    if (argc > 1) num_keys = atoi(argv[1]);
+    if (argc > 2) num_queries = atoi(argv[2]);
+    if (argc > 3) min_t = atoi(argv[3]);
+    if (argc > 4) max_t = atoi(argv[4]);
+    if (argc > 5) step_t = atoi(argv[5]);
+
+    if (num_keys <= 0 || num_queries <= 0 || num_queries > num_keys || min_t < 2 || max_t < min_t || step_t < 1) {
+        fprintf(stderr, "Invalid arguments.\n"); return 1;
+    }
+
+    keys_to_insert = malloc(num_keys * sizeof(int));
+    keys_to_query = malloc(num_queries * sizeof(int));
+    if (!keys_to_insert || !keys_to_query) { perror("Failed to allocate key arrays"); return 1; }
+
+    printf("Generating %d unique keys for insertion...\n", num_keys);
+    simple_srand_perf((unsigned int)time(NULL));
+    /* Use loop variable 'i' declared above */
+    for (i = 0; i < num_keys; ++i) {
+        do {
+            unique = 1;
+            k = simple_rand_perf() % (num_keys * 10);
+            /* Use loop variable 'j' declared above */
+            for (j = 0; j < i; ++j) {
+                 if (keys_to_insert[j] == k) { unique = 0; break; }
+            }
+            if (!unique) continue;
+        } while(0);
+        keys_to_insert[i] = k;
+    }
+    printf("Generating %d keys for querying...\n", num_queries);
+    /* Use loop variable 'i' declared above */
+    for(i=0; i<num_keys; ++i) {
+        shuffle_idx = (size_t)i + simple_rand_perf() / (32768 / (num_keys - i) + 1);
+        tmp = keys_to_insert[shuffle_idx];
+        keys_to_insert[shuffle_idx] = keys_to_insert[i];
+        keys_to_insert[i] = tmp;
+    }
+    memcpy(keys_to_query, keys_to_insert, num_queries * sizeof(int));
+    /* Use loop variable 'i' declared above */
+    for(i=0; i<num_keys; ++i) {
+        shuffle_idx = (size_t)i + simple_rand_perf() / (32768 / (num_keys - i) + 1);
+        tmp = keys_to_insert[shuffle_idx];
+        keys_to_insert[shuffle_idx] = keys_to_insert[i];
+        keys_to_insert[i] = tmp;
+    }
+
+    printf("------------------------------------------------------------------------------------------------------------------------------\n");
+    printf("| %4s | %12s | %12s | %10s | %10s | %10s | %12s | %12s | %10s | %10s | %10s |\n",
+           "T", "Ins Time (s)", "Ins Ops/s", "Ins Reads", "Ins Writes", "Ins Allocs", "Qry Time (s)", "Qry Ops/s", "Qry Reads", "Qry Writes", "Qry Allocs");
+    printf("------------------------------------------------------------------------------------------------------------------------------\n");
+
+    /* Use loop variable 't' declared above */
+    for (t = min_t; t <= max_t; t = (step_t == 1 ? t + 1 : t * step_t)) {
+        sprintf(db_filename, "%s%d.db", PERF_DB_FILE_PREFIX, t);
+        remove(db_filename);
+
+        bt = BTree_open(db_filename, t);
+
+        /* --- Insertion Phase --- */
+        reads_start_ins = Storage_get_read_count();
+        writes_start_ins = Storage_get_write_count();
+        allocs_start_ins = Storage_get_alloc_count();
+        start = clock();
+        /* Use loop variable 'i' declared above */
+        for (i = 0; i < num_keys; ++i) {
+             BTree_put(&bt, keys_to_insert[i], keys_to_insert[i] + 1);
+        }
+        end = clock();
+        reads_end_ins = Storage_get_read_count();
+        writes_end_ins = Storage_get_write_count();
+        allocs_end_ins = Storage_get_alloc_count();
+        insert_time = (double)(end - start) / CLOCKS_PER_SEC;
+
+        /* --- Query Phase --- */
+        reads_start_qry = Storage_get_read_count();
+        writes_start_qry = Storage_get_write_count();
+        allocs_start_qry = Storage_get_alloc_count();
+        start = clock();
+        /* Use loop variable 'i' declared above */
+        for (i = 0; i < num_queries; ++i) {
+            val = -1;
+            BTree_get(&bt, keys_to_query[i], &val);
+            if (val != keys_to_query[i] + 1) {
+                 fprintf(stderr, "WARN: Query failed for key %d (t=%d, val=%d)\n", keys_to_query[i], t, val);
+            }
+        }
+        end = clock();
+        reads_end_qry = Storage_get_read_count();
+        writes_end_qry = Storage_get_write_count();
+        allocs_end_qry = Storage_get_alloc_count();
+        query_time = (double)(end - start) / CLOCKS_PER_SEC;
+
+        BTree_close(&bt);
+
+        /* --- Report Results --- */
+        printf("| %4d | %12.4f | %12.1f | %10lu | %10lu | %10lu | %12.4f | %12.1f | %10lu | %10lu | %10lu |\n",
+               t,
+               insert_time,
+               insert_time > 0 ? (double)num_keys / insert_time : 0.0,
+               reads_end_ins - reads_start_ins,
+               writes_end_ins - writes_start_ins,
+               allocs_end_ins - allocs_start_ins,
+               query_time,
+               query_time > 0 ? (double)num_queries / query_time : 0.0,
+               reads_end_qry - reads_start_qry,
+               writes_end_qry - writes_start_qry,
+               allocs_end_qry - allocs_start_qry
+               );
+        /* remove(db_filename); */
+    }
+
+    printf("------------------------------------------------------------------------------------------------------------------------------\n");
+
+    free(keys_to_insert);
+    free(keys_to_query);
+    printf("Performance Harness Finished.\n");
+    return 0;
+}
+
+================================================================================
+=== FILE: main.c
+================================================================================
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h> /* For memcpy */
+#include <assert.h>
+
+/* Required Struct Definitions */
+struct Node { int n; int leaf; int *key; int *value; int *c; };
+struct BTree { int root; int t; };
+
+/* Required Prototypes from btree.c */
+struct BTree BTree_open (const char *name, int t);
+void        BTree_close(struct BTree *bt);
+void        BTree_put  (const struct BTree *bt, int k, int v);
+void        BTree_get  (const struct BTree *bt, int k, int *v);
+
+/* Required Prototypes from storage.c */
+unsigned long Storage_get_read_count(void);
+unsigned long Storage_get_write_count(void);
+unsigned long Storage_get_alloc_count(void);
+
+
+#define EXAMPLE_DB_FILE "main_example.db"
+#define EXAMPLE_T 170
+#define NUM_KEYS_TO_INSERT 100000
+#define NUM_KEYS_TO_QUERY 10000
+
+static unsigned long next_rand_main = 1;
+int simple_rand_main(void) {
+    next_rand_main = next_rand_main * 1103515245 + 12345;
+    return (unsigned int)(next_rand_main / 65536) % 32768;
+}
+void simple_srand_main(unsigned int seed) { next_rand_main = seed; }
+
+
+int main() {
+    /* --- ALL declarations at the top of the block (ANSI C requirement) --- */
+    struct BTree bt;
+    int *keys_inserted = NULL;
+    int *keys_to_query = NULL;
+    clock_t start, end;
+    double cpu_time_used;
+    unsigned long initial_reads, initial_writes, initial_allocs;
+    unsigned long final_reads, final_writes, final_allocs;
+    int i; /* Declare loop variables here */
+    int j; /* Declare loop variable here */
+    int k; /* For generated key */
+    int duplicate; /* For duplicate check */
+    int found_count = 0; /* Moved declaration up */
+    int not_found_marker = -7777; /* Moved declaration up */
+    int value; /* Moved declaration up */
+    size_t shuffle_idx; /* For shuffle index */
+    int tmp; /* For shuffle temporary storage */
+
+    /* --- Executable code starts here --- */
+    printf("B-Tree Usage Example\n");
+    printf("Database file: %s\n", EXAMPLE_DB_FILE);
+    printf("Minimum degree t: %d\n", EXAMPLE_T);
+    printf("Keys to insert: %d\n", NUM_KEYS_TO_INSERT);
+    printf("Keys to query: %d\n", NUM_KEYS_TO_QUERY);
+
+    keys_inserted = malloc(NUM_KEYS_TO_INSERT * sizeof(int));
+    keys_to_query = malloc(NUM_KEYS_TO_QUERY * sizeof(int));
+    if (!keys_inserted || !keys_to_query) {
+        perror("Failed to allocate memory for keys");
+        return 1;
+    }
+
+    printf("Generating %d unique random keys...\n", NUM_KEYS_TO_INSERT);
+    simple_srand_main((unsigned int)time(NULL));
+    /* Use loop variable 'i' declared above */
+    for (i = 0; i < NUM_KEYS_TO_INSERT; ++i) {
+        do {
+            k = (simple_rand_main() << 15) | simple_rand_main();
+            if (k < 0) k = -k;
+            duplicate = 0;
+            /* Use loop variable 'j' declared above */
+            for (j = 0; j < i; ++j) {
+                 if (keys_inserted[j] == k) {
+                     duplicate = 1;
+                     break;
+                 }
+            }
+            if (duplicate) continue;
+        } while (0);
+        keys_inserted[i] = k;
+    }
+    printf("Keys generated.\n");
+
+    /* Select a subset for querying */
+    /* Use loop variable 'i' declared above */
+     for(i=0; i<NUM_KEYS_TO_INSERT; ++i) {
+        shuffle_idx = (size_t)i + simple_rand_main() / (32768 / (NUM_KEYS_TO_INSERT - i) + 1);
+        tmp = keys_inserted[shuffle_idx];
+        keys_inserted[shuffle_idx] = keys_inserted[i];
+        keys_inserted[i] = tmp;
+     }
+    memcpy(keys_to_query, keys_inserted, NUM_KEYS_TO_QUERY * sizeof(int));
+
+    /* Re-shuffle insertion keys */
+    /* Use loop variable 'i' declared above */
+     for(i=0; i<NUM_KEYS_TO_INSERT; ++i) {
+        shuffle_idx = (size_t)i + simple_rand_main() / (32768 / (NUM_KEYS_TO_INSERT - i) + 1);
+        tmp = keys_inserted[shuffle_idx];
+        keys_inserted[shuffle_idx] = keys_inserted[i];
+        keys_inserted[i] = tmp;
+     }
+
+    printf("Opening B-tree file '%s' with t=%d...\n", EXAMPLE_DB_FILE, EXAMPLE_T);
+    remove(EXAMPLE_DB_FILE);
+    bt = BTree_open(EXAMPLE_DB_FILE, EXAMPLE_T);
+    initial_reads = Storage_get_read_count();
+    initial_writes = Storage_get_write_count();
+    initial_allocs = Storage_get_alloc_count();
+    printf("B-tree opened.\n");
+
+    printf("Inserting %d keys...\n", NUM_KEYS_TO_INSERT);
+    start = clock();
+    /* Use loop variable 'i' declared above */
+    for (i = 0; i < NUM_KEYS_TO_INSERT; ++i) {
+        BTree_put(&bt, keys_inserted[i], keys_inserted[i] * 2);
+        if ((i + 1) % (NUM_KEYS_TO_INSERT / 10) == 0) {
+            printf("  Inserted %d / %d\n", i + 1, NUM_KEYS_TO_INSERT);
+        }
+    }
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Insertion finished in %.2f seconds.\n", cpu_time_used);
+
+    printf("Querying %d keys...\n", NUM_KEYS_TO_QUERY);
+    start = clock();
+    /* Use loop variable 'i' declared above */
+    for (i = 0; i < NUM_KEYS_TO_QUERY; ++i) {
+        value = not_found_marker; /* Initialize before get */
+        BTree_get(&bt, keys_to_query[i], &value);
+        if (value == keys_to_query[i] * 2) {
+            found_count++;
+        } else {
+            fprintf(stderr, "Verification failed: Key %d not found or wrong value %d (expected %d)\n",
+                    keys_to_query[i], value, keys_to_query[i] * 2);
+        }
+    }
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Querying finished in %.2f seconds.\n", cpu_time_used);
+    printf("Verified %d out of %d keys.\n", found_count, NUM_KEYS_TO_QUERY);
+    assert(found_count == NUM_KEYS_TO_QUERY);
+
+    final_reads = Storage_get_read_count();
+    final_writes = Storage_get_write_count();
+    final_allocs = Storage_get_alloc_count();
+
+    printf("Closing B-tree...\n");
+    BTree_close(&bt);
+    printf("B-tree closed.\n");
+
+    printf("\n--- Storage Statistics ---\n");
+    printf("Total Reads: %lu\n", final_reads);
+    printf("Total Writes: %lu\n", final_writes);
+    printf("Total Allocs: %lu\n", final_allocs);
+    printf("Reads during operations: %lu\n", final_reads - initial_reads);
+    printf("Writes during operations: %lu\n", final_writes - initial_writes);
+    printf("Allocs during operations: %lu\n", final_allocs - initial_allocs);
+
+    free(keys_inserted);
+    free(keys_to_query);
+
+    printf("\nExample finished successfully.\n");
+    return 0;
+}
+

@@ -29,8 +29,9 @@ rm -f "$SUMMARY"  # Start fresh each test run
 # Create and initialize the running summary
 RUNNING_SUMMARY="/tmp/running_summary.txt"
 echo "Test Results Summary" > "$RUNNING_SUMMARY"
-echo "=================== " >> "$RUNNING_SUMMARY"
-printf "%-25s %-15s %-20s %-15s %-30s\n" "Configuration" "Status" "Time" "Pieces Placed" "Fail Reason" >> "$RUNNING_SUMMARY"
+echo "=====================" >> "$RUNNING_SUMMARY"
+# Use tab as delimiter
+printf "%s\t%s\t%s\t%s\t%s\n" "Configuration" "Status" "Time" "Pieces Placed" "Fail Reason" > "$SUMMARY"
 echo "------------------------------------------------------------------------" >> "$RUNNING_SUMMARY"
 
 # Test cases covering all template types with valid configurations
@@ -139,13 +140,46 @@ for test in "${!tests[@]}"; do
          failure_reason=$(grep -E "Error:|No valid tiling" "$logfile" | head -1)
     fi
     
-    # Add to summary
-    printf "%-25s %-15s %-20s %-15s %-30s\n" "$test" "$status" "$time_taken" "$pieces_placed" "$failure_reason" >> "$SUMMARY"
+    # Add to summary (use tab as delimiter)
+    printf "%s\t%s\t%s\t%s\t%s\n" "$test" "$status" "$time_taken" "$pieces_placed" "$failure_reason" >> "$SUMMARY"
 
 done
+
+# NEW BLOCK: Run additional tests from generated_tests.txt if it exists
+if [ -f generated_tests.txt ]; then
+    echo "Running additional tests from generated_tests.txt..."
+    while IFS= read -r line; do
+        # Parse test parameters: rows, cols, and piece sequence
+        r=$(echo "$line" | awk '{print $1}')
+        c=$(echo "$line" | awk '{print $2}')
+        piece_seq=$(echo "$line" | awk '{print $3}')
+        logfile="$LOGDIR/generated_${r}x${c}_${piece_seq}.log"
+        echo "Running generated test ${r}x${c} with sequence ${piece_seq}..."
+        ./artetris "$r" "$c" "$piece_seq" > "$logfile" 2>&1
+        exit_code=$?
+        time_taken=$(grep "Time:" "$logfile" | awk '{print $NF}' | head -1)
+        pieces_placed=$(grep "solution has" "$logfile" | awk '{print $(NF-1)}')
+        if [ -z "$pieces_placed" ]; then
+            pieces_placed="0"
+        fi
+        if grep -q "No solutions found" "$logfile"; then
+            status="NO_SOLUTION"
+        elif [ $exit_code -eq 0 ]; then
+            status="COMPLETED"
+        else
+            status="ERROR($exit_code)"
+        fi
+        failure_reason=""
+        if [ "$status" != "COMPLETED" ]; then
+            failure_reason=$(grep -E "Error:|No valid tiling" "$logfile" | head -1)
+        fi
+        # Append test result to the SUMMARY
+        printf "%s\t%s\t%s\t%s\t%s\n" "Generated_${r}x${c}_${piece_seq}" "$status" "$time_taken" "$pieces_placed" "$failure_reason" >> "$SUMMARY"
+    done < generated_tests.txt
+fi
 
 # Print final summary
 echo ""
 echo "Test Results Summary"
-echo "=================== "
-column -t -s' ' "$SUMMARY"
+echo "====================="
+column -t -s $'\t' "$SUMMARY"
